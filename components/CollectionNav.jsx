@@ -1,12 +1,12 @@
 import { BiDownArrow } from "react-icons/bi";
 
-const CollectionNav = () => {
+const CollectionNav = ({scrollDown}) => {
   return (
     <div className="nav-link dropdown dropdown-hover group z-50 relative ">
       <span
         tabIndex={0}
         role="button"
-        className="flex justify-between items-center gap-1 "
+        className={`flex justify-between items-center gap-1 ${!scrollDown && "text-aside"}`}
       >
         Collection {/* <BiDownArrow size={17} fill="#6a532d" className="p-0 m-0" /> */}
       </span>

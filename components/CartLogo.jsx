@@ -1,7 +1,7 @@
 import { PiShoppingCartSimple } from "react-icons/pi";
 import Link from "next/link";
 
-const CartLogo = ({noText, classes, size, fill, indicatorClass}) => {
+const CartLogo = ({noText, classes, size, fill, indicatorClass, isMenuOpen}) => {
   return (
     <a href="#" className={`nav-link ${classes}`}>
       <span className="flex items-center gap-1 justify-center ">

@@ -107,7 +107,6 @@ h3 {
   height: 3px;
   top: 0;
   left: 0;
-  background: #886b3a;
   transform: rotate(0);
   transition: all 0.3s;
   transform-origin: right;
@@ -164,19 +163,20 @@ h3 {
   height: 15rem;
 }
 
+/* sm:max-w-[1280px] xl:w-[1280px] */
 
 @layer components {
   .layout-align {
-    @apply sm:max-w-[1280px] xl:w-[1280px];
+    @apply block;
   }
   .header {
-    @apply flex justify-between relative;
+    @apply flex justify-between relative border-b;
   }
   .nav-bar {
-    @apply bg-aside font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
+    @apply bg-black/20 font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
   .nav-link-container {
-    @apply transition-all duration-200 py-2 w-full flex items-center justify-center lg:justify-between bg-aside;
+    @apply transition-all duration-200 py-2 w-full flex items-center justify-center lg:justify-between ;
   }
   .nav-items {
     @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8 ;

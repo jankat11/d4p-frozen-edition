@@ -53,7 +53,7 @@ const Products = () => {
         power of art, d4p is an up-cycling workshop that designs products by
         blending waste materials with nature-friendly materials.
       </p>
-      <div className="grid relative sm:top-24 p-4 sm-p-0 sm:grid-cols-3  sm:mx-8">
+      {/* <div className="grid relative sm:top-24 p-4 sm-p-0 sm:grid-cols-3  sm:mx-8">
         <div className="home-images-container sm:top-12 sm:left-24 z-30 ">
           <div className="product-layer"></div>
           <Image
@@ -85,7 +85,7 @@ const Products = () => {
             className="home-images object-bottom"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

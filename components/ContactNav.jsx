@@ -2,13 +2,13 @@ import SocialIcons from "./SocialIcons";
 import { BiDownArrow } from "react-icons/bi";
 import { CiMail } from "react-icons/ci";
 
-const ContactNav = () => {
+const ContactNav = ({scrollDown}) => {
   return (
     <div className="nav-link dropdown dropdown-hover relative ">
       <span
         tabIndex={0}
         role="button"
-        className=" flex justify-between items-center gap-1 "
+        className={` flex justify-between items-center gap-1 ${!scrollDown && "text-aside"}`}
       >
         Contact {/* <BiDownArrow size={17} fill="#6a532d" className="p-0 m-0" /> */}
       </span>

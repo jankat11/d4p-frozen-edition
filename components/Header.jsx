@@ -10,60 +10,41 @@ import Sidebar from "./Sidebar";
 
 const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
   const headerRef = useRef(null);
-  
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleClick = () => setIsMenuOpen((prev) => !prev);
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflowY = "hidden"
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflowY = "auto"
+      document.body.style.overflowY = "auto";
     }
-  }, [isMenuOpen])
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    console.log(scrollDown);
+  }, [scrollDown])
 
   return (
     <>
-      {isHomePage && (
-        <div>
-          <div
-            className={`layout-align stripeConst overflow-hidden ${
-              initialLoad && " " /* "scale-in-hor-left" */
-            }`}
-          ></div>
-        </div>
-      )}
-
       <section ref={headerRef} className="header z-40">
-        <nav className={`nav-bar absolut ${isHomePage && "h-24"}`}>
-          {isHomePage && (
-            <Image
-              style={{ width: "100%" }}
-              className={`absolute top-[100px] opacity-100 ${
-                initialLoad && fadeIn
-              }`}
-              quality={100}
-              src={"/phfull.png"}
-              width={1000}
-              height={200}
-              alt="plates"
-            />
-          )}
+        <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
-            className={`nav-link-container layout-align ${
-              (!isHomePage || scrollDown) && "fixed top-0"
+            className={`nav-link-container layout-align  ${
+              (!isHomePage || scrollDown) && "fixed top-0 bg-aside"
             }
             `}
           >
             <div className={` nav-items ${initialLoad && fadeIn}`}>
               <div className="sm:flex sm:flex-row sm:space-x-10 sm:justify-start">
-                <CollectionNav />
-                <ContactNav />
+                <CollectionNav scrollDown={scrollDown} />
+                <ContactNav scrollDown={scrollDown} />
                 <Link
                   href="/our-story"
-                  className="nav-link  whitespace-nowrap "
+                  className={`nav-link  whitespace-nowrap `}
                 >
-                  <span className="">Our Story</span>
+                  <span className={`${!scrollDown && "text-aside"}`}>Our Story</span>
                   {/* <div className="text-line"></div> */}
                 </Link>
                 <CartLogo indicatorClass="" size={18} fill={"#5b4726"} />
@@ -75,10 +56,10 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 initialLoad && fadeIn
               }`}
             >
-              <Sidebar handleClick={handleClick} isMenuOpen={isMenuOpen} />
+              <Sidebar scrollDown={scrollDown} handleClick={handleClick} isMenuOpen={isMenuOpen} />
             </div>
 
-            <D4P initialLoad={initialLoad} />
+            <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
             <div
               className={`absolute z-50 right-6 sm:right-8 translate-y-[2px] flex items-center gap-4 lg:hidden ${
                 initialLoad && fadeIn
@@ -91,7 +72,8 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 noText={true}
                 classes="relative bottom-[3px]"
                 size={25}
-                fill={"#5b4726"}
+                fill={(scrollDown || isMenuOpen) ? "#5b4726" : "#fff"}
+                isMenuOpen={isMenuOpen}
               />
             </div>
           </ul>

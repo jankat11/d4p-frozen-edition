@@ -1,7 +1,7 @@
 import SidebarContent from "./SidebarContent";
 import { useRef } from "react";
 
-const Sidebar = ({handleClick, isMenuOpen}) => { 
+const Sidebar = ({handleClick, isMenuOpen, scrollDown}) => { 
   const menuIconRef = useRef(null);
   
   const handleMenuClick = () => {
@@ -21,9 +21,9 @@ const Sidebar = ({handleClick, isMenuOpen}) => {
               isMenuOpen && "open"
             }`}
           >
-            <span className="hamburger-top"></span>
-            <span className="hamburger-middle"></span>
-            <span className="hamburger-bottom"></span>
+            <span className={`hamburger-top ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
+            <span className={`hamburger-middle ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
+            <span className={`hamburger-bottom ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
           </div>
         </label>
       </div>
