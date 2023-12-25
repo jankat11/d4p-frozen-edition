@@ -265,6 +265,9 @@ h3 {
   .four-images {
     @apply relative w-full object-cover transition-all duration-500 group-hover:scale-105;
   }
+  .homeproducts-info {
+    @apply text-accentDark text-sm font-bold mt-2 flex font-raleway justify-between p-2;
+  }
 }
 
 .nav-link-container {

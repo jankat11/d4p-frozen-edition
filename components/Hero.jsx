@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { SlArrowDown } from "react-icons/sl"
-import ReactCompareImage from "react-compare-image";
 
 const Hero = () => {
   const [height, setHeight] = useState(0);

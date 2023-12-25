@@ -56,7 +56,7 @@ const Products = () => {
     <section
       /* ref={storeRef} */
       id="home-store"
-      className="  relative sm:mb-56 mb-4"
+      className="  relative mb-24"
     >
       <div className="grid relative md:grid-cols-2 ">
         <div
@@ -168,25 +168,96 @@ const Products = () => {
         dedicated to contributing to its well-being by upcycling waste materials
         and turning them into one of a kind gadgets, utensils and art objects.
       </p>
-
-      <div className="">
-        <p className="text-center text-letter text-xl sm:text-2xl lg:text-3xl font-raleway">THE HEALING POVER OF ART</p>
-        <div className="overflow-hidden sm:rounded-sm flex flex-col sm:flex-row p-4 gap-4">
+      <div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none">
+            <div className="carousel-item w-2/5 md:w-[28%] border-none">
+              <div className="sm:p-4 ">
+                <Image
+                  src={"/plates/p1.png"}
+                  style={{ width: "700px", height: "auto" }}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="rounded-md shadow"
+                  alt="photo"
+                />
+                <div className="homeproducts-info">
+                  <p>büyük tabak</p>
+                  <p>500tl</p>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item  w-2/5 md:w-[28%] ">
+              <div className="sm:p-4 ">
+                <Image
+                  src={"/plates/p2.png"}
+                  style={{ width: "700px", height: "auto" }}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="rounded-md object-cover shadow"
+                  alt="photo"
+                />
+                <div className="homeproducts-info">
+                  <p>büyük tabak</p>
+                  <p>500tl</p>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item  w-2/5 md:w-[28%] ">
+              <div className="sm:p-4 ">
+                <Image
+                  src={"/plates/p3.png"}
+                  style={{ width: "700px", height: "auto" }}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="rounded-md object-cover shadow"
+                  alt="photo"
+                />
+                <div className="homeproducts-info">
+                  <p>büyük tabak</p>
+                  <p>500tl</p>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item  w-2/5 md:w-[28%]">
+              <div className="sm:p-4 ">
+                <Image
+                  src={"/plates/p4.png"}
+                  style={{ width: "700px", height: "auto" }}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="rounded-md object-cover shadow"
+                  alt="photo"
+                />
+                <div className="homeproducts-info">
+                  <p>büyük tabak</p>
+                  <p>500tl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      {/* <div className="mt-24">
+        <div className="overflow-hidden sm:rounded-sm flex flex-col sm:flex-row justify-around gap-4 xl:gap-12  mx-auto">
           <ReactCompareImage
             leftImage="homepage/comp1.png"
             rightImage="homepage/comp2.png"
+            sliderPositionPercentage={0.3}
           />
           <ReactCompareImage
             leftImage="homepage/comp3.png"
             rightImage="homepage/comp4.png"
+            sliderPositionPercentage={0.3}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
 export default Products;
 
+        {/* <p className="text-center text-letter text-xl sm:text-2xl lg:text-3xl font-raleway mb-4">THE HEALING POVER OF ART</p> */}
 {
   /* <h2 className="text-primary/80 text-4xl text-center py-16">Products</h2> */
 }

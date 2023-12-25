@@ -32,7 +32,7 @@ export const featureBoxes = [
 const iconProps = {
   size: 45,
   fill: "#ad9b7c",
-  fillOpacity: 0.6, 
+  fillOpacity: 0.9, 
   className: "mb-2 inline-block",
 };
 
