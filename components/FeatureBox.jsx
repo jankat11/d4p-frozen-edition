@@ -11,7 +11,7 @@ const FeatureBox = ({ title, content }) => {
   return (
     <article
       ref={ref}
-      className={`feature-box w-full mx-auto px-6 relative right-2 sm:right-0 opacity-0 ${
+      className={`feature-box w-full mx-auto px-6 relative right-2 sm:right-0 opacity-0 font-raleway ${
         inView && "animate__animated animate__flipInY opacity-100"
       }`}
     >

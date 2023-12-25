@@ -11,7 +11,7 @@ const D4P = ({ initialLoad, scrollDown }) => {
         quality={100}
         className={`w-[156px] pt-2  lg:pe-2 z-40  ${
           initialLoad && "" /* "animate__animated animate__flipInY animate__delay-1s" */
-        } ${!scrollDown && "invert brightness-0"}`}
+        } ${!scrollDown ? "invert brightness-0" : ""}`}
         style={{width: "156px", height: "auto"}}
         alt="logo"
       />

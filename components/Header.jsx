@@ -37,7 +37,7 @@ const Header = ({
       <section ref={headerRef} className="header z-40">
         <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
-            className={`nav-link-container layout-align lg:px-6 xl:px-12 2xl:px-24 ${
+            className={`nav-link-container layout-align lg:px-6 xl:px-12 2xl:px-24 font-bold ${
               (!isHomePage || fixedValue) && "fixed top-0"
             }
             ${scrollDown && "bg-aside"}
@@ -46,7 +46,7 @@ const Header = ({
             <div className="lg:block hidden">
               <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
             </div>
-            <div className={` nav-items  ${initialLoad && fadeIn}`}>
+            <div className={` nav-items text-xl  ${initialLoad && fadeIn}`}>
               <div className="sm:flex sm:flex-row sm:space-x-10 sm:justify-start">
                 <CollectionNav scrollDown={scrollDown} />
                 <ContactNav scrollDown={scrollDown} />
@@ -109,6 +109,7 @@ const Header = ({
                 size={25}
                 fill={scrollDown || isMenuOpen ? "#5b4726" : "#fff"}
                 isMenuOpen={isMenuOpen}
+                scrollDown={scrollDown}
               />
             </div>
           </ul>

@@ -21,9 +21,9 @@ const Sidebar = ({handleClick, isMenuOpen, scrollDown}) => {
               isMenuOpen && "open"
             }`}
           >
-            <span className={`hamburger-top ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
-            <span className={`hamburger-middle ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
-            <span className={`hamburger-bottom ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#886b3a]"}`}></span>
+            <span className={`hamburger-top ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#6b593c]"}`}></span>
+            <span className={`hamburger-middle ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#6b593c]"}`}></span>
+            <span className={`hamburger-bottom ${!scrollDown && !isMenuOpen ? "bg-aside" : "bg-[#6b593c]"}`}></span>
           </div>
         </label>
       </div>
