@@ -15,10 +15,11 @@ const Hero = () => {
       <div className="h-screen md:h-auto bg-aside shadow-neutral m-0 p-0  ">
         <div className="lg:w-full relative z-10 h-screen ">
           <Image 
-            src={"/herosm.jpg"}
+            src={"/herosm.png"}
             width={2500}
             height={2500}
             alt="hero"
+            priority
             quality={100}
             className="object-cover  object-center h-screen "
           />
