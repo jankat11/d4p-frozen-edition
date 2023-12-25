@@ -3,11 +3,13 @@ import Header from "./Header";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
+import Image from "next/image";
 
 const Layout = ({ children }) => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [initialLoad, setInitialLoad] = useState(true);
-  const scrollDown = scrollHeight >= 21;
+  const scrollDown = scrollHeight >= 41;
+  const fixedValue = scrollHeight >= 21;
   const {pathname} = useRouter()
 
  /*  const fadeIn = "animate__animated animate__fadeIn animate__delay-1s"; */
@@ -34,10 +36,21 @@ const Layout = ({ children }) => {
         <div
           className={`bg-aside screen-cover ${fadeIn}`}
         ></div>
+       {/*  <div className="w-fit absolute z-50 top-[35%]">
+          <Image 
+          src={"/brand.png"}
+          height={400}
+          width={400}
+          alt="brand"
+          className="w-36 invert brightness-0"
+          />
+
+        </div> */}
         <div className={`layout-align w-full z-30 absolute`}>
           <Header
             initialLoad={initialLoad}
             scrollDown={scrollDown}
+            fixedValue={fixedValue}
             fadeIn={fadeIn}
             isHomePage={isHomePage}
           />

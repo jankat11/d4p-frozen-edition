@@ -20,11 +20,11 @@ const Hero = () => {
             width={2500}
             height={2500}
             alt="hero"
-            className="h-screen object-cover"
+            className="h-screen object-cover object-top"
           />
-          {/* <p className="hero-text border-accent relative bg-white pt-0 py-4">the healing pover of art</p> */}
         </div>
-        <div className="w-full md:hidden px-4 sm:px-8  relative mt-10 lg:mt-0 z-10 left-0 flex flex-col sm:flex-row items-center justify-center  gap-8 ">
+        <div className="w-full  px-4 sm:px-8  absolute top-[70%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
+          <p className="hero-text font-bold border-accent pt-0 py-4"><span className="">U</span>pcycled Products</p>
           <a className="">
             <button
               onClick={handleClick}

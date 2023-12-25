@@ -8,7 +8,13 @@ import ContactNav from "./ContactNav";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
 
-const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
+const Header = ({
+  scrollDown,
+  initialLoad,
+  fadeIn,
+  isHomePage,
+  fixedValue,
+}) => {
   const headerRef = useRef(null);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,19 +30,23 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
 
   useEffect(() => {
     console.log(scrollDown);
-  }, [scrollDown])
+  }, [scrollDown]);
 
   return (
     <>
       <section ref={headerRef} className="header z-40">
         <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
-            className={`nav-link-container layout-align  ${
-              (!isHomePage || scrollDown) && "fixed top-0 bg-aside"
+            className={`nav-link-container layout-align lg:px-6 xl:px-12 2xl:px-24 ${
+              (!isHomePage || fixedValue) && "fixed top-0"
             }
+            ${scrollDown && "bg-aside"}
             `}
           >
-            <div className={` nav-items ${initialLoad && fadeIn}`}>
+            <div className="lg:block hidden">
+              <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
+            </div>
+            <div className={` nav-items  ${initialLoad && fadeIn}`}>
               <div className="sm:flex sm:flex-row sm:space-x-10 sm:justify-start">
                 <CollectionNav scrollDown={scrollDown} />
                 <ContactNav scrollDown={scrollDown} />
@@ -44,22 +54,47 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                   href="/our-story"
                   className={`nav-link  whitespace-nowrap `}
                 >
-                  <span className={`${!scrollDown && "text-aside"}`}>Our Story</span>
+                  <span className={`${!scrollDown && "text-aside"}`}>
+                    Our Story
+                  </span>
                   {/* <div className="text-line"></div> */}
                 </Link>
-                <CartLogo indicatorClass="" size={18} fill={"#5b4726"} />
+                <Link href="/" className={`nav-link  whitespace-nowrap `}>
+                  <span className={`${!scrollDown && "text-aside"}`}>
+                    New Arrivals
+                  </span>
+                </Link>
               </div>
             </div>
-
+            <div className="lg:flex hidden items-center gap-1">
+              <Link
+                href="/our-story"
+                className={`nav-link  whitespace-nowrap `}
+              >
+                <span className={`${!scrollDown && "text-aside"}`}>Cart</span>
+              </Link>
+              <CartLogo
+                noText={true}
+                scrollDown={scrollDown}
+                size={18}
+                fill={scrollDown || isMenuOpen ? "#5b4726" : "#fff"}
+              />
+            </div>
             <div
               className={`absolute z-50 left-4 block  lg:hidden ${
                 initialLoad && fadeIn
               }`}
             >
-              <Sidebar scrollDown={scrollDown} handleClick={handleClick} isMenuOpen={isMenuOpen} />
+              <Sidebar
+                scrollDown={scrollDown}
+                handleClick={handleClick}
+                isMenuOpen={isMenuOpen}
+              />
             </div>
 
-            <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
+            <div className="lg:hidden">
+              <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
+            </div>
             <div
               className={`absolute z-50 right-6 sm:right-8 translate-y-[2px] flex items-center gap-4 lg:hidden ${
                 initialLoad && fadeIn
@@ -72,7 +107,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 noText={true}
                 classes="relative bottom-[3px]"
                 size={25}
-                fill={(scrollDown || isMenuOpen) ? "#5b4726" : "#fff"}
+                fill={scrollDown || isMenuOpen ? "#5b4726" : "#fff"}
                 isMenuOpen={isMenuOpen}
               />
             </div>

@@ -49,9 +49,7 @@ const Products = () => {
       className="  relative lg:mt-4 sm:mb-56 mb-4"
     >
       <p className="max-w-lg p-4 leading-loose text-center mx-auto text-letter font-semibold">
-        <span className="font-serif text-4xl">I</span>nspired by the healing
-        power of art, d4p is an up-cycling workshop that designs products by
-        blending waste materials with nature-friendly materials.
+        <span className="font-serif text-4xl">W</span>e value our planet and are dedicated to contributing to its well-being by upcycling waste materials and turning them into one of a kind gadgets, utensils and art objects.
       </p>
       {/* <div className="grid relative sm:top-24 p-4 sm-p-0 sm:grid-cols-3  sm:mx-8">
         <div className="home-images-container sm:top-12 sm:left-24 z-30 ">
