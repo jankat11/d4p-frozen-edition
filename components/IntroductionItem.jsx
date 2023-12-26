@@ -14,6 +14,12 @@ const IntroductionItem = ({ introImage, title }) => {
     triggerOnce: false,
   });
   const [ref3, endView] = useInView({
+    onChange: () => {
+      if(inView)
+      sectionRef.current.style.backgroundColor = "red"
+      console.log("hello");
+    
+    },
     threshold: 1,
     triggerOnce: false,
   });
@@ -24,14 +30,14 @@ const IntroductionItem = ({ introImage, title }) => {
     /* console.log(title, "here"); */
   }
   return (
-    <section ref={sectionRef} className="md:aspect-square overflow-hidden relative group">
+    <section  className="md:aspect-square overflow-hidden relative group">
       <div ref={ref}>
         <div ref={ref2} className="slideController "></div>
-        <motion.div
+        <div
           ref={ref3}
-          whileInView={here}
+         
           className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
-        ></motion.div>
+        ></div>
         <Image
           src={introImage}
           width={900}
@@ -44,9 +50,9 @@ const IntroductionItem = ({ introImage, title }) => {
           <p className="home-images-title">{title}</p>
         </div>
         <div
-    
+          ref={sectionRef}
           className={`w-full ${
-            startView && !on ? "fixed" : "absolute"
+            startView && !endView ? "fixed" : "absolute"
           } md:hidden bottom-8
           `}
         >
