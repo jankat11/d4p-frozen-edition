@@ -18,14 +18,20 @@ const IntroductionItem = ({ introImage, title }) => {
     triggerOnce: false,
   });
 
+  const [on, setOn] = useState(false)
+  const here = () => {
+    setOn(true)
+    /* console.log(title, "here"); */
+  }
   return (
     <section ref={sectionRef} className="md:aspect-square overflow-hidden relative group">
       <div ref={ref}>
         <div ref={ref2} className="slideController "></div>
-        <div
+        <motion.div
           ref={ref3}
-          className="slideControllerBottom z-50 absolute w-full h-56 bottom-0"
-        ></div>
+          whileInView={here}
+          className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
+        ></motion.div>
         <Image
           src={introImage}
           width={900}
@@ -40,7 +46,7 @@ const IntroductionItem = ({ introImage, title }) => {
         <div
     
           className={`w-full ${
-            startView && !endView ? "fixed" : "absolute"
+            startView && !on ? "fixed" : "absolute"
           } md:hidden bottom-8
           `}
         >
