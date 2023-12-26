@@ -13,6 +13,7 @@ const IntroductionItem = ({ introImage, title }) => {
   }
 
   useEffect(() => {
+    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       getHeight()
