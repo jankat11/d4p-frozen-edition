@@ -1,6 +1,6 @@
 import "animate.css";
 import Hero from "../components/Hero";
-import Products from "../components/Products";
+import IntroductionList from "../components/IntroductionList";
 import Features from "@/components/Features";
 import Map from "@/components/Map";
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Products />
+      <IntroductionList />
       {/* <Features /> */}
       <Map />
     </>
