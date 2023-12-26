@@ -1,11 +1,9 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import React, { useState, useEffect, useRef, useDebugValue } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const IntroductionItem = ({ introImage, title }) => {
-  const [isTouching, setIsTouching] = useState(false);
-  const [start, setStart] = useState(0);
-
+  const sectionRef = useRef();
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: false,
@@ -19,45 +17,8 @@ const IntroductionItem = ({ introImage, title }) => {
     triggerOnce: false,
   });
 
-  const fixedRef = useRef();
-  const imageRef = useRef();
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-
-  const getScroll = () => {
-    return window.scrollY;
-  };
-  const getOffset = () => {
-    return imageRef.current.offsetHeight;
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const fixedRect = fixedRef.current.getBoundingClientRect();
-      const otherRect = getOffset();
-      const currentIsTouching = !(fixedRect.bottom <= otherRect.top - 13);
-      const scroll = getScroll()
-      setIsTouching(scroll - start > otherRect )
-      setPrevScrollPos(scroll);
-      if (title === "our collection" && inView && !endView)
-        console.log(scroll, otherRect, start);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos]);
-
-  useEffect(() => {
-    if (inView) {
-      setStart(getScroll())
-    }
-  }, [inView])
-
   return (
-    <section
-      
-      className="md:aspect-square overflow-hidden relative group"
-    >
+    <section ref={sectionRef} className="md:aspect-square overflow-hidden relative group">
       <div ref={ref}>
         <div ref={ref2} className="slideController "></div>
         <div
@@ -70,17 +31,16 @@ const IntroductionItem = ({ introImage, title }) => {
           height={900}
           alt="plates"
           className="four-images"
-          ref={imageRef}
+         
         />
         <div className={`w-full absolute hidden md:block  bottom-8`}>
           <p className="home-images-title">{title}</p>
         </div>
         <div
-          ref={fixedRef}
+    
           className={`w-full ${
-            !isTouching ? "fixed" : "absolute"
-          } md:hidden bottom-[44px]
-          ${!startView && "hidden"}
+            startView && !endView ? "fixed" : "absolute"
+          } md:hidden bottom-8
           `}
         >
           <p className="home-images-title ">{title}</p>
