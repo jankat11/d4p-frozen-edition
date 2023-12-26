@@ -22,7 +22,7 @@ const IntroductionItem = ({ introImage, title }) => {
       const fixedRect = fixedRef.current.getBoundingClientRect();
       const otherRect = textRef.current.getBoundingClientRect();
       const currentIsTouching = !(
-        fixedRect.bottom < otherRect.top 
+        fixedRect.bottom < otherRect.top - 2
        
       );
       setIsTouching(currentIsTouching);
@@ -44,7 +44,7 @@ const IntroductionItem = ({ introImage, title }) => {
       <div  className="slideController "></div>
       <div
         ref={textRef}
-        className="slideControllerBottom z-50 absolute w-full h-8 bg-blue-500 bottom-0"
+        className="slideControllerBottom z-50 absolute w-full h-8 bg-gray-500 bottom-0"
       ></div>
       <Image
         src={introImage}
