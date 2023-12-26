@@ -41,10 +41,10 @@ const IntroductionItem = ({ introImage, title }) => {
       
       className="md:aspect-square overflow-hidden relative group"
     >
-      <div  className="slideController "></div>
+      <div ref={ref2} className="slideController "></div>
       <div
         ref={textRef}
-        className="slideControllerBottom z-50 absolute w-full h-8 bg-gray-500 bottom-0"
+        className="slideControllerBottom z-50 absolute w-full h-8 bg-violet-500 bottom-0"
       ></div>
       <Image
         src={introImage}
@@ -61,7 +61,7 @@ const IntroductionItem = ({ introImage, title }) => {
         className={`w-full ${
           (!isTouching) ? "fixed" : "absolute"
         } md:hidden bottom-8
-        
+        ${!startView && "hidden"}
         `}
         
       >

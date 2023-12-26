@@ -263,7 +263,7 @@ h3 {
     @apply absolute  w-1/2 h-[80%] bottom-0 ;
   }
   .four-images {
-    @apply relative w-full object-cover transition-all duration-500 group-hover:scale-105;
+    @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
     @apply text-accentDark text-sm font-bold mt-2 flex font-raleway justify-between p-2;
