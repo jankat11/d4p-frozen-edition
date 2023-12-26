@@ -22,7 +22,7 @@ const IntroductionItem = ({ introImage, title }) => {
       const fixedRect = fixedRef.current.getBoundingClientRect();
       const otherRect = textRef.current.getBoundingClientRect();
       const currentIsTouching = !(
-        fixedRect.bottom < otherRect.top - 2
+        fixedRect.bottom < otherRect.top 
        
       );
       setIsTouching(currentIsTouching);
