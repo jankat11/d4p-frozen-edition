@@ -24,15 +24,18 @@ const [elementPosition, setElementPosition] = useState(0);
 const [onplace, setOnplace] = useState(false)
 
 
+  const getIsTouch = () => {
+    
+      const fixedRect = fixedRef.current.getBoundingClientRect();
+      const otherRect = textRef.current.getBoundingClientRect();
+      return !(
+        fixedRect.bottom <= otherRect.top - 13
+      );
+  }
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      const fixedRect = fixedRef.current.getBoundingClientRect();
-      const otherRect = textRef.current.getBoundingClientRect();
-      const currentIsTouching = !(
-        fixedRect.bottom <= otherRect.top - 13
-       
-      );
+      const currentIsTouching = getIsTouch()
       setIsTouching(currentIsTouching);
       console.log(title, "is touching", currentIsTouching);
       if (currentScrollPos > prevScrollPos) {
@@ -61,7 +64,7 @@ const [onplace, setOnplace] = useState(false)
       <div ref={ref2} className="slideController "></div>
       <div
         ref={textRef}
-        className="slideControllerBottom z-50 absolute w-full h-8 bg-black bottom-0"
+        className="slideControllerBottom z-50 absolute w-full h-8 bg-white bottom-0"
       ></div>
       <Image
         src={introImage}
