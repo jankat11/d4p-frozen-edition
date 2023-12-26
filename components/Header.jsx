@@ -28,9 +28,9 @@ const Header = ({
     }
   }, [isMenuOpen]);
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log(scrollDown);
-  }, [scrollDown]);
+  }, [scrollDown]); */
 
   return (
     <>
