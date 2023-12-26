@@ -22,8 +22,6 @@ const IntroductionItem = ({ introImage, title }) => {
       const fixedRect = fixedRef.current.getBoundingClientRect();
       const otherRect = textRef.current.getBoundingClientRect();
       const currentIsTouching = !(
-        fixedRect.right < otherRect.left ||
-        fixedRect.left > otherRect.right ||
         fixedRect.bottom < otherRect.top ||
         fixedRect.top > otherRect.bottom
       );
@@ -43,7 +41,7 @@ const IntroductionItem = ({ introImage, title }) => {
       
       className="md:aspect-square overflow-hidden relative group"
     >
-      <div ref={ref2} className="slideController "></div>
+      <div  className="slideController "></div>
       <div
         ref={textRef}
         className="slideControllerBottom z-50 absolute w-full h-8 bg-red-500 bottom-0"
@@ -63,7 +61,7 @@ const IntroductionItem = ({ introImage, title }) => {
         className={`w-full ${
           (!isTouching) ? "fixed" : "absolute"
         } md:hidden bottom-8
-        ${!startView && "hidden" }
+        
         `}
         
       >
