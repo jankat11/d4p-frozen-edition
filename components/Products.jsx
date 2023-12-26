@@ -77,7 +77,7 @@ const Products = () => {
           <div
             className={`w-full ${
               controller1 && !endView1
-                ? "fixed animate__animated animate__swing"
+                ? "fixed animate__animated animate__fadeIn"
                 : "absolute"
             } md:hidden bottom-8`}
           >
@@ -102,7 +102,7 @@ const Products = () => {
           <div
             className={`w-full ${
               controller2 && !endView2
-                ? "fixed animate__animated animate__swing"
+                ? "fixed animate__animated animate__fadeIn"
                 : "absolute"
             } md:hidden bottom-8`}
           >
@@ -127,7 +127,7 @@ const Products = () => {
           <div
             className={`w-full ${
               controller3 && !endView3
-                ? "fixed animate__animated animate__swing"
+                ? "fixed animate__animated animate__fadeIn"
                 : "absolute"
             } md:hidden  bottom-8`}
           >
@@ -152,7 +152,7 @@ const Products = () => {
           <div
             className={`w-full ${
               controller4 && !endAll
-                ? "fixed animate__animated animate__swing"
+                ? "fixed animate__animated animate__fadeIn"
                 : "absolute"
             } md:hidden bottom-8`}
           >
