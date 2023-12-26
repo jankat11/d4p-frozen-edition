@@ -32,13 +32,8 @@ const IntroductionItem = ({ introImage, title }) => {
   }, [windowWidth]); 
 
 
-/*   useEffect(() => {
-    getHeight()
-    console.log(sectionHeight);
-  }, [windowWidth]) */
-
   return (
-    <div className={`md:aspect-square group containerss  aspect-[400/490]`}>
+    <div className={`md:aspect-square group containerss md:overflow-hidden aspect-[400/490]`}>
       <Image
         src={introImage}
         width={900}

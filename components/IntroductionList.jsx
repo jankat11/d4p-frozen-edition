@@ -19,18 +19,18 @@ const IntroductionList = () => {
           title={"our collection"}
           introImage={"/homepage/h1.png"}
         />
-        <IntroductionItem title={"in stock"} introImage={"/homepage/h2.png"} />
+        <IntroductionItem title={"in stock"} introImage={"/homepage/h15.png"} />
         <IntroductionItem
           title={"new arrivals"}
-          introImage={"/homepage/h9.png"}
+          introImage={"/homepage/h11.png"}
         />
         <IntroductionItem
           title={"art and craft"}
-          introImage={"/homepage/h4.png"}
+          introImage={"/homepage/h14.jpg"}
         />
       </div>
       <p className="max-w-3xl p-4 py-24 font-raleway leading-loose sm:leading-10 text-center mx-auto text-letter sm:text-2xl text-xl tracking-wide">
-        <span className="font-serif text-4xl">W</span>e value our planet and are
+        <span className=" ">W</span>e value our planet and are
         dedicated to contributing to its well-being by upcycling waste materials
         and turning them into one of a kind gadgets, utensils and art objects.
       </p>
