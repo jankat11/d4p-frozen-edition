@@ -1,41 +1,36 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import React, { useState, useEffect, useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const IntroductionItem = ({ introImage, title }) => {
-  const sectionRef = useRef();
-  const [ref, inView] = useInView({
-    threshold: 0,
-    triggerOnce: false,
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "end end"]
   });
-  const [ref2, startView] = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
-  });
-  const [ref3, endView] = useInView({
-    onChange: () => {
-      if(inView)
-      sectionRef.current.style.backgroundColor = "red"
-      console.log("hello");
-    
-    },
-    threshold: 1,
-    triggerOnce: false,
-  });
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [progress, setProgress] = useState(0);
+ 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setPrevScrollPos(currentScrollPos);
+      setProgress(scrollYProgress.prev)
+      console.log(progress);
+    };
+    window.addEventListener('scroll', handleScroll);
 
-  const [on, setOn] = useState(false)
-  const here = () => {
-    setOn(true)
-    /* console.log(title, "here"); */
-  }
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos])
+  
   return (
-    <section  className="md:aspect-square overflow-hidden relative group">
-      <div ref={ref}>
-        <div ref={ref2} className="slideController "></div>
+    <motion.div ref={ref} className="md:aspect-square overflow-hidden relative group">
+      <div>
+        <div  className="slideController "></div>
         <div
-          ref={ref3}
-         
           className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
         ></div>
         <Image
@@ -49,17 +44,15 @@ const IntroductionItem = ({ introImage, title }) => {
         <div className={`w-full absolute hidden md:block  bottom-8`}>
           <p className="home-images-title">{title}</p>
         </div>
-        <div
-          ref={sectionRef}
-          className={`w-full ${
-            startView && !endView ? "fixed" : "absolute"
-          } md:hidden bottom-8
+        <motion.div
+        style={{position : `${scrollYProgress.current < 1 ? "fixed" : "absolute"}`}}
+          className={`w-full md:hidden bottom-0
           `}
         >
           <p className="home-images-title ">{title}</p>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 export default IntroductionItem;
