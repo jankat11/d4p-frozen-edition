@@ -11,7 +11,7 @@ const IntroductionItem = ({ introImage, title }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
 
       if (currentScrollPos > prevScrollPos) {
         setIsScrollDown(true);
@@ -60,7 +60,7 @@ const IntroductionItem = ({ introImage, title }) => {
           inView && !endView
             ? isScrollDown ? "fixed animate__animated animate__fadeIn" : "fixed"
             : "absolute"
-        } md:hidden bottom-8`}
+        } md:hidden bottom-0`}
       >
         <p className="home-images-title ">{title}</p>
       </div>
