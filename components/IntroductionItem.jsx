@@ -23,7 +23,7 @@ const IntroductionItem = ({ introImage, title }) => {
         <div ref={ref2} className="slideController "></div>
         <div
           ref={ref3}
-          className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
+          className="slideControllerBottom z-50 absolute w-full h-1 bg-yellow-500 bottom-0"
         ></div>
         <Image
           src={introImage}
