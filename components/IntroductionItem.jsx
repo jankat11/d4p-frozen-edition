@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useDebugValue } from "react";
 
 const IntroductionItem = ({ introImage, title }) => {
   const [isTouching, setIsTouching] = useState(false);
+  const [start, setStart] = useState(0);
 
   const [ref, inView] = useInView({
     threshold: 0,
@@ -13,79 +14,77 @@ const IntroductionItem = ({ introImage, title }) => {
     threshold: 0.1,
     triggerOnce: false,
   });
+  const [ref3, endView] = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  });
 
   const fixedRef = useRef();
-  const textRef = useRef();
+  const imageRef = useRef();
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
-  const [isScrollDown, setIsScrollDown] = useState(false);
-const [isScrollUp, setIsScrollUp] = useState(false);
-const [prevScrollPos, setPrevScrollPos] = useState(0);
-const [elementPosition, setElementPosition] = useState(0);
-const [onplace, setOnplace] = useState(false)
+  const getScroll = () => {
+    return window.scrollY;
+  };
+  const getOffset = () => {
+    return imageRef.current.offsetHeight;
+  };
 
-
-  const getIsTouch = () => {
-    
-      const fixedRect = fixedRef.current.getBoundingClientRect();
-      const otherRect = textRef.current.getBoundingClientRect();
-      return !(
-        fixedRect.bottom <= otherRect.top - 13
-      );
-  }
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      const currentIsTouching = getIsTouch()
-      setIsTouching(currentIsTouching);
-      console.log(title, "is touching", currentIsTouching);
-      if (currentScrollPos > prevScrollPos) {
-        setIsScrollDown(true);
-        setIsScrollUp(false);
-      } else {
-        setIsScrollDown(false);
-        setIsScrollUp(true);
-      }
-  
-      setPrevScrollPos(currentScrollPos);
+      const fixedRect = fixedRef.current.getBoundingClientRect();
+      const otherRect = getOffset();
+      const currentIsTouching = !(fixedRect.bottom <= otherRect.top - 13);
+      const scroll = getScroll()
+      setIsTouching(scroll - start > otherRect )
+      setPrevScrollPos(scroll);
+      if (title === "our collection" && inView && !endView)
+        console.log(scroll, otherRect, start);
     };
-    console.log(title, "STARTTT", startView);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
   }, [prevScrollPos]);
+
+  useEffect(() => {
+    if (inView) {
+      setStart(getScroll())
+    }
+  }, [inView])
 
   return (
     <section
       
       className="md:aspect-square overflow-hidden relative group"
     >
-      <div ref={ref2} className="slideController "></div>
-      <div
-        ref={textRef}
-        className="slideControllerBottom z-50 absolute w-full h-8 bg-white bottom-0"
-      ></div>
-      <Image
-        src={introImage}
-        width={900}
-        height={900}
-        alt="plates"
-        className="four-images"
-      />
-      <div className={`w-full absolute hidden md:block  bottom-8`}>
-        <p className="home-images-title">{title}</p>
-      </div>
-      <div
-        ref={fixedRef}
-        className={`w-full ${
-          (!isTouching) ? "fixed" : "absolute"
-        } md:hidden bottom-[44px]
-        ${!startView && "hidden"}
-        `}
-        
-      >
-        <p className="home-images-title ">{title}</p>
+      <div ref={ref}>
+        <div ref={ref2} className="slideController "></div>
+        <div
+          ref={ref3}
+          className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
+        ></div>
+        <Image
+          src={introImage}
+          width={900}
+          height={900}
+          alt="plates"
+          className="four-images"
+          ref={imageRef}
+        />
+        <div className={`w-full absolute hidden md:block  bottom-8`}>
+          <p className="home-images-title">{title}</p>
+        </div>
+        <div
+          ref={fixedRef}
+          className={`w-full ${
+            !isTouching ? "fixed" : "absolute"
+          } md:hidden bottom-[44px]
+          ${!startView && "hidden"}
+          `}
+        >
+          <p className="home-images-title ">{title}</p>
+        </div>
       </div>
     </section>
   );
