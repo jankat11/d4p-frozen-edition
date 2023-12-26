@@ -1,7 +1,37 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import React, { useState, useEffect } from 'react';
+
 
 const IntroductionItem = ({ introImage, title }) => {
+
+  const [isScrollDown, setIsScrollDown] = useState(false);
+  const [isScrollUp, setIsScrollUp] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos > prevScrollPos) {
+        setIsScrollDown(true);
+        setIsScrollUp(false);
+      } else {
+        setIsScrollDown(false);
+        setIsScrollUp(true);
+      }
+
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
+
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -28,7 +58,7 @@ const IntroductionItem = ({ introImage, title }) => {
       <div
         className={`w-full ${
           inView && !endView
-            ? "fixed animate__animated animate__fadeIn"
+            ? isScrollDown ? "fixed animate__animated animate__fadeIn" : "fixed"
             : "absolute"
         } md:hidden bottom-8`}
       >
