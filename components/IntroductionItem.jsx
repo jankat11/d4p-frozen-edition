@@ -4,55 +4,58 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const IntroductionItem = ({ introImage, title }) => {
+  const [isFixed, setIsFixed] = useState(0);
+  const [should, setShould] = useState(false);
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "end end"]
-  });
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [progress, setProgress] = useState(0);
- 
+
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      setPrevScrollPos(currentScrollPos);
-      setProgress(scrollYProgress.prev)
-      console.log(progress);
+      if (ref.current) {
+        const { top, bottom } = ref.current.getBoundingClientRect();
+        const scrollPosition = window.scrollY;
+        const shouldFix = scrollPosition - top;
+        const height = window.innerHeight
+        setIsFixed(shouldFix);
+        setShould(height > bottom);
+        console.log(title, height, bottom, should);
+      }
     };
-    window.addEventListener('scroll', handleScroll);
 
+    window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [prevScrollPos])
+  }, [isFixed]);
   
   return (
-    <motion.div ref={ref} className="md:aspect-square overflow-hidden relative group">
-      <div>
-        <div  className="slideController "></div>
-        <div
-          className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
-        ></div>
-        <Image
-          src={introImage}
-          width={900}
-          height={900}
-          alt="plates"
-          className="four-images"
-         
-        />
-        <div className={`w-full absolute hidden md:block  bottom-8`}>
-          <p className="home-images-title">{title}</p>
-        </div>
-        <motion.div
-        style={{position : `${scrollYProgress.current < 1 ? "fixed" : "absolute"}`}}
-          className={`w-full md:hidden bottom-0
-          `}
-        >
-          <p className="home-images-title ">{title}</p>
-        </motion.div>
-      </div>
-    </motion.div>
+    <div ref={ref} className="md:aspect-square overflow-hidden relative group">
+    
+        
+          <div  className="slideController "></div>
+          <div
+            className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
+          ></div>
+          <Image
+            src={introImage}
+            width={900}
+            height={900}
+            alt="plates"
+            className="four-images"
+          
+          />
+          <div className={`w-full absolute hidden md:block  bottom-8`}>
+            <p className="home-images-title">{title}</p>
+          </div>
+          <div
+            className={`w-full md:hidden bottom-0 py-8
+            ${!should ? "fixed" : "absolute"}
+            `}
+          >
+            <p className="home-images-title ">{title}</p>
+          </div>
+      
+     
+    </div>
   );
 };
 export default IntroductionItem;
@@ -147,3 +150,35 @@ useEffect(() => {
 useEffect(() => {
   console.log(title, ref, inView, entry);
 }, [inView]) */
+
+
+
+
+
+
+
+
+
+
+
+/* const ref = useRef(null);
+const { scrollYProgress } = useScroll({
+  target: ref,
+  offset: ["0 1", "end end"]
+});
+const [prevScrollPos, setPrevScrollPos] = useState(0);
+const [progress, setProgress] = useState(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    setPrevScrollPos(currentScrollPos);
+    setProgress(scrollYProgress.prev)
+    console.log(progress);
+  };
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [prevScrollPos]) */
