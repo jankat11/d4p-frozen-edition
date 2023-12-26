@@ -17,8 +17,16 @@ const IntroductionItem = ({ introImage, title }) => {
   const fixedRef = useRef();
   const textRef = useRef();
 
+  const [isScrollDown, setIsScrollDown] = useState(false);
+const [isScrollUp, setIsScrollUp] = useState(false);
+const [prevScrollPos, setPrevScrollPos] = useState(0);
+const [elementPosition, setElementPosition] = useState(0);
+const [onplace, setOnplace] = useState(false)
+
+
   useEffect(() => {
     const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
       const fixedRect = fixedRef.current.getBoundingClientRect();
       const otherRect = textRef.current.getBoundingClientRect();
       const currentIsTouching = !(
@@ -27,6 +35,15 @@ const IntroductionItem = ({ introImage, title }) => {
       );
       setIsTouching(currentIsTouching);
       console.log(title, "is touching", currentIsTouching);
+      if (currentScrollPos > prevScrollPos) {
+        setIsScrollDown(true);
+        setIsScrollUp(false);
+      } else {
+        setIsScrollDown(false);
+        setIsScrollUp(true);
+      }
+  
+      setPrevScrollPos(currentScrollPos);
     };
     console.log(title, "STARTTT", startView);
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +51,7 @@ const IntroductionItem = ({ introImage, title }) => {
       window.removeEventListener("scroll", handleScroll);
     };
 
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <section
@@ -44,7 +61,7 @@ const IntroductionItem = ({ introImage, title }) => {
       <div ref={ref2} className="slideController "></div>
       <div
         ref={textRef}
-        className="slideControllerBottom z-50 absolute w-full h-8 bg-yellow-500 bottom-0"
+        className="slideControllerBottom z-50 absolute w-full h-8 bg-black bottom-0"
       ></div>
       <Image
         src={introImage}
