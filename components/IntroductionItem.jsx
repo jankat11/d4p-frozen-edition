@@ -60,7 +60,7 @@ const IntroductionItem = ({ introImage, title }) => {
         ref={fixedRef}
         className={`w-full ${
           (!isTouching) ? "fixed" : "absolute"
-        } md:hidden bottom-[44px]
+        } md:hidden bottom-[42px]
         ${!startView && "hidden"}
         `}
         
