@@ -4,62 +4,64 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const IntroductionItem = ({ introImage, title }) => {
-  const [isFixed, setIsFixed] = useState(0);
-  const [should, setShould] = useState(false);
-  const ref = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [sectionHeight, setSectionHeight] = useState(500);
+
+  const getHeight = () => {
+    const height = `${(windowWidth / 4) * 5}` + "px"
+    setSectionHeight(height)
+  }
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (ref.current) {
-        const { top, bottom } = ref.current.getBoundingClientRect();
-        const scrollPosition = window.scrollY;
-        const shouldFix = scrollPosition - top;
-        const height = window.innerHeight
-        setIsFixed(shouldFix);
-        setShould(height > bottom);
-        console.log(title, height, bottom, should);
-      }
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      getHeight()
+      console.log(windowWidth);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isFixed]);
-  
+    // Check if window is defined (client-side)
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+      getHeight()
+      console.log(windowWidth, sectionHeight);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, [windowWidth]); 
+
+
+/*   useEffect(() => {
+    getHeight()
+    console.log(sectionHeight);
+  }, [windowWidth]) */
+
   return (
-    <div ref={ref} className="md:aspect-square overflow-hidden relative group">
-    
+    <div className={`md:aspect-square group containerss  aspect-[400/490]`}>
+      <Image
+        src={introImage}
+        width={900}
+        height={900}
+        alt="plates"
+        className="four-images absolute md:relative"
+      />
+
+      <div
+        className={`w-full md:hidden py-8  shark-3 bottom-0
         
-          <div  className="slideController "></div>
-          <div
-            className="slideControllerBottom z-50 absolute w-full h-0 bottom-0"
-          ></div>
-          <Image
-            src={introImage}
-            width={900}
-            height={900}
-            alt="plates"
-            className="four-images"
-          
-          />
-          <div className={`w-full absolute hidden md:block  bottom-8`}>
-            <p className="home-images-title">{title}</p>
-          </div>
-          <div
-            className={`w-full md:hidden bottom-0 py-8
-            ${!should ? "fixed" : "absolute"}
-            `}
-          >
-            <p className="home-images-title ">{title}</p>
-          </div>
-      
-     
+                `}
+      >
+        <div className={`w-full absolute hidden md:block  bottom-8`}>
+          <p className="home-images-title">{title}</p>
+        </div>
+        <p className="home-images-title ">{title}</p>
+      </div>
     </div>
   );
 };
 export default IntroductionItem;
-
+/* ${!should ? "fixed" : "absolute"} */
 /* object-bottom  md:aspect-square */
 
 /* const [isScrollDown, setIsScrollDown] = useState(false);
@@ -151,16 +153,6 @@ useEffect(() => {
   console.log(title, ref, inView, entry);
 }, [inView]) */
 
-
-
-
-
-
-
-
-
-
-
 /* const ref = useRef(null);
 const { scrollYProgress } = useScroll({
   target: ref,
@@ -182,3 +174,26 @@ useEffect(() => {
     window.removeEventListener('scroll', handleScroll);
   };
 }, [prevScrollPos]) */
+
+/* const [isFixed, setIsFixed] = useState(0);
+const [should, setShould] = useState(false);
+const ref = useRef(null);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (ref.current) {
+      const { top, bottom } = ref.current.getBoundingClientRect();
+      const scrollPosition = window.scrollY;
+      const shouldFix = scrollPosition - top;
+      const height = window.innerHeight;
+      setIsFixed(shouldFix);
+      setShould(height > bottom);
+      console.log(title, height, bottom, should);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, [isFixed]); */

@@ -300,3 +300,14 @@ h3 {
 }
 
 
+.containerss {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.shark-3 {
+  position: sticky;
+  bottom: 0rem;
+  align-self: flex-end;
+}
