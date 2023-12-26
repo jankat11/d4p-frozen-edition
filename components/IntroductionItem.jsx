@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import React, { useState, useEffect, useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 const IntroductionItem = ({ introImage, title }) => {
   const sectionRef = useRef();
@@ -13,7 +14,7 @@ const IntroductionItem = ({ introImage, title }) => {
     triggerOnce: false,
   });
   const [ref3, endView] = useInView({
-    threshold: 0,
+    threshold: 1,
     triggerOnce: false,
   });
 
@@ -23,7 +24,7 @@ const IntroductionItem = ({ introImage, title }) => {
         <div ref={ref2} className="slideController "></div>
         <div
           ref={ref3}
-          className="slideControllerBottom z-50 absolute w-full h-1 bg-yellow-500 bottom-0"
+          className="slideControllerBottom z-50 absolute w-full h-56 bottom-0"
         ></div>
         <Image
           src={introImage}
