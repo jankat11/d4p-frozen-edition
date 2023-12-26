@@ -9,6 +9,7 @@ const IntroductionItem = ({ introImage, title }) => {
   const [isScrollUp, setIsScrollUp] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [elementPosition, setElementPosition] = useState(0);
+  const [onplace, setOnplace] = useState(false);
   
   const sectionRef = useRef()
   const [ref, inView] = useInView({
@@ -27,9 +28,15 @@ const IntroductionItem = ({ introImage, title }) => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      if(!endView, inView) {
+      if(!endView && inView) {
         const elementHeight = currentScrollPos - elementPosition
-        console.log(title, "height is ", elementHeight);
+        if (elementHeight >= sectionRef.current.offsetHeight){
+          setOnplace(true)
+          console.log(title, "onplace")
+        } else {
+          setOnplace(false)
+        }
+        /* console.log(title, "height is ", elementHeight); */
       }
       
       if (currentScrollPos > prevScrollPos) {
@@ -59,8 +66,8 @@ const IntroductionItem = ({ introImage, title }) => {
   }, [inView])
 
   useEffect(() => {
-    console.log("element height is: ", sectionRef.current.offsetHeight);
-  }, [])
+    /* console.log(title, "element height is: ", sectionRef.current.offsetHeight); */
+  }, [inView])
 
 
   return (
@@ -80,10 +87,10 @@ const IntroductionItem = ({ introImage, title }) => {
         </div>
         <div
           className={`w-full ${
-            startView && !endView
+            startView && !onplace && isScrollDown
               ? "fixed"
               : "absolute"
-          } md:hidden bottom-0`}
+          } md:hidden bottom-[32px]`}
         >
           <p className="home-images-title ">{title}</p>
         </div>
