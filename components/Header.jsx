@@ -37,10 +37,10 @@ const Header = ({
       <section ref={headerRef} className="header z-40">
         <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
-            className={`nav-link-container layout-align lg:px-6 xl:px-12 2xl:px-24 font-bold ${
+            className={`nav-link-container layout-align  lg:px-6 xl:px-12 2xl:px-24 font-bold ${
               (!isHomePage || fixedValue) && "fixed top-0"
             }
-            ${scrollDown && "bg-aside"}
+            ${scrollDown && "bg-aside border-b border-primaryDark"}
             `}
           >
             <div className="lg:block hidden">
