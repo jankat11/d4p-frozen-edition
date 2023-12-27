@@ -28,7 +28,7 @@ const Header = ({
     }
   }, [isMenuOpen]);
 
-/*   useEffect(() => {
+  /*   useEffect(() => {
     console.log(scrollDown);
   }, [scrollDown]); */
 
@@ -37,9 +37,9 @@ const Header = ({
       <section ref={headerRef} className="header z-40">
         <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
-            className={`nav-link-container layout-align  lg:px-6 xl:px-12 2xl:px-24 font-bold ${
-              (!isHomePage || fixedValue) && "fixed top-0"
-            }
+            className={`nav-link-container layout-align  lg:px-6 xl:px-12 2xl:px-24 font-bold border-b border-aside
+              fixed top-0
+            
             ${scrollDown && "bg-aside border-b border-primaryDark"}
             `}
           >
@@ -67,17 +67,32 @@ const Header = ({
               </div>
             </div>
             <div className="lg:flex hidden items-center gap-1">
-                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
-                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
-                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
-
-              <Link
-                href="/"
-                className={`nav-link  whitespace-nowrap `}
+              <span
+                className={`text-xl opacity-0 cursor-default ${
+                  !scrollDown && "text-aside"
+                }`}
               >
-                
-                
-                <span className={`text-xl ${!scrollDown && "text-aside"}`}>Cart</span>
+                Cart
+              </span>
+              <span
+                className={`text-xl opacity-0 cursor-default ${
+                  !scrollDown && "text-aside"
+                }`}
+              >
+                Cart
+              </span>
+              <span
+                className={`text-xl opacity-0 cursor-default ${
+                  !scrollDown && "text-aside"
+                }`}
+              >
+                Cart
+              </span>
+
+              <Link href="/" className={`nav-link  whitespace-nowrap `}>
+                <span className={`text-xl ${!scrollDown && "text-aside"}`}>
+                  Cart
+                </span>
               </Link>
               <CartLogo
                 noText={true}

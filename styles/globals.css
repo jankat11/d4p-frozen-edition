@@ -170,13 +170,13 @@ h3 {
     @apply block;
   }
   .header {
-    @apply flex justify-between relative border-b border-b-aside;
+    @apply flex justify-between relative;
   }
   .nav-bar {
     @apply bg-navtitle/0 font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
   .nav-link-container {
-    @apply transition-all duration-0 py-2 w-full flex items-center justify-center lg:justify-between ;
+    @apply transition-all duration-0 py-3 w-full flex items-center justify-center lg:justify-between ;
   }
   .nav-items {
     @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8 ;

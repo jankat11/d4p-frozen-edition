@@ -25,15 +25,15 @@ const Hero = () => {
           />
         </div>
         <div className="w-full  px-4 sm:px-8  absolute top-[70%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
-          <p className="hero-text font-bold border-accent pt-0 py-4"><span className="">U</span>pcycled Products</p>
+          <p className="hero-text font-raleway font-semibold border-accent pt-0 py-4"><span className="">U</span>pcycled Products</p>
           <a className="">
             <button
-              onClick={handleClick}
-              className="button-accent-outline w-full py-2 sm:py-4"
+             
+              className="button-accent-outline w-full py-2 sm:py-4 font-raleway"
             >
               <div className="flex justify-center items-center gap-1">
-                <span>Explore</span>{" "}
-                <SlArrowDown size={17} className="p-0 m-0" />
+                <span>SHOP NOW</span>{" "}
+                {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
               </div>
             </button>
           </a>
