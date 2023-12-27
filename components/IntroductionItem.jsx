@@ -46,7 +46,7 @@ const IntroductionItem = ({ introImage, title }) => {
       <div className={`w-full md:hidden py-8  shark-3 bottom-0`}>
         <p className="home-images-title ">{title}</p>
       </div>
-        <div className={`w-full absolute hidden md:block z-50 bottom-8`}>
+        <div className={`w-full absolute hidden md:block  bottom-8`}>
           <p className="home-images-title">{title}</p>
         </div>
     </div>
