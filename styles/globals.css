@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Parisienne:wght@400&family=Cormorant:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Parisienne:wght@400&family=Cormorant:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -184,7 +184,7 @@ h3 {
     @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8 ;
   }
   .nav-link {
-    @apply tracking-tight cursor-pointer pb-0 duration-500 relative sm:right-0 py-2;
+    @apply tracking-tight cursor-pointer pb-0 duration-500  relative sm:right-0 py-2;
   }
   .text-line {
     @apply w-1/5 absolute border border-accent opacity-0 ml-1;
@@ -229,7 +229,7 @@ h3 {
     @apply  group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
-    @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway tracking-wide;
+    @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal tracking-wide;
   }
   .about-gallery {
     @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-letter font-medium;
