@@ -67,11 +67,17 @@ const Header = ({
               </div>
             </div>
             <div className="lg:flex hidden items-center gap-1">
+                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
+                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
+                  <span className={`text-xl opacity-0 cursor-default ${!scrollDown && "text-aside"}`}>Cart</span>
+
               <Link
-                href="/our-story"
+                href="/"
                 className={`nav-link  whitespace-nowrap `}
               >
-                <span className={`${!scrollDown && "text-aside"}`}>Cart</span>
+                
+                
+                <span className={`text-xl ${!scrollDown && "text-aside"}`}>Cart</span>
               </Link>
               <CartLogo
                 noText={true}

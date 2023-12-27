@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CartLogo = ({noText, classes, size, fill, scrollDown, isMenuOpen}) => {
   return (
-    <a href="#" className={`nav-link ${classes}`}>
+    <Link href="/" className={`nav-link ${classes}`}>
       <span className={`flex items-center gap-1 justify-center ${!scrollDown && "text-aside"}`}>
         {!noText && "Cart"}
         <div className="indicator font-raleway">
@@ -14,7 +14,7 @@ const CartLogo = ({noText, classes, size, fill, scrollDown, isMenuOpen}) => {
         </div>
       </span>
       {/* <div className={`text-line`}></div> */}
-    </a>
+    </Link>
   );
 };
 export default CartLogo;
