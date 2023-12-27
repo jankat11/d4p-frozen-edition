@@ -34,7 +34,7 @@ const IntroductionItem = ({ introImage, title }) => {
 
 
   return (
-    <div className={`md:aspect-square group containerss md:overflow-hidden aspect-[400/490]`}>
+    <div className={`md:aspect-square group md:relative containerss md:overflow-hidden aspect-[400/490]`}>
       <Image
         src={introImage}
         width={900}
@@ -48,7 +48,7 @@ const IntroductionItem = ({ introImage, title }) => {
         
                 `}
       >
-        <div className={`w-full absolute hidden md:block  bottom-8`}>
+        <div className={`w-full absolute hidden md:block z-50 bottom-8`}>
           <p className="home-images-title">{title}</p>
         </div>
         <p className="home-images-title ">{title}</p>
