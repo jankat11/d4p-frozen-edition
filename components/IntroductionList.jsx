@@ -29,7 +29,7 @@ const IntroductionList = () => {
           introImage={"/homepage/h14.jpg"}
         />
       </div>
-      <p className="max-w-3xl p-4 sm:py-24 py-16 font-raleway leading-loose sm:leading-10 text-center mx-auto text-letter sm:text-2xl text-xl tracking-wide">
+      <p className="introTitle max-w-3xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 xl:leading-12 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide">
         <span className=" ">W</span>e value our planet and are
         dedicated to contributing to its well-being by upcycling waste materials
         and turning them into one of a kind gadgets, utensils and art objects.

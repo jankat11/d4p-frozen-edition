@@ -113,6 +113,8 @@ h3 {
   
 }
 
+
+
 .hamburger-middle {
   transform: translateY(7px);
 }
@@ -287,6 +289,11 @@ h3 {
 @media (max-width: 717px) {
   .nav-link-container {
     font-size: 1.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .introTitle {
+    line-height: 1.8 !important;
   }
 }
 
