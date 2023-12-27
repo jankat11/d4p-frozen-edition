@@ -8,13 +8,13 @@ import Image from "next/image";
 const Layout = ({ children }) => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [initialLoad, setInitialLoad] = useState(true);
-  const scrollDown = scrollHeight >= 41;
   const fixedValue = scrollHeight >= 21;
   const {pathname} = useRouter()
-
- /*  const fadeIn = "animate__animated animate__fadeIn animate__delay-1s"; */
+  
+  /*  const fadeIn = "animate__animated animate__fadeIn animate__delay-1s"; */
   const fadeIn = "animate__animated animate__fadeIn";
   const isHomePage = pathname == "/"
+  const scrollDown = scrollHeight >= 41 || !isHomePage;
 
   useEffect(() => {
     document.body.style.overflowX = "hidden";
