@@ -47,7 +47,7 @@ const IntroductionItem = ({ introImage, title }) => {
         <p className="home-images-title ">{title}</p>
       </div>
         <div className={`w-full absolute hidden md:block  bottom-8`}>
-          <p className="home-images-title">{title}</p>
+          <p className="home-images-title cursor-pointer">{title}</p>
         </div>
     </div>
   );

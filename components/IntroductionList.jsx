@@ -29,7 +29,7 @@ const IntroductionList = () => {
           introImage={"/homepage/h14.jpg"}
         />
       </div>
-      <p className="introTitle max-w-3xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 xl:leading-12 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide">
+      <p className="introTitle select-none max-w-3xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 xl:leading-12 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide">
         <span className=" ">W</span>e value our planet and are
         dedicated to contributing to its well-being by upcycling waste materials
         and turning them into one of a kind gadgets, utensils and art objects.
@@ -38,7 +38,7 @@ const IntroductionList = () => {
 
 
 <div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none ">
-                    <div className="carousel-item w-4/5 sm:w-2/5 md:w-[28%] border-none">
+                    <div className="carousel-item w-4/5 sm:w-2/5 md:w-[28%] border-none cursor-pointer">
                       <div className="sm:p-4 ">
                       <Image
                       src={"/plates/p2.png"}
@@ -55,7 +55,7 @@ const IntroductionList = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] ">
+                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
                       <div className="sm:p-4 ">
                         <Image
                           src={"/plates/p3.png"}
@@ -72,7 +72,7 @@ const IntroductionList = () => {
                           </div>
                           </div>
                           </div>
-                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] ">
+                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
                     <div className="sm:p-4 ">
                     <Image
                     src={"/plates/p4.png"}
@@ -89,7 +89,7 @@ const IntroductionList = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="carousel-item hidden md:block w-4/5 sm:w-2/5 md:w-[28%]">
+                    <div className="carousel-item hidden md:block w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
                       <div className="sm:p-4 ">
                         <Image
                           src={"/plates/p1.png"}
