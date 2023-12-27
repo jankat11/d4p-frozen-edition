@@ -7,7 +7,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      {/* <GoogleAnalytics /> */}
+      <GoogleAnalytics />
       <Head>
         <link
           rel="stylesheet"
