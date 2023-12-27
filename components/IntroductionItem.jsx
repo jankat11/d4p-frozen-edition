@@ -8,33 +8,33 @@ const IntroductionItem = ({ introImage, title }) => {
   const [sectionHeight, setSectionHeight] = useState(500);
 
   const getHeight = () => {
-    const height = `${(windowWidth / 4) * 5}` + "px"
-    setSectionHeight(height)
-  }
+    const height = `${(windowWidth / 4) * 5}` + "px";
+    setSectionHeight(height);
+  };
 
   useEffect(() => {
-    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      getHeight()
+      getHeight();
       console.log(windowWidth);
     };
 
     // Check if window is defined (client-side)
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       setWindowWidth(window.innerWidth);
-      window.addEventListener('resize', handleResize);
-      getHeight()
+      window.addEventListener("resize", handleResize);
+      getHeight();
       console.log(windowWidth, sectionHeight);
       return () => {
-        window.removeEventListener('resize', handleResize);
+        window.removeEventListener("resize", handleResize);
       };
     }
-  }, [windowWidth]); 
-
+  }, [windowWidth]);
 
   return (
-    <div className={`md:aspect-square group md:relative containerss md:overflow-hidden aspect-[400/490]`}>
+    <div
+      className={`md:aspect-square group md:relative containerss md:overflow-hidden aspect-[400/490]`}
+    >
       <Image
         src={introImage}
         width={900}
@@ -43,16 +43,12 @@ const IntroductionItem = ({ introImage, title }) => {
         className="four-images absolute md:relative"
       />
 
-      <div
-        className={`w-full md:hidden py-8  shark-3 bottom-0
-        
-                `}
-      >
+      <div className={`w-full md:hidden py-8  shark-3 bottom-0`}>
+        <p className="home-images-title ">{title}</p>
+      </div>
         <div className={`w-full absolute hidden md:block z-50 bottom-8`}>
           <p className="home-images-title">{title}</p>
         </div>
-        <p className="home-images-title ">{title}</p>
-      </div>
     </div>
   );
 };
