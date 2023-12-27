@@ -119,7 +119,7 @@ const About = () => {
           </p>
           <div className="flex gap-6 flex-col justify-between max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
             <button className="button-accent-outline w-full">contact us</button>
-            <button className="button-letter w-full">shop now!</button>
+            <button className="button-accent-outline w-full">shop now!</button>
           </div>
         </div>
       </div>
