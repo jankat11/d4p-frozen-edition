@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeVitra = () => {
   return (
-    <section className="py-24">
+    <section className="lg:py-24 py-16">
       <div className="relative overflow-hidden">
         <p className="home-images-title limited-edition">limited edition</p>
         <Image
