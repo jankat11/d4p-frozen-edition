@@ -3,11 +3,11 @@ import SectionTitle from "./SectionTitle";
 
 const CompareImages = () => {
   return (
-    <div className="pb-16 pt-8 px-4">
+    <div className="pb-16 pt-8 overflow-x-hidden">
       <div className="pb-6 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle first={"THE HEALING POVER OF ART"} second={"OUR STORY"} third={true}/>
       </div>
-      <div className="flex flex-col sm:flex-row sm:gap-4   xl:justify-between ">
+      <div className="flex flex-col sm:flex-row sm:gap-4 sm:px-4  xl:justify-between ">
         <ReactCompareImage
           leftImage="homepage/comp1.png"
           rightImage="homepage/comp22.png"
