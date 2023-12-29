@@ -46,7 +46,7 @@ const Opening = () => {
               animationName: "appear",
               animationDuration: "100s",
               animationDelay: delay,
-              opacity: "0",
+              opacity: "1",
             };
             const newpath = {
               ...path.props,
