@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <section className="h-full flex justify-center ">
         <div
           className={`layout-align w-full z-30 absolute ${
-            initialLoad && "hidden"
+            initialLoad && "opacity-0"
           }`}
         >
           <Header
