@@ -1,10 +1,18 @@
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
+import SectionTitle from "./SectionTitle";
 
 const HomeInstagram = () => {
   return (
     <section className="pb-4">
-      <p className="ps-4 xl:ps-8 font-raleway"><span className="text-accent">INSTAGRAM</span> <span className="text-accent text-2xl px-2 relative top-[1px]">|</span> <span className="text-letter">FOLLOW US</span></p>
+      <div className="pb-2">
+        <SectionTitle
+          first={"INSTAGRAM"}
+          second={"FOLLOW US"}
+          third={false}
+          classes={"xl:ps-8"}
+        />
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-4 p-4 gap-4">
         <div className="relative group">
           <div className="absolute top-[50%] transition-all duration-300 right-[50%] cursor-pointer group-hover:opacity-100 z-20 opacity-0 translate-x-[50%] translate-y-[-50%]">
@@ -54,8 +62,6 @@ const HomeInstagram = () => {
             alt="instagram"
           />
         </div>
-        
-          
       </div>
     </section>
   );
