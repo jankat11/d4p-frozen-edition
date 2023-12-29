@@ -144,6 +144,44 @@ h3 {
   transform: translateY(0px);
 }
 
+.opening {
+  position: absolute;
+  z-index: 1000;
+}
+
+.openingPath {
+/*   stroke-dasharray: 100;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear infinite; */
+  fill: #F3F0EA;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    fill: #F3F0EA;
+    scale: 10;
+
+  }
+  2% {
+    opacity: 1;
+    fill: #ad7431;
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    fill: #ad7431;
+  }
+}
+
+
+
 .open .hamburger-top {
   transform: rotate(45deg) translateY(12px) translateX(12px);
 }

@@ -8,6 +8,7 @@ import HomeProducts from "@/components/HomeProducts";
 import HomeVitra from "@/components/HomeVitra";
 import HomeInstagram from "@/components/HomeInstagram";
 import CompareImages from "@/components/CompareImages";
+import Opening from "@/components/Opening";
 
 export default function Home() {
 
@@ -18,14 +19,18 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
-      <IntroductionList />
-      <HomeProducts />
-      <HomeVitra />
-      {/* <CompareImages /> */}
-      <HomeInstagram />
-      {/* <Features /> */}
-     {/*  <Map /> */}
+      <Opening />
+      <div className="">
+        <Hero />
+        <IntroductionList />
+        <HomeProducts />
+        <HomeVitra />
+        <HomeInstagram />
+      </div>
     </>
   );
 }
+
+  {/* <CompareImages /> */}
+  {/* <Features /> */}
+ {/*  <Map /> */}
