@@ -8,12 +8,8 @@ import IntroductionItem from "./IntroductionItem";
 const IntroductionList = () => {
   const [isMounted, setIsMounted] = useState({});
 
-  
   return (
-    <section
-      id="home-store"
-      className="  relative mb-24"
-    >
+    <section id="home-store" className="  relative">
       <div className="grid relative md:grid-cols-2 ">
         <IntroductionItem
           title={"our collection"}
@@ -29,128 +25,15 @@ const IntroductionList = () => {
           introImage={"/homepage/h14.jpg"}
         />
       </div>
-      <p className="introTitle select-none max-w-3xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 xl:leading-12 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide">
-        <span className=" ">W</span>e value our planet and are
-        dedicated to contributing to its well-being by upcycling waste materials
-        and turning them into one of a kind gadgets, utensils and art objects.
+      <p className="introTitle ">
+        <span className=" ">W</span>e value our planet and are dedicated to
+        contributing to its well-being by upcycling waste materials and turning
+        them into one of a kind gadgets, utensils and art objects.
       </p>
-
-
-
-<div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none ">
-                    <div className="carousel-item w-4/5 sm:w-2/5 md:w-[28%] border-none cursor-pointer">
-                      <div className="sm:p-4 ">
-                      <Image
-                      src={"/plates/p2.png"}
-                      style={{ width: "700px", height: "auto" }}
-                          quality={100}
-                          width={700}
-                          height={825}
-                          className="rounded-md shadow"
-                          alt="photo"
-                        />
-                        <div className="homeproducts-info">
-                          <p>büyük tabak</p>
-                          <p>500tl</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
-                      <div className="sm:p-4 ">
-                        <Image
-                          src={"/plates/p3.png"}
-                          style={{ width: "700px", height: "auto" }}
-                          quality={100}
-                          width={700}
-                          height={825}
-                          className="rounded-md object-cover shadow"
-                          alt="photo"
-                        />
-                        <div className="homeproducts-info">
-                        <p>büyük tabak</p>
-                          <p>500tl</p>
-                          </div>
-                          </div>
-                          </div>
-                    <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
-                    <div className="sm:p-4 ">
-                    <Image
-                    src={"/plates/p4.png"}
-                    style={{ width: "700px", height: "auto" }}
-                          quality={100}
-                          width={700}
-                          height={825}
-                          className="rounded-md object-cover shadow"
-                          alt="photo"
-                          />
-                        <div className="homeproducts-info">
-                          <p>büyük tabak</p>
-                          <p>500tl</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="carousel-item hidden md:block w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
-                      <div className="sm:p-4 ">
-                        <Image
-                          src={"/plates/p1.png"}
-                          style={{ width: "700px", height: "auto" }}
-                          quality={100}
-                          width={700}
-                          height={825}
-                          className="rounded-md object-cover shadow"
-                          alt="photo"
-                        />
-                        <div className="homeproducts-info">
-                          <p>büyük tabak</p>
-                          <p>500tl</p>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-
-
-
-
-
-
-
     </section>
   );
 };
 export default IntroductionList;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {
   /* <p className="text-center text-letter text-xl sm:text-2xl lg:text-3xl font-raleway mb-4">THE HEALING POVER OF ART</p> */
@@ -166,8 +49,8 @@ export default IntroductionList;
               rightImage="homepage/yumak.png"
             />
             </div> */
-          }
-          
+}
+
 /* const products = `
     query Products {
       products(first: 6) {
@@ -195,8 +78,8 @@ export default IntroductionList;
     }
     `;
     */
-   {
-     /* <div className="grid relative sm:top-24 p-4 sm-p-0 sm:grid-cols-3  sm:mx-8">
+{
+  /* <div className="grid relative sm:top-24 p-4 sm-p-0 sm:grid-cols-3  sm:mx-8">
           <div className="home-images-container sm:top-12 sm:left-24 z-30 ">
             <div className="product-layer"></div>
             <Image
@@ -229,9 +112,10 @@ export default IntroductionList;
               />
               </div>
         </div> */
-      }
+}
 
-      {/* <div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none">
+{
+  /* <div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none">
                     <div className="carousel-item w-2/5 md:w-[28%] border-none">
                       <div className="sm:p-4 ">
                       <Image
@@ -300,8 +184,10 @@ export default IntroductionList;
                         </div>
                       </div>
                       </div>
-                    </div> */}
-              {/* <div className="mt-24">
+                    </div> */
+}
+{
+  /* <div className="mt-24">
               <div className="overflow-hidden sm:rounded-sm flex flex-col sm:flex-row justify-around gap-4 xl:gap-12  mx-auto">
                   <ReactCompareImage
                     leftImage="homepage/comp1.png"
@@ -314,10 +200,9 @@ export default IntroductionList;
                   sliderPositionPercentage={0.3}
                   />
                 </div>
-              </div> */}
+              </div> */
+}
 
-
-
-              /*   useEffect(() => {
+/*   useEffect(() => {
                 storefront(products);
               }, []); */

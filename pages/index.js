@@ -4,6 +4,9 @@ import IntroductionList from "../components/IntroductionList";
 import Features from "@/components/Features";
 import Map from "@/components/Map";
 import { useEffect } from "react";
+import HomeProducts from "@/components/HomeProducts";
+import HomeVitra from "@/components/HomeVitra";
+import HomeInstagram from "@/components/HomeInstagram";
 
 export default function Home() {
 
@@ -16,6 +19,9 @@ export default function Home() {
     <>
       <Hero />
       <IntroductionList />
+      <HomeProducts />
+      <HomeVitra />
+      <HomeInstagram />
       {/* <Features /> */}
      {/*  <Map /> */}
     </>

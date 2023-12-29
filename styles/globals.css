@@ -270,6 +270,9 @@ h3 {
   .homeproducts-info {
     @apply text-accentDark text-sm font-bold mt-2 flex font-raleway justify-between p-2;
   }
+  .introTitle {
+    @apply select-none max-w-3xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
+  }
 }
 
 .nav-link-container {
