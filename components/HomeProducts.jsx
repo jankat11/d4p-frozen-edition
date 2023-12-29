@@ -42,7 +42,7 @@ const HomeProducts = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
+        <div className="carousel-item hidden sm:block w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p4.png"}

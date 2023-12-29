@@ -22,7 +22,7 @@ export default function Home() {
       <IntroductionList />
       <HomeProducts />
       <HomeVitra />
-      <CompareImages />
+      {/* <CompareImages /> */}
       <HomeInstagram />
       {/* <Features /> */}
      {/*  <Map /> */}
