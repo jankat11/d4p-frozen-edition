@@ -67,6 +67,10 @@ body {
   --animate-delay: 0.4s;
 }
 
+.animate__animated.animate__fadeOut.animate__delay-5s {
+  --animate-duration: 0.5s;
+}
+
 h3 {
   @apply  font-semibold uppercase my-3;
 }
