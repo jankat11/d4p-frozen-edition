@@ -36,9 +36,8 @@ const Opening = () => {
         </metadata>
         <g
           transform="translate(0.000000,275.000000) scale(0.100000,-0.100000)"
-          stroke="#ad7431"
-          strokeWidth="4"
-          className="openingPath"
+          className=""
+          
         >
           {paths.map((path, i) => {
             const delay = `${i * 0.02}s`;
@@ -50,7 +49,7 @@ const Opening = () => {
             };
             const newpath = {
               ...path.props,
-              fill: "#ad7431",
+              
               style,
             };
             return <path key={Math.random()} {...newpath} />;

@@ -153,14 +153,9 @@ h3 {
   z-index: 1000;
   animation: opening 6s ease-in-out;
   animation-delay: 0s;
+  fill: #fcfbfb;
 }
 
-.openingPath {
-/*   stroke-dasharray: 100;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear infinite; */
-  fill: #F3F0EA;
-}
 
 @keyframes dash {
   to {
@@ -185,7 +180,7 @@ h3 {
 @keyframes appear {
   0% {
     opacity: 0;
-    fill: #F3F0EA;
+    fill: #fcfbfb;
     scale: 10;
 
   }
