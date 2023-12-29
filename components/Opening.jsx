@@ -18,11 +18,13 @@ const Opening = () => {
     }
   }, [hidden])
 
+  /* animate__animated animate__fadeOut animate__delay-5s */ 
+
   return (
     <section
       className={`${
         hidden ? "hidden" : "flex"
-      } animate__animated animate__fadeOut animate__delay-5s opening opening-logo`}
+      } opening opening-logo`}
     >
       <svg
         version="1.0"

@@ -151,6 +151,8 @@ h3 {
 .opening {
   position: absolute;
   z-index: 1000;
+  animation: opening 5s ease-in-out;
+  animation-delay: 5s;
 }
 
 .openingPath {
@@ -163,6 +165,24 @@ h3 {
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes opening {
+  0%  {
+    width: 100dvw;
+    opacity: 1;
+  }
+  10%  {
+    width: 0px;
+    opacity: 1;
+  }
+  11%  {
+    width: 0px;
+    opacity: 0;
+  }
+  100%  {
+    width: 0px;
+    opacity: 0;
   }
 }
 
