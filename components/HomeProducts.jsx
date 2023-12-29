@@ -11,7 +11,7 @@ const HomeProducts = () => {
         <div className="carousel-item w-4/5 sm:w-2/5 md:w-[28%] border-none cursor-pointer">
           <div className="sm:p-4 ">
             <Image
-              src={"/plates/p2.png"}
+              src={"/plates/p3.png"}
               style={{ width: "700px", height: "auto" }}
               quality={100}
               width={700}
@@ -28,7 +28,7 @@ const HomeProducts = () => {
         <div className="carousel-item  w-4/5 sm:w-2/5 md:w-[28%] cursor-pointer">
           <div className="sm:p-4 ">
             <Image
-              src={"/plates/p3.png"}
+              src={"/plates/p2.png"}
               style={{ width: "700px", height: "auto" }}
               quality={100}
               width={700}
