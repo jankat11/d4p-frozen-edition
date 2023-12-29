@@ -24,7 +24,7 @@ const Opening = () => {
     <section
       className={`${
         hidden ? "hidden" : "flex"
-      } opening opening-logo`}
+      } opening opening-logo overflow-hidden`}
     >
       <svg
         version="1.0"
@@ -33,6 +33,7 @@ const Opening = () => {
         height="275.000000pt"
         viewBox="0 0 300.000000 275.000000"
         preserveAspectRatio="xMidYMid meet"
+        className="absolute"
       >
         <metadata>
           Created by potrace 1.10, written by Peter Selinger 2001-2011
