@@ -12,20 +12,16 @@ const Opening = () => {
 
   useEffect(() => {
     if (!hidden) {
-      document.body.style.overflowY = "hidden"
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflowY = "auto"
+      document.body.style.overflowY = "auto";
     }
-  }, [hidden])
+  }, [hidden]);
 
-  /* animate__animated animate__fadeOut animate__delay-5s */ 
+  /* animate__animated animate__fadeOut animate__delay-5s */
 
   return (
-    <section
-      className={`${
-        hidden ? "hidden" : "flex"
-      } opening opening-logo overflow-hidden`}
-    >
+    <section className={`flex opening opening-logo overflow-hidden w-0`}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -65,4 +61,3 @@ const Opening = () => {
   );
 };
 export default Opening;
-

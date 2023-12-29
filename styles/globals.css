@@ -151,8 +151,8 @@ h3 {
 .opening {
   position: absolute;
   z-index: 1000;
-  animation: opening 5s ease-in-out;
-  animation-delay: 5s;
+  animation: opening 6s ease-in-out;
+  animation-delay: 0s;
 }
 
 .openingPath {
@@ -172,17 +172,13 @@ h3 {
     width: 100dvw;
     opacity: 1;
   }
-  10%  {
-    width: 0px;
+  90%  {
+    width: 100dvw;
     opacity: 1;
-  }
-  11%  {
-    width: 0px;
-    opacity: 0;
   }
   100%  {
     width: 0px;
-    opacity: 0;
+    opacity: 1;
   }
 }
 
