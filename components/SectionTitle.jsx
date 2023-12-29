@@ -7,13 +7,13 @@ const SectionTitle = ({ first, second, classes, third }) => {
     >
       <span className={`${third && "flex flex-col gap-2 sm:inline"}`}>
         <span className="text-accent">{first}</span>{" "}
-        <span
+        {second && <span
           className={`text-accent text-2xl px-2 relative top-[1px] ${
             third && "hidden sm:inline"
           }`}
         >
           |
-        </span>{" "}
+        </span>}
         <span className="text-letter">{second}</span>
       </span>
       {third && (

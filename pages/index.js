@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import HomeProducts from "@/components/HomeProducts";
 import HomeVitra from "@/components/HomeVitra";
 import HomeInstagram from "@/components/HomeInstagram";
+import CompareImages from "@/components/CompareImages";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
       <IntroductionList />
       <HomeProducts />
       <HomeVitra />
+      <CompareImages />
       <HomeInstagram />
       {/* <Features /> */}
      {/*  <Map /> */}

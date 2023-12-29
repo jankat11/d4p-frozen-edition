@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 const HomeInstagram = () => {
   return (
     <section className="pb-4">
-      <div className="pb-2">
+      <div className="pb-2 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"INSTAGRAM"}
           second={"FOLLOW US"}
