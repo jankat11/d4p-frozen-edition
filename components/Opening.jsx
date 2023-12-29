@@ -1,9 +1,29 @@
 import { paths } from "@/logoData";
 import { delay } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const Opening = () => {
+  const [hidden, setHidden] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setHidden(true);
+    }, 5500);
+  }, []);
+
+  useEffect(() => {
+    if (!hidden) {
+      document.body.style.overflowY = "hidden"
+    } else {
+      document.body.style.overflowY = "auto"
+    }
+  }, [hidden])
+
   return (
-    <section style={{transform: "translate"}} className="animate__animated animate__fadeOut animate__delay-5s opening border w-full h-screen overflow-y-hidden flex justify-center items-center bg-aside">
+    <section
+      className={`${
+        hidden ? "hidden" : "flex"
+      } animate__animated animate__fadeOut animate__delay-5s opening opening-logo`}
+    >
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,14 +42,13 @@ const Opening = () => {
           className="openingPath"
         >
           {paths.map((path, i) => {
-            const delay = `${i * 0.05}s`;
+            const delay = `${i * 0.02}s`;
             let style = {
               animationName: "appear",
               animationDuration: "100s",
               animationDelay: delay,
-              opacity: "0"
+              opacity: "0",
             };
-            
             const newpath = {
               ...path.props,
               fill: "#ad7431",
@@ -44,6 +63,3 @@ const Opening = () => {
 };
 export default Opening;
 
-/* animationName: "appear",
-animationDuration: "100s",
-animationDelay: delay, */
