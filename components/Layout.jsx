@@ -38,10 +38,10 @@ const Layout = ({ children }) => {
         >
           <Header
             initialLoad={initialLoad}
+            isHomePage={isHomePage}
             scrollDown={scrollDown}
             fixedValue={fixedValue}
             fadeIn={fadeIn}
-            isHomePage={isHomePage}
           />
         </div>
         <div className={`layout-align bg-aside h-full w-full ${fadeIn}`}>

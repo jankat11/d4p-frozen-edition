@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 1000);
+    }, 500);
   }, []);
 
   useEffect(() => {

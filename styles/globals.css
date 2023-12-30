@@ -151,10 +151,15 @@ h3 {
 .opening {
   position: absolute;
   z-index: 1000;
-  animation: opening 5s ease-in-out;
+  animation: opening 3s ease-in-out;
   animation-delay: 0s;
 }
 
+.opening-shine {
+  z-index: 10000;
+  animation: openingShine 2s ease-in-out;
+  animation-delay: 1s;
+}
 
 @keyframes dash {
   to {
@@ -176,6 +181,18 @@ h3 {
   
     opacity: 1;
     transform: translateX(-100%);
+  }
+}
+@keyframes openingShine {
+  0%  {
+ 
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100%  {
+  
+    opacity: 1;
+    transform: translateX(500px);
   }
 }
 
