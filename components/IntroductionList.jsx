@@ -17,7 +17,7 @@ const IntroductionList = () => {
         />
         <IntroductionItem title={"in stock"} introImage={"/homepage/h15.png"} />
         <IntroductionItem
-          title={"new arrivals"}
+          title={"artists"}
           introImage={"/homepage/h11.png"}
         />
         <IntroductionItem
