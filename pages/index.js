@@ -31,6 +31,7 @@ export default function Home() {
           <IntroductionList />
           <HomeProducts />
           <HomeVitra />
+          <CompareImages />
           <HomeInstagram />
         </div>
       )}

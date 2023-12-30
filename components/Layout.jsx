@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   /*  const fadeIn = "animate__animated animate__fadeIn animate__delay-1s"; */
   const fadeIn = "animate__animated animate__fadeIn";
   const isHomePage = pathname == "/";
-  const scrollDown = scrollHeight >= 41 || !isHomePage;
+  const scrollDown = scrollHeight >= 70 || !isHomePage;
 
   useEffect(() => {
     document.body.style.overflowX = "hidden";

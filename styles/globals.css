@@ -292,7 +292,7 @@ h3 {
     @apply  relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center ;
   }
   .img-container {
-    @apply rounded-sm border-8 border-accent mx-auto md:mx-0 max-w-sm sm:max-w-lg sm:p-6 p-6 w-full;
+    @apply rounded-sm border-4 border-accent mx-auto md:mx-0 max-w-sm sm:max-w-lg sm:p-6 p-6 w-full;
   }
   .img-wrapper {
     @apply flex relative overflow-hidden rounded-sm w-full;

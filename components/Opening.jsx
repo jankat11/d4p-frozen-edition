@@ -7,9 +7,10 @@ const Opening = () => {
   useEffect(() => {
     const time = window.innerWidth < 1025 ? 3000 : 2500
 
-    setTimeout(() => {
+    const timeOut = setTimeout(() => {
       setHidden(true);
     }, time);
+    return () => clearTimeout(timeOut)
   }, []);
 
   useEffect(() => {
