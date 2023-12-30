@@ -1,45 +1,42 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { SlArrowDown } from "react-icons/sl"
+import { SlArrowDown } from "react-icons/sl";
 
 const Hero = () => {
   const [height, setHeight] = useState(0);
-  const storeRef = useRef()
+  const storeRef = useRef();
 
   const handleClick = () => {
     storeRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <>
-      <div className="h-screen md:h-auto bg-aside shadow-neutral m-0 p-0  ">
-        <div className="lg:w-full relative z-10 h-screen ">
-          <Image 
-            src={"/hero.png"}
-            width={2500}
-            height={2500}
-            alt="hero"
-            priority
-            quality={100}
-            className="object-cover  object-center h-screen "
-          />
-        </div>
-        <div className="w-full  px-4 sm:px-8  absolute top-[72%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
-          <p className="hero-text tracking-wide font-bold border-accent pt-0 py-4"><span className="">U</span>pcycled Products</p>
-          <a className="">
-            <button
-             
-              className="button-accent-outline w-full py-3 "
-            >
-              <div className="flex justify-center items-center gap-1">
-                <span>SHOP NOW</span>{" "}
-                {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
-              </div>
-            </button>
-          </a>
-        </div>
+    <section className="h-screen md:h-auto bg-aside m-0 p-0  relative ">
+      <div className="lg:w-full relative z-10 h-screen ">
+        <Image
+          src={"/hero.png"}
+          width={2500}
+          height={2500}
+          alt="hero"
+          priority
+          quality={100}
+          className="object-cover  object-center h-screen "
+        />
       </div>
-    </>
+      <div className="w-full  px-4 sm:px-8  absolute top-[72%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
+        <p className="hero-text tracking-wide font-bold border-accent pt-0 py-4">
+          <span className="">U</span>pcycled Products
+        </p>
+        <a className="">
+          <button className="button-accent-outline w-full py-3 ">
+            <div className="flex justify-center items-center gap-1">
+              <span>SHOP NOW</span>{" "}
+              {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
+            </div>
+          </button>
+        </a>
+      </div>
+    </section>
   );
 };
 export default Hero;
@@ -50,6 +47,8 @@ export default Hero;
   setHeight(innerHeight);
 }, [height, innerHeight]); */
 
-{/*  <p className="hero-text  pt-0 py-4">
+{
+  /*  <p className="hero-text  pt-0 py-4">
 <span className="font-serif text-3xl sm:text-4xl md:text-5xl">t</span>he healing pover of art
-</p> */}
+</p> */
+}

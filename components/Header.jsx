@@ -33,8 +33,7 @@ const Header = ({
   }, [scrollDown]); */
 
   return (
-    <>
-      <section ref={headerRef} className="header z-40">
+      <section ref={headerRef} className="">
         <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
           <ul
             className={`nav-link-container layout-align  lg:px-6 xl:px-12 2xl:px-24 font-bold border-b border-aside
@@ -136,7 +135,6 @@ const Header = ({
           </ul>
         </nav>
       </section>
-    </>
   );
 };
 

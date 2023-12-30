@@ -9,7 +9,7 @@ const IntroductionList = () => {
   const [isMounted, setIsMounted] = useState({});
 
   return (
-    <section id="home-store" className="  relative">
+    <section id="home-store" className="relative">
       <div className="grid relative md:grid-cols-2 ">
         <IntroductionItem
           title={"our collection"}

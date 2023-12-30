@@ -159,8 +159,8 @@ h3 {
   z-index: 10000;
   transform: translateX(-220px);
   background: linear-gradient(#fcfbfb38,#fcfbfbd5, #fcfbfb28);
-  animation: openingShine 1.8s ease-in-out;
-  animation-delay: 1s;
+  animation: openingShine 1.3s ease-in-out;
+  animation-delay: 1.1s;
 }
 
 @keyframes dash {
@@ -243,9 +243,9 @@ h3 {
   .layout-align {
     @apply block;
   }
-  .header {
+/*   .header {
     @apply flex justify-between relative;
-  }
+  } */
   .nav-bar {
     @apply bg-navtitle/0 font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
