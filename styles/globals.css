@@ -158,7 +158,7 @@ h3 {
 .opening-shine {
   z-index: 10000;
   transform: translateX(-220px);
-
+  background: linear-gradient(#fcfbfb38,#fcfbfbd5, #fcfbfb28);
   animation: openingShine 1.8s ease-in-out;
   animation-delay: 1s;
 }
@@ -181,8 +181,8 @@ h3 {
   }
   100%  {
   
-    opacity: 0;
-    transform: translateX(0%);
+    opacity: 1;
+    transform: translateX(-100%);
   }
 }
 @keyframes openingShine {
