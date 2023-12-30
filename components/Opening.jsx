@@ -26,7 +26,7 @@ const Opening = () => {
     <section
       className={`opening opening-logo overflow-hidden translate-x-[-100%]`}
     >
-      <div className=" h-screen rotate-12 w-16 top-0 -left-16 bg-aside/60 absolute opening-shine"></div>
+      <div className=" h-screen rotate-12 w-8 top-0 -left-16 bg-aside/60 absolute opening-shine"></div>
       <Image
         src="/brand.png"
         width={500}
