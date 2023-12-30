@@ -181,8 +181,8 @@ h3 {
   }
   100%  {
   
-    opacity: 1;
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(0%);
   }
 }
 @keyframes openingShine {
@@ -349,7 +349,7 @@ h3 {
     @apply absolute bottom-4 sm:bottom-12 md:top-[50%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl ;
   }
   .opening-logo {
-    @apply  w-full h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
+    @apply  w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
   }
 }
 
