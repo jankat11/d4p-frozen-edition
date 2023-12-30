@@ -16,19 +16,18 @@ const HomeProducts = () => {
 
       <div className="">
         <Carousel
-        
           additionalTransfrom={0}
           arrows={false}
-          centerMode
-          className="absolute"
+          centerMode={false}
+          className="absolute pl-2"
           dotListClass=""
           draggable
           focusOnSelect={false}
           infinite
+          partialVisbile
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
-        
           pauseOnHover
           renderArrowsWhenDisabled={false}
           renderButtonGroupOutside={false}
@@ -44,16 +43,16 @@ const HomeProducts = () => {
             },
             mobile: {
               breakpoint: {
-                max: 810,
+                max: 464,
                 min: 0,
               },
               items: 1,
-              partialVisibilityGutter: 30,
+              partialVisibilityGutter: 50,
             },
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 810,
+                min: 464,
               },
               items: 2,
               partialVisibilityGutter: 30,
@@ -68,15 +67,14 @@ const HomeProducts = () => {
           slidesToSlide={1}
           swipeable
         >
-          <div className=" border-none cursor-pointer flex gap-4">
+          <div className=" border-none cursor-pointer flex gap-4 mx-2">
             <div className="sm:p-4 ">
               <Image
                 src={"/plates/p3.png"}
-        
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md shadow object-cover home-prod-img h-56 md:h-72"
+                className="rounded-md shadow object-cover home-prod-img h-96 "
                 alt="photo"
               />
               <div className="homeproducts-info">
@@ -85,15 +83,14 @@ const HomeProducts = () => {
               </div>
             </div>
           </div>
-          <div className=" cursor-pointer">
+          <div className=" cursor-pointer mx-2">
             <div className="sm:p-4 ">
               <Image
                 src={"/plates/p2.png"}
-        
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-56 md:h-72"
+                className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
               <div className="homeproducts-info">
@@ -102,15 +99,14 @@ const HomeProducts = () => {
               </div>
             </div>
           </div>
-          <div className=" cursor-pointer">
+          <div className=" cursor-pointer mx-2">
             <div className="sm:p-4 ">
               <Image
                 src={"/plates/p4.png"}
-        
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-56 md:h-72"
+                className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
               <div className="homeproducts-info">
@@ -119,15 +115,14 @@ const HomeProducts = () => {
               </div>
             </div>
           </div>
-          <div className=" cursor-pointer">
+          <div className=" cursor-pointer mx-2">
             <div className="sm:p-4 ">
               <Image
                 src={"/plates/p1.png"}
-        
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-56 md:h-72"
+                className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
               <div className="homeproducts-info">
