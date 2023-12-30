@@ -1,5 +1,5 @@
 import { paths } from "@/logoData";
-import { delay } from "framer-motion";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const Opening = () => {
@@ -21,8 +21,23 @@ const Opening = () => {
   /* animate__animated animate__fadeOut animate__delay-5s */
 
   return (
-    <section className={`flex opening opening-logo overflow-hidden w-0`}>
-      <svg
+    <section className={`opening opening-logo overflow-hidden translate-x-[-100%]`}>
+      
+        <Image
+          src="/brand.png"
+          width={500}
+          height={500}
+          className="absolute z-[9999] animate__animated animate__flipInY animate__delay-1s"
+          alt="brand"
+        />
+  
+    </section>
+  );
+};
+export default Opening;
+
+{
+  /*       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         width="300.000000pt"
@@ -55,8 +70,5 @@ const Opening = () => {
             return <path key={Math.random()} {...newpath} />;
           })}
         </g>
-      </svg>
-    </section>
-  );
-};
-export default Opening;
+      </svg> */
+}
