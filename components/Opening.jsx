@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const Opening = () => {
   const [hidden, setHidden] = useState(false);
   useEffect(() => {
-    const time = window.innerWidth < 1025 ? 3000 : 2500
+    const time = window.innerWidth < 1025 ? 4000 : 3500
 
     const timeOut = setTimeout(() => {
       setHidden(true);
@@ -27,12 +27,12 @@ const Opening = () => {
     <section
       className={`opening opening-logo overflow-hidden translate-x-[-100%]`}
     >
-      <div className=" h-1/2 w-6 top-[15%] absolute opening-shine"></div>
+      {/* <div className=" h-1/2 w-6 top-[15%] absolute opening-shine"></div> */}
       <Image
         src="/brand.png"
         width={500}
         height={500}
-        className="relative bottom-16 z-[9999] animate__animated animate__fadeIn animate__delay-1s"
+        className=" bottom-16 z-[9999] relative animate__animated animate__fadeIn animate__delay-1s"
         alt="brand"
       />
     </section>
