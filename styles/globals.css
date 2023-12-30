@@ -155,7 +155,7 @@ h3 {
 .opening {
   position: absolute;
   z-index: 1000;
-  animation: opening 4s ease-in-out;
+  animation: opening 5s ease-in-out;
   animation-delay: 0s;
 }
 
