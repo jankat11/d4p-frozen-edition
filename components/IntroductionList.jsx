@@ -18,11 +18,11 @@ const IntroductionList = () => {
         <IntroductionItem title={"in stock"} introImage={"/homepage/h15.png"} />
         <IntroductionItem
           title={"artists"}
-          introImage={"/homepage/h11.png"}
+          introImage={"/homepage/h14.jpg"}
         />
         <IntroductionItem
           title={"art and craft"}
-          introImage={"/homepage/h14.jpg"}
+          introImage={"/homepage/h11.png"}
         />
       </div>
       <p className="introTitle ">
