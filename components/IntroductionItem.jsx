@@ -33,14 +33,14 @@ const IntroductionItem = ({ introImage, title }) => {
 
   return (
     <div
-      className={`md:aspect-square group md:relative containerss md:overflow-hidden aspect-[300/400]`}
+      className={`md:aspect-[10/9] group md:relative containerss md:overflow-hidden aspect-[300/400]`}
     >
       <Image
         src={introImage}
         width={900}
         height={900}
         alt="plates"
-        className="four-images absolute md:relative object-cover object-center md:aspect-square"
+        className="four-images absolute md:relative object-cover object-center md:aspect-[10/9]"
       />
 
       <div className={`w-full md:hidden py-8  shark-3 bottom-0`}>
