@@ -32,7 +32,7 @@ const Opening = () => {
         src="/brand.png"
         width={500}
         height={500}
-        className=" bottom-16 z-[9999] relative animate__animated animate__fadeIn animate__delay-1s"
+        className=" bottom-16 z-[9999] left-1 relative animate__animated animate__fadeIn animate__delay-1s"
         alt="brand"
       />
     </section>

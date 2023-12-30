@@ -128,7 +128,7 @@ h3 {
 }
 
 .relative.animate__animated.animate__fadeIn {
-  --animate-duration: 3s;
+  --animate-duration: 2.8s;
 }
 
 /* .open {
