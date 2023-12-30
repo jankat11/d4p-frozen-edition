@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const Opening = () => {
   const [hidden, setHidden] = useState(false);
   useEffect(() => {
-    const time = window.innerWidth < 1025 ? 2800 : 2500
+    const time = window.innerWidth < 1025 ? 3000 : 2500
 
     setTimeout(() => {
       setHidden(true);
