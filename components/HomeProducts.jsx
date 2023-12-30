@@ -47,7 +47,7 @@ const HomeProducts = () => {
                 min: 0,
               },
               items: 1,
-              partialVisibilityGutter: 50,
+              partialVisibilityGutter: 70,
             },
             tablet: {
               breakpoint: {
