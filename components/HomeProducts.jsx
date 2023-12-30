@@ -15,11 +15,9 @@ const HomeProducts = () => {
       </div>
 
       <Carousel
-        autoPlay
-        autoPlaySpeed={3000}
+      
         additionalTransfrom={0}
         arrows={false}
-  
         centerMode
         className="max-h-56 sm:max-h-full"
         dotListClass=""
@@ -73,7 +71,7 @@ const HomeProducts = () => {
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p3.png"}
-              style={{ width: "700px", height: "auto" }}
+             
               quality={100}
               width={700}
               height={825}
@@ -90,7 +88,7 @@ const HomeProducts = () => {
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p2.png"}
-              style={{ width: "700px", height: "auto" }}
+           
               quality={100}
               width={700}
               height={825}
@@ -107,7 +105,7 @@ const HomeProducts = () => {
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p4.png"}
-              style={{ width: "700px", height: "auto" }}
+           
               quality={100}
               width={700}
               height={825}
@@ -124,7 +122,7 @@ const HomeProducts = () => {
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p1.png"}
-              style={{ width: "700px", height: "auto" }}
+            
               quality={100}
               width={700}
               height={825}
