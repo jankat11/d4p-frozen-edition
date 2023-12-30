@@ -241,6 +241,15 @@ h3 {
   height: 15rem;
 }
 
+.home-prod-img {
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 /* sm:max-w-[1280px] xl:w-[1280px] */
 
 @layer components {

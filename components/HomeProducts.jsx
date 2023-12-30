@@ -16,11 +16,10 @@ const HomeProducts = () => {
 
       <Carousel
         additionalTransfrom={0}
-        autoPlaySpeed={3000}
         arrows={false}
+        autoPlaySpeed={3000}
         centerMode
-        className=""
-        containerClass="container"
+        className="max-h-56 sm:max-h-full"
         dotListClass=""
         draggable
         focusOnSelect={false}
@@ -28,6 +27,7 @@ const HomeProducts = () => {
         itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
+       
         pauseOnHover
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}
@@ -39,7 +39,7 @@ const HomeProducts = () => {
               min: 1024,
             },
             items: 3,
-            partialVisibilityGutter: 10,
+            partialVisibilityGutter: 40,
           },
           mobile: {
             breakpoint: {
@@ -47,7 +47,7 @@ const HomeProducts = () => {
               min: 0,
             },
             items: 1,
-            partialVisibilityGutter: 10,
+            partialVisibilityGutter: 30,
           },
           tablet: {
             breakpoint: {
@@ -55,7 +55,7 @@ const HomeProducts = () => {
               min: 464,
             },
             items: 2,
-            partialVisibilityGutter: 10,
+            partialVisibilityGutter: 30,
           },
         }}
         rewind={false}
@@ -67,7 +67,7 @@ const HomeProducts = () => {
         slidesToSlide={1}
         swipeable
       >
-        <div className=" border-none cursor-pointer">
+        <div className=" border-none cursor-pointer flex gap-4">
           <div className="sm:p-4 ">
             <Image
               src={"/plates/p3.png"}
@@ -75,7 +75,7 @@ const HomeProducts = () => {
               quality={100}
               width={700}
               height={825}
-              className="rounded-md shadow"
+              className="rounded-md shadow object-cover home-prod-img"
               alt="photo"
             />
             <div className="homeproducts-info">
@@ -92,7 +92,7 @@ const HomeProducts = () => {
               quality={100}
               width={700}
               height={825}
-              className="rounded-md object-cover shadow"
+              className="rounded-md object-cover shadow home-prod-img"
               alt="photo"
             />
             <div className="homeproducts-info">
@@ -109,7 +109,7 @@ const HomeProducts = () => {
               quality={100}
               width={700}
               height={825}
-              className="rounded-md object-cover shadow"
+              className="rounded-md object-cover shadow home-prod-img"
               alt="photo"
             />
             <div className="homeproducts-info">
@@ -126,7 +126,7 @@ const HomeProducts = () => {
               quality={100}
               width={700}
               height={825}
-              className="rounded-md object-cover shadow"
+              className="rounded-md object-cover shadow home-prod-img"
               alt="photo"
             />
             <div className="homeproducts-info">
