@@ -356,7 +356,7 @@ h3 {
     @apply  w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
   }
 }
-
+/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-letter  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
 .nav-link-container {
   font-size: 1rem;
 }

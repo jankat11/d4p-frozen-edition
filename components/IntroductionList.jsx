@@ -4,6 +4,10 @@ import { shopifyFetch, storefront } from "@/utils";
 import axios from "axios";
 import ReactCompareImage from "react-compare-image";
 import IntroductionItem from "./IntroductionItem";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Features from "./Features";
+
 
 const IntroductionList = () => {
   const [isMounted, setIsMounted] = useState({});
@@ -206,3 +210,22 @@ export default IntroductionList;
 /*   useEffect(() => {
                 storefront(products);
               }, []); */
+
+/*               <div className="introTitle flex flex-col md:gap-8 sm:flex-row items-center md:py-36 xl:py-44">
+              <div className="flex relative">
+                <p className="md:pl-10 relative lg:left-8 lg:pl-0">
+                  <span className=" ">W</span>e value our planet and are dedicated to
+                  contributing to its well-being by upcycling waste materials and
+                  turning them into one of a kind gadgets, utensils and art objects.
+                </p>
+                <div className="border-r-2 opacity-70 -right-12 xl:-right-16 top-0 border-primary/30 h-full absolute"></div>
+              </div>
+              <Image
+                src="/brand3.png"
+                width={700}
+                height={500}
+                quality={100}
+                className="lg:pl-32 md:px-16 lg:px-16 relative lg:right-12 xl:right-8 md:h-48 hidden md:block xl:h-64 w-auto opacity-60"
+                alt="brand"
+              />
+            </div> */

@@ -24,8 +24,8 @@ export default function Home() {
 
   return (
     <>
-      <Opening />
-      {show && (
+      {/* <Opening /> */}
+      {true && (
         <div className="">
           <Hero />
           <IntroductionList />

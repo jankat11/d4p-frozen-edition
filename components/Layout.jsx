@@ -27,13 +27,13 @@ const Layout = ({ children }) => {
       clearTimeout(removeInitialAnimation);
     };
   }, []);
-
+  /* (initialLoad && isHomePage) && "opacity-0" */
   return (
     <>
       <section className="h-full flex justify-center ">
         <div
           className={`layout-align w-full z-30 absolute ${
-            (initialLoad && isHomePage) && "opacity-0"
+           "" 
           }`}
         >
           <Header
