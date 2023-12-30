@@ -7,7 +7,7 @@ const Opening = () => {
   useEffect(() => {
     setTimeout(() => {
       setHidden(true);
-    }, 5500);
+    }, 4500);
   }, []);
 
   useEffect(() => {
@@ -21,16 +21,16 @@ const Opening = () => {
   /* animate__animated animate__fadeOut animate__delay-5s */
 
   return (
-    <section className={`opening opening-logo overflow-hidden translate-x-[-100%]`}>
-      
-        <Image
-          src="/brand.png"
-          width={500}
-          height={500}
-          className="absolute z-[9999] animate__animated animate__flipInY animate__delay-1s"
-          alt="brand"
-        />
-  
+    <section
+      className={`opening opening-logo overflow-hidden translate-x-[-100%]`}
+    >
+      <Image
+        src="/brand.png"
+        width={500}
+        height={500}
+        className="absolute z-[9999] animate__animated animate__flipInY animate__delay-2s"
+        alt="brand"
+      />
     </section>
   );
 };
