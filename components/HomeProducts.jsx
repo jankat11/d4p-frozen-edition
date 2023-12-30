@@ -15,9 +15,11 @@ const HomeProducts = () => {
       </div>
 
       <Carousel
+        autoPlay
+        autoPlaySpeed={3000}
         additionalTransfrom={0}
         arrows={false}
-        autoPlaySpeed={3000}
+  
         centerMode
         className="max-h-56 sm:max-h-full"
         dotListClass=""
