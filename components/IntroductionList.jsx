@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { shopifyFetch, storefront } from "@/utils";
 import axios from "axios";
-import ReactCompareImage from "react-compare-image";
 import IntroductionItem from "./IntroductionItem";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Features from "./Features";
 
 
 const IntroductionList = () => {
