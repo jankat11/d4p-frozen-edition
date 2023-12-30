@@ -28,7 +28,7 @@ const Opening = () => {
         src="/brand.png"
         width={500}
         height={500}
-        className="absolute z-[9999] animate__animated animate__flipInY animate__delay-2s"
+        className="absolute z-[9999] animate__animated animate__flipInY animate__delay-1s"
         alt="brand"
       />
     </section>
