@@ -157,8 +157,10 @@ h3 {
 
 .opening-shine {
   z-index: 10000;
-  animation: openingShine 2s ease-in-out;
-  animation-delay: 1s;
+  transform: translateX(-220px) rotate(20deg);
+
+  animation: openingShine 1s ease-in-out;
+  animation-delay: 1.5s;
 }
 
 @keyframes dash {
@@ -185,14 +187,12 @@ h3 {
 }
 @keyframes openingShine {
   0%  {
- 
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(-220px) rotate(20deg);
   }
   100%  {
-  
     opacity: 1;
-    transform: translateX(500px);
+    transform: translateX(200px) rotate(20deg);
   }
 }
 
@@ -324,9 +324,9 @@ h3 {
   .stripeConst {
     @apply z-40 top-24 md:top-24 absolute border-b-4 border-primary w-full;
   }
-  .screen-cover {
-    @apply fixed opacity-70 h-screen w-screen -z-50;
-  }
+/*   .screen-cover {
+    @apply fixed opacity-70 h-screen -z-50;
+  } */
   .product-layer {
     @apply absolute  hover:bg-transparent top-4 right-4 left-4 bottom-4 bg-transparent  z-10;
   }
