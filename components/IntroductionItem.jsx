@@ -16,7 +16,6 @@ const IntroductionItem = ({ introImage, title }) => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       getHeight();
-      console.log(windowWidth);
     };
 
     // Check if window is defined (client-side)
@@ -24,7 +23,6 @@ const IntroductionItem = ({ introImage, title }) => {
       setWindowWidth(window.innerWidth);
       window.addEventListener("resize", handleResize);
       getHeight();
-      console.log(windowWidth, sectionHeight);
       return () => {
         window.removeEventListener("resize", handleResize);
       };
