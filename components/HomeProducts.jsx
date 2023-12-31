@@ -69,7 +69,7 @@ const HomeProducts = () => {
             },
             mobile: {
               breakpoint: {
-                max: 600,
+                max: 530,
                 min: 0,
               },
               items: 1,
@@ -78,7 +78,7 @@ const HomeProducts = () => {
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 600,
+                min: 530,
               },
               items: 2,
               partialVisibilityGutter: 30,
@@ -94,15 +94,17 @@ const HomeProducts = () => {
           swipeable
         >
           <div className=" border-none cursor-pointer flex gap-4 mx-2">
-            <div className="">
-              <Image
-                src={"/plates/p3.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="rounded-md shadow object-cover home-prod-img h-80 sm:h-96 2xl:h-[450px]"
-                alt="photo"
-              />
+            <div >
+              <div className="homeproducts-img-cover">
+                <Image
+                  src={"/plates/p3.png"}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="homeproducts-img"
+                  alt="photo"
+                />
+              </div>
               {(slide == 2  || slide == 8 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
@@ -110,15 +112,17 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="">
-              <Image
-                src={"/plates/p2.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
-                alt="photo"
-              />
+            <div >
+              <div className="homeproducts-img-cover">
+                <Image
+                  src={"/plates/p2.png"}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="homeproducts-img"
+                  alt="photo"
+                />
+              </div>
               {(slide == 3 || slide == 7 || true)&& <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
@@ -126,15 +130,17 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="">
-              <Image
-                src={"/plates/p4.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
-                alt="photo"
-              />
+            <div >
+              <div className="homeproducts-img-cover">
+                <Image
+                  src={"/plates/p4.png"}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="homeproducts-img"
+                  alt="photo"
+                />
+              </div>
               {(slide == 4 || slide == 6 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
@@ -142,21 +148,24 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="">
-              <Image
-                src={"/plates/p1.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
-                alt="photo"
-              />
+            <div >
+              <div className="homeproducts-img-cover">
+                <Image
+                  src={"/plates/p1.png"}
+                  quality={100}
+                  width={700}
+                  height={825}
+                  className="homeproducts-img"
+                  alt="photo"
+                />
+              </div>
               {(slide == 5 || true )&& <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
             </div>
           </div>
+
 {/*           <div className=" cursor-pointer mx-2">
             <div className="">
               <Image

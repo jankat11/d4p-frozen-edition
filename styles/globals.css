@@ -369,6 +369,15 @@ h3 {
   .homeproducts-info {
     @apply text-accentDark text-sm font-bold mt-2 flex flex-col font-raleway justify-between p-2;
   }
+  .homeproducts-img {
+    @apply rounded-md home-prod-img object-cover object-center aspect-square
+  }
+  .homeproducts-img-cover{
+    @apply overflow-hidden;
+  }
+/*   .homeproducts-img-cover{
+    @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
+  } */
   .introTitle {
     @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
