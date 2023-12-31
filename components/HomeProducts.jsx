@@ -69,7 +69,7 @@ const HomeProducts = () => {
             },
             mobile: {
               breakpoint: {
-                max: 464,
+                max: 640,
                 min: 0,
               },
               items: 1,
@@ -78,7 +78,7 @@ const HomeProducts = () => {
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 464,
+                min: 640,
               },
               items: 2,
               partialVisibilityGutter: 30,
@@ -94,7 +94,7 @@ const HomeProducts = () => {
           swipeable
         >
           <div className=" border-none cursor-pointer flex gap-4 mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p3.png"}
                 quality={100}
@@ -110,7 +110,7 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p2.png"}
                 quality={100}
@@ -126,7 +126,7 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p4.png"}
                 quality={100}
@@ -142,7 +142,7 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p1.png"}
                 quality={100}
@@ -158,7 +158,7 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p1.png"}
                 quality={100}
@@ -174,7 +174,7 @@ const HomeProducts = () => {
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
-            <div className="sm:p-4 ">
+            <div className="">
               <Image
                 src={"/plates/p1.png"}
                 quality={100}
