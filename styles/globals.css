@@ -294,7 +294,7 @@ h3 {
     @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-accent-outline {
-    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primary uppercase border border-accentDark px-8 py-4 duration-150;
+    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primaryDark/90 uppercase border border-accentDark px-8 py-4 duration-150;
   }
   .button-info {
     @apply rounded-sm bg-white hover:scale-105 font-semibold text-infoDark uppercase border-2 border-infoDark px-8 py-2 duration-300 active:scale-95;
@@ -306,7 +306,7 @@ h3 {
     @apply rounded-sm bg-white hover:scale-105 font-semibold text-primaryDark uppercase border-2 border-primaryDark px-8 py-4 duration-300 active:scale-95;
   }
   .button-secondary {
-    @apply rounded-sm bg-letter tracking-wide hover:bg-letter/90 hover:border-transparent font-light text-aside font-raleway uppercase border-2 border-letter px-8 py-4 duration-150;
+    @apply rounded-sm bg-letter tracking-wide hover:border-transparent font-light text-aside hover:text-white font-raleway uppercase border-2 border-letter px-8 py-4 duration-150;
   }
   .button-secondary-outline {
     @apply rounded-sm bg-white hover:scale-105 text-letter uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
@@ -330,7 +330,7 @@ h3 {
     @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
-    @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal ;
+    @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal ;
   }
   .about-gallery {
     @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-letter font-medium;

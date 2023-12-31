@@ -107,17 +107,17 @@ const About = () => {
             <span>• Respect for nature</span> <br /> <br />
             <span>• Sustainability</span> <br /> <br />
             <span className="relative">
-              • Collaboration with Local Craftsmen
+              • Collaboration with Local <span className="relative md:left-[17px]">Craftsmen</span>
             </span>
           </p>
         </span>
 
         <div className="flex flex-col gap-10 max-w-3xl md:px-2 md:flex-row w-full justify-between h-72 md:h-auto relative -bottom-8 md:bottom-10">
-          <p className="about-text leading-normal md:mx-0  md:w-1/2 relative  md:hyphens-auto ">
+          <p className="about-text  md:mx-0  md:w-1/2 relative  md:hyphens-auto ">
             We aim to contribute to sustainability and raise awareness on this
             issue with our designs that we work with pleasure at every stage.
           </p>
-          <div className="flex gap-6 flex-col justify-between max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
+          <div className="flex gap-6 flex-col justify-center max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
             <button className="button-accent-outline w-full">contact us</button>
             <button className="button-secondary w-full ">shop now!</button>
           </div>
