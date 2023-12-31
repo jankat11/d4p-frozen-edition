@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/animations.css";
+import "react-multi-carousel/lib/styles.css";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import GoogleAnalytics from "@/components/GoogleAnalytics";

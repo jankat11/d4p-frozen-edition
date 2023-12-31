@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { shopifyFetch, storefront } from "@/utils";
 import axios from "axios";
-import IntroductionItem from "./IntroductionItem";
-
+import IntroductionItem from "../IntroductionItem";
 
 const IntroductionList = () => {
   const [isMounted, setIsMounted] = useState({});
@@ -15,10 +14,7 @@ const IntroductionList = () => {
           introImage={"/homepage/h1.png"}
         />
         <IntroductionItem title={"in stock"} introImage={"/homepage/h15.png"} />
-        <IntroductionItem
-          title={"artists"}
-          introImage={"/homepage/h14.jpg"}
-        />
+        <IntroductionItem title={"artists"} introImage={"/homepage/h14.jpg"} />
         <IntroductionItem
           title={"art and craft"}
           introImage={"/homepage/h11.png"}

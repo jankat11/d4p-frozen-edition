@@ -1,13 +1,13 @@
 import "animate.css";
-import Hero from "../components/Hero";
-import IntroductionList from "../components/IntroductionList";
+import Hero from "../components/home/Hero";
+import IntroductionList from "../components/home/IntroductionList";
 import Features from "@/components/Features";
-import Map from "@/components/Map";
+import Map from "@/components/map";
 import { useEffect, useState } from "react";
-import HomeProducts from "@/components/HomeProducts";
-import HomeVitra from "@/components/HomeVitra";
-import HomeInstagram from "@/components/HomeInstagram";
-import CompareImages from "@/components/CompareImages";
+import HomeProducts from "@/components/home/HomeProducts";
+import HomeVitra from "@/components/home/HomeVitra";
+import HomeInstagram from "@/components/home/HomeInstagram";
+import CompareImages from "@/components/home/CompareImages";
 import Opening from "@/components/Opening";
 
 export default function Home() {

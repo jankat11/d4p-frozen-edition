@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../SectionTitle";
 
 const HomeInstagram = () => {
   return (
