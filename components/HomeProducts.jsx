@@ -9,7 +9,7 @@ const HomeProducts = () => {
   const [prev, setPrev] = useState(3)
   const CustomDot = ({ index, onClick, active }) => {
     return (
-      <div className="border-1 border-aside px-1 pt-6 pb-2 bg-aside relative left-32 ">
+      <div className="border-1  px-1 pt-6 pb-2 relative left-24 ">
         <button
           onClick={(e) => {
             onClick();
@@ -103,7 +103,7 @@ const HomeProducts = () => {
                 className="rounded-md shadow object-cover home-prod-img h-96 "
                 alt="photo"
               />
-              {(slide == 2  || slide == 8) && <div className="homeproducts-info">
+              {(slide == 2  || slide == 8 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
@@ -119,7 +119,7 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              {(slide == 3 || slide == 7 )&& <div className="homeproducts-info">
+              {(slide == 3 || slide == 7 || true)&& <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
@@ -135,7 +135,7 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              {(slide == 4 || slide == 6) && <div className="homeproducts-info">
+              {(slide == 4 || slide == 6 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
@@ -151,7 +151,7 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              {slide == 5 && <div className="homeproducts-info">
+              {(slide == 5 || true )&& <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
@@ -167,7 +167,7 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              {(slide == 6 || slide == 0) && <div className="homeproducts-info">
+              {(slide == 6 || slide == 0 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}
@@ -183,7 +183,7 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              {(slide == 7 || slide == 1) && <div className="homeproducts-info">
+              {(slide == 7 || slide == 1 || true) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
               </div>}

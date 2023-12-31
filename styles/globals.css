@@ -29,15 +29,9 @@ body {
   color: transparent;
 }
 
-
 .hero-text {
   line-height: 1.5 !important;
-  background-image: linear-gradient(
-    110deg,
-    #fff,
-    #fff,
-    #fff
-  ) !important;
+  background-image: linear-gradient(110deg, #fff, #fff, #fff) !important;
 }
 
 .nav-link {
@@ -72,9 +66,8 @@ body {
 }
 
 h3 {
-  @apply  font-semibold uppercase my-3;
+  @apply font-semibold uppercase my-3;
 }
-
 
 .nav-link:focus,
 .nav-link:hover {
@@ -92,7 +85,6 @@ h3 {
   color: rgb(243, 240, 234);
 }
 
-
 .header {
   backface-visibility: hidden;
 }
@@ -105,7 +97,7 @@ h3 {
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 2px;
@@ -114,10 +106,7 @@ h3 {
   transform: rotate(0);
   transition: transform 0.3s;
   transform-origin: right;
-  
 }
-
-
 
 .hamburger-middle {
   transform: translateY(7px);
@@ -162,7 +151,7 @@ h3 {
 .opening-shine {
   z-index: 10000;
   transform: translateX(-220px);
-  background: linear-gradient(#fcfbfb38,#fcfbfbd5, #fcfbfb28);
+  background: linear-gradient(#fcfbfb38, #fcfbfbd5, #fcfbfb28);
   animation: openingShine 1.3s ease-in-out;
   animation-delay: 1.1s;
 }
@@ -173,28 +162,25 @@ h3 {
   }
 }
 @keyframes opening {
-  0%  {
- 
+  0% {
     opacity: 1;
     transform: translateX(0%);
   }
-  90%  {
- 
+  90% {
     opacity: 1;
     transform: translateX(0%);
   }
-  100%  {
-  
+  100% {
     opacity: 1;
     transform: translateX(-100%);
   }
 }
 @keyframes openingShine {
-  0%  {
+  0% {
     opacity: 1;
-    transform: translateX(-220px) ;
+    transform: translateX(-220px);
   }
-  100%  {
+  100% {
     opacity: 1;
     transform: translateX(200px);
   }
@@ -205,7 +191,6 @@ h3 {
     opacity: 0;
     fill: #fcfbfb;
     scale: 10;
-
   }
   2% {
     opacity: 1;
@@ -218,14 +203,12 @@ h3 {
   }
 }
 
-
-
 .open .hamburger-top {
   transform: rotate(45deg) translateY(12px) translateX(12px);
 }
 
 .open .hamburger-middle {
- display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
@@ -242,7 +225,6 @@ h3 {
 }
 
 .home-prod-img {
-
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -257,21 +239,29 @@ h3 {
 .custom-dot {
   outline: none;
 }
-.custom-dot:active, 
-.custom-dot:focus, 
+.custom-dot:active,
+.custom-dot:focus,
 .custom-dot:checked {
   transform: scale(1.3);
   outline: auto;
   outline: none;
 }
 
-.dotlist::before  {
-  background-color: #fcfbfb;
+.dotlist::before {
+  background: linear-gradient(
+    to right,
+    #fcfbfb00,
+    #fcfbfb,
+    #fcfbfb,
+    #fcfbfb,
+    #fcfbfb,
+    #fcfbfb
+  );
   content: "";
   position: absolute;
-  width: 140px;
+  width: 200px;
   height: 50px;
-  right: 0px
+  right: 0px;
 }
 
 /* sm:max-w-[1280px] xl:w-[1280px] */
@@ -280,17 +270,17 @@ h3 {
   .layout-align {
     @apply block;
   }
-/*   .header {
+  /*   .header {
     @apply flex justify-between relative;
   } */
   .nav-bar {
     @apply bg-navtitle/0 font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
   .nav-link-container {
-    @apply transition-all duration-0 py-3 w-full flex items-center justify-center lg:justify-between ;
+    @apply transition-all duration-0 py-3 w-full flex items-center justify-center lg:justify-between;
   }
   .nav-items {
-    @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8 ;
+    @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8;
   }
   .nav-link {
     @apply tracking-tight cursor-pointer pb-0 duration-500  relative sm:right-0 py-2;
@@ -299,34 +289,34 @@ h3 {
     @apply w-1/5 absolute border border-accent opacity-0 ml-1;
   }
   .button-accent {
-    @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-accent-outline {
-    @apply rounded-sm bg-white hover:scale-105   font-semibold text-accentDark uppercase border border-accentDark px-8 py-4 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-white hover:scale-105   font-semibold text-accentDark uppercase border border-accentDark px-8 py-4 duration-300 active:scale-95;
   }
   .button-info {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-infoDark uppercase border-2 border-infoDark px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-white hover:scale-105 font-semibold text-infoDark uppercase border-2 border-infoDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-primary {
-    @apply rounded-sm bg-primaryDark hover:scale-105 font-semibold text-neutral uppercase border-2 border-primaryDark px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-primaryDark hover:scale-105 font-semibold text-neutral uppercase border-2 border-primaryDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-primary-outline {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primaryDark uppercase border-2 border-primaryDark px-8 py-4 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primaryDark uppercase border-2 border-primaryDark px-8 py-4 duration-300 active:scale-95;
   }
   .button-secondary {
-    @apply rounded-sm bg-letter hover:scale-105 text-neutral uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-letter hover:scale-105 text-neutral uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
   }
   .button-secondary-outline {
-    @apply rounded-sm bg-white hover:scale-105 text-letter uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-white hover:scale-105 text-letter uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
   }
   .button-letter {
-    @apply rounded-sm bg-navtitle hover:scale-105 font-semibold  text-neutral uppercase border-2 border-navtitle px-8 py-4 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-navtitle hover:scale-105 font-semibold  text-neutral uppercase border-2 border-navtitle px-8 py-4 duration-300 active:scale-95;
   }
   .button-letter-outline {
-    @apply rounded-sm bg-white hover:scale-105  text-navtitle uppercase border-2 border-navtitle px-8 py-2 duration-300 active:scale-95 ;
+    @apply rounded-sm bg-white hover:scale-105  text-navtitle uppercase border-2 border-navtitle px-8 py-2 duration-300 active:scale-95;
   }
   .hero-text {
-    @apply  relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center ;
+    @apply relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center;
   }
   .img-container {
     @apply rounded-sm border-4 border-accent mx-auto md:mx-0 max-w-sm sm:max-w-lg sm:p-6 p-6 w-full;
@@ -335,7 +325,7 @@ h3 {
     @apply flex relative overflow-hidden rounded-sm w-full;
   }
   .about-images {
-    @apply  group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
+    @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
     @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal tracking-wide;
@@ -350,7 +340,7 @@ h3 {
     @apply bg-base-200 border-8 rounded-sm lg:p-6 sm:p-4 hover:sm:-translate-y-4 hover:sm:translate-x-4 hover:cursor-pointer border-accent my-6 p-6 overflow-hidden relative hover:z-50 hover:sm:scale-110 transition-transform duration-200;
   }
   .feature-box {
-    @apply  rounded-sm py-8  px-4 text-center text-base max-w-sm md:max-w-[14rem];
+    @apply rounded-sm py-8  px-4 text-center text-base max-w-sm md:max-w-[14rem];
   }
   .certificate {
     @apply bg-accent/70 shadow-md  absolute top-10 sm:w-32 w-24  h-6 -rotate-45 -translate-x-6 -translate-y-7 sm:-translate-x-7 sm:-translate-y-4 flex justify-center items-center;
@@ -361,7 +351,7 @@ h3 {
   .stripeConst {
     @apply z-40 top-24 md:top-24 absolute border-b-4 border-primary w-full;
   }
-/*   .screen-cover {
+  /*   .screen-cover {
     @apply fixed opacity-70 h-screen -z-50;
   } */
   .product-layer {
@@ -371,7 +361,7 @@ h3 {
     @apply mx-auto md:ml-0  w-fit  rounded-sm text-3xl  p-2 px-8 text-aside tracking-wider;
   }
   .slideController {
-    @apply absolute  w-1/2 h-[80%] bottom-0 ;
+    @apply absolute  w-1/2 h-[80%] bottom-0;
   }
   .four-images {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
@@ -383,10 +373,10 @@ h3 {
     @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
-    @apply absolute bottom-4 sm:bottom-12 md:top-[50%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl ;
+    @apply absolute bottom-4 sm:bottom-12 md:top-[50%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl;
   }
   .opening-logo {
-    @apply  w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
+    @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
   }
 }
 /* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-letter  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
@@ -423,7 +413,6 @@ h3 {
     font-size: 1rem;
   }
 }
-
 
 .containerss {
   display: flex;
