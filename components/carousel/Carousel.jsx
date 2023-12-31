@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 
-const ReactCarousel = ({ centerMode, partialVisbile, showDots, children }) => {
+const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
   const CustomDot = ({ index, onClick, active }) => {
     return (
       <div className="border-1 sm:hidden px-1 pt-6 pb-2 relative left-24 ">
@@ -30,7 +30,7 @@ const ReactCarousel = ({ centerMode, partialVisbile, showDots, children }) => {
         draggable
         focusOnSelect={false}
         infinite
-        partialVisbile={partialVisbile}
+        partialVisbile={partial}
         itemClass=""
         keyBoardControl
         minimumTouchDrag={50}

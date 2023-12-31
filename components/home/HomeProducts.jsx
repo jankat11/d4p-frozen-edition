@@ -33,7 +33,7 @@ const HomeProducts = () => {
 
       {isOnClient && <ReactCarousel
         centerMode={width >= 530 }
-        partialVisbile={ width < 530 }
+        partial={ width < 530 }
         showDots={ width < 530 }
       >
         <div className=" border-none cursor-pointer flex gap-4 mx-2">
