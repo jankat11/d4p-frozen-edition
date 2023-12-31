@@ -23,7 +23,7 @@ const HomeProducts = () => {
 
   return (
     <section className="relative">
-      <div className="pb-6 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
+      <div className="pb-6 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"DIRECT AVAILABLE"}
           second={"IN STOCK"}
