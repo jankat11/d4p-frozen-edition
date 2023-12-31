@@ -9,7 +9,7 @@ const HomeProducts = () => {
   const [prev, setPrev] = useState(3)
   const CustomDot = ({ index, onClick, active }) => {
     return (
-      <div className="border-1  px-1 pt-6 pb-2 relative left-24 ">
+      <div className="border-1 sm:hidden px-1 pt-6 pb-2 relative left-24 ">
         <button
           onClick={(e) => {
             onClick();
