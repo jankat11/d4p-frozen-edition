@@ -53,7 +53,7 @@ const HomeProducts = () => {
           partialVisbile
           itemClass=""
           keyBoardControl
-          minimumTouchDrag={80}
+          minimumTouchDrag={50}
           pauseOnHover
           renderArrowsWhenDisabled={false}
           renderButtonGroupOutside={false}
