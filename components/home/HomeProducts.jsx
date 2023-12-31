@@ -60,7 +60,7 @@ const HomeProducts = () => {
 
                   <div className="homeproducts-info">
                     <p>{productItem.product}</p>
-                    <p className="text-lg mt-2">{productItem.price}₺</p>
+                    <p className="text-base sm:text-sm mt-2 sm:mt-0">{productItem.price}₺</p>
                   </div>
                 </div>
               </div>
