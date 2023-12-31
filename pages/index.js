@@ -2,7 +2,7 @@ import "animate.css";
 import Hero from "../components/home/Hero";
 import IntroductionList from "../components/home/IntroductionList";
 import Features from "@/components/Features";
-import Map from "@/components/map/Map";
+/* import Map from "@/components/map/Map"; */
 import { useEffect, useState } from "react";
 import HomeProducts from "@/components/home/HomeProducts";
 import HomeVitra from "@/components/home/HomeVitra";
@@ -12,11 +12,12 @@ import Opening from "@/components/Opening";
 
 export default function Home() {
   const [show, setShow] = useState(false);
-  useEffect(() => {
+
+/*   useEffect(() => {
     setTimeout(() => {
       setShow(true);
     }, 100);
-  }, []);
+  }, []); */
 
   useEffect(() => {
     document.body.style.overflowX = "hidden";
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <>
       {/* <Opening /> */}
-      {true && (
+     
         <div className="">
           <Hero />
           <IntroductionList />
@@ -34,11 +35,12 @@ export default function Home() {
           <CompareImages />
           <HomeInstagram />
         </div>
-      )}
+     
     </>
   );
 }
 
+ /*  <Map /> */
 {
   /* <CompareImages /> */
 }
@@ -46,5 +48,4 @@ export default function Home() {
   /* <Features /> */
 }
 {
-  /*  <Map /> */
 }
