@@ -24,7 +24,7 @@ const Hero = () => {
         />
       </div>
       <div className="w-full  px-4 sm:px-8  absolute top-[72%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
-        <p className="hero-text tracking-wide font-bold border-accent pt-0 py-4">
+        <p className="hero-text tracking-wide  border-accent pt-0 py-4">
           <span className="">U</span>pcycled Products
         </p>
         <a className="">
