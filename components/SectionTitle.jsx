@@ -1,7 +1,7 @@
 const SectionTitle = ({ first, second, classes, third }) => {
   return (
     <div
-      className={`ps-4 font-raleway w-full whitespace-nowrap ${
+      className={`ps-4 font-raleway font-semibold w-full whitespace-nowrap ${
         third && "flex sm:block items-end justify-between"
       } ${classes}`}
     >

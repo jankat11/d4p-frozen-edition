@@ -259,7 +259,8 @@ h3 {
   content: "";
   position: absolute;
   width: 200px;
-  height: 50px;
+  height: 100px;
+  top: -20px;
   right: 0px;
 }
 
@@ -366,7 +367,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-accentDark text-sm font-bold mt-2 flex flex-col font-raleway justify-between p-2;
+    @apply text-letter text-sm font-bold mt-2 flex flex-col sm:flex-row font-raleway justify-between p-2;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square

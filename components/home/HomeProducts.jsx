@@ -3,6 +3,13 @@ import SectionTitle from "../SectionTitle";
 import ReactCarousel from "../carousel/Carousel";
 import { useState, useEffect } from "react";
 
+const data = [
+  { product: "büyük tabak", price: "1600", image: "/plates/p3.png" },
+  { product: "büyük tabak", price: "700", image: "/plates/p2.png" },
+  { product: "büyük tabak", price: "850", image: "/plates/p4.png" },
+  { product: "büyük tabak", price: "1400", image: "/plates/p1.png" },
+];
+
 const HomeProducts = () => {
   const [width, setWidth] = useState(null);
   const [isOnClient, setIsOnClient] = useState(false);
@@ -11,10 +18,9 @@ const HomeProducts = () => {
     setWidth(window.innerWidth);
   };
 
-
   useEffect(() => {
     updateWindowDimensions();
-    setIsOnClient(true)
+    setIsOnClient(true);
     window.addEventListener("resize", updateWindowDimensions);
     return () => {
       window.removeEventListener("resize", updateWindowDimensions);
@@ -31,94 +37,41 @@ const HomeProducts = () => {
         />
       </div>
 
-      {isOnClient && <ReactCarousel
-        centerMode={width >= 530 }
-        partial={ width < 530 }
-        showDots={ width < 530 }
-      >
-        <div className=" border-none cursor-pointer flex gap-4 mx-2">
-          <div>
-            <div className="homeproducts-img-cover">
-              <Image
-                src={"/plates/p3.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="homeproducts-img"
-                alt="photo"
-              />
-            </div>
+      {isOnClient && (
+        <ReactCarousel
+          centerMode={width >= 530}
+          partial={width < 530}
+          showDots={width < 530}
+        >
+          {data.map((productItem, i) => {
+            return (
+              <div key={i} className=" cursor-pointer mx-2">
+                <div>
+                  <div className="homeproducts-img-cover">
+                    <Image
+                      src={productItem.image}
+                      quality={100}
+                      width={700}
+                      height={825}
+                      className="homeproducts-img"
+                      alt="photo"
+                    />
+                  </div>
 
-            <div className="homeproducts-info">
-              <p>büyük tabak</p>
-              <p>500tl</p>
-            </div>
-          </div>
-        </div>
-        <div className=" cursor-pointer mx-2">
-          <div>
-            <div className="homeproducts-img-cover">
-              <Image
-                src={"/plates/p2.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="homeproducts-img"
-                alt="photo"
-              />
-            </div>
-
-            <div className="homeproducts-info">
-              <p>büyük tabak</p>
-              <p>500tl</p>
-            </div>
-          </div>
-        </div>
-        <div className=" cursor-pointer mx-2">
-          <div>
-            <div className="homeproducts-img-cover">
-              <Image
-                src={"/plates/p4.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="homeproducts-img"
-                alt="photo"
-              />
-            </div>
-
-            <div className="homeproducts-info">
-              <p>büyük tabak</p>
-              <p>500tl</p>
-            </div>
-          </div>
-        </div>
-        <div className=" cursor-pointer mx-2">
-          <div>
-            <div className="homeproducts-img-cover">
-              <Image
-                src={"/plates/p1.png"}
-                quality={100}
-                width={700}
-                height={825}
-                className="homeproducts-img"
-                alt="photo"
-              />
-            </div>
-
-            <div className="homeproducts-info">
-              <p>büyük tabak</p>
-              <p>500tl</p>
-            </div>
-          </div>
-        </div>
-      </ReactCarousel>}
+                  <div className="homeproducts-info">
+                    <p>{productItem.product}</p>
+                    <p className="text-lg mt-2">{productItem.price}₺</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </ReactCarousel>
+      )}
     </section>
   );
 };
 export default HomeProducts;
-
-
 
 /* import Image from "next/image";
 import SectionTitle from "../SectionTitle";
@@ -311,3 +264,70 @@ const HomeProducts = () => {
   );
 };
 export default HomeProducts; */
+
+/* 
+
+        <div className=" cursor-pointer mx-2">
+          <div>
+            <div className="homeproducts-img-cover">
+              <Image
+                src={"/plates/p2.png"}
+                quality={100}
+                width={700}
+                height={825}
+                className="homeproducts-img"
+                alt="photo"
+              />
+            </div>
+
+            <div className="homeproducts-info">
+              <p>büyük tabak</p>
+              <p>500tl</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div className=" cursor-pointer mx-2">
+          <div>
+            <div className="homeproducts-img-cover">
+              <Image
+                src={"/plates/p4.png"}
+                quality={100}
+                width={700}
+                height={825}
+                className="homeproducts-img"
+                alt="photo"
+              />
+            </div>
+
+            <div className="homeproducts-info">
+              <p>büyük tabak</p>
+              <p>500tl</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div className=" cursor-pointer mx-2">
+          <div>
+            <div className="homeproducts-img-cover">
+              <Image
+                src={"/plates/p1.png"}
+                quality={100}
+                width={700}
+                height={825}
+                className="homeproducts-img"
+                alt="photo"
+              />
+            </div>
+
+            <div className="homeproducts-info">
+              <p>büyük tabak</p>
+              <p>500tl</p>
+            </div>
+          </div>
+        </div>
+
+
+*/
