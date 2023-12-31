@@ -100,7 +100,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md shadow object-cover home-prod-img h-96 "
+                className="rounded-md shadow object-cover home-prod-img h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 2  || slide == 8 || true) && <div className="homeproducts-info">
@@ -116,7 +116,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 "
+                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 3 || slide == 7 || true)&& <div className="homeproducts-info">
@@ -132,7 +132,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 "
+                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 4 || slide == 6 || true) && <div className="homeproducts-info">
@@ -148,7 +148,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 "
+                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 5 || true )&& <div className="homeproducts-info">
@@ -157,7 +157,7 @@ const HomeProducts = () => {
               </div>}
             </div>
           </div>
-          <div className=" cursor-pointer mx-2">
+{/*           <div className=" cursor-pointer mx-2">
             <div className="">
               <Image
                 src={"/plates/p1.png"}
@@ -188,7 +188,7 @@ const HomeProducts = () => {
                 <p>500tl</p>
               </div>}
             </div>
-          </div>
+          </div> */}
         </Carousel>
       </div>
     </section>
