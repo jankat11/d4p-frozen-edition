@@ -69,7 +69,7 @@ const HomeProducts = () => {
             },
             mobile: {
               breakpoint: {
-                max: 640,
+                max: 600,
                 min: 0,
               },
               items: 1,
@@ -78,7 +78,7 @@ const HomeProducts = () => {
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 640,
+                min: 600,
               },
               items: 2,
               partialVisibilityGutter: 30,
@@ -100,7 +100,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md shadow object-cover home-prod-img h-96 2xl:h-[450px]"
+                className="rounded-md shadow object-cover home-prod-img h-80 sm:h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 2  || slide == 8 || true) && <div className="homeproducts-info">
@@ -116,7 +116,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
+                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 3 || slide == 7 || true)&& <div className="homeproducts-info">
@@ -132,7 +132,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
+                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 4 || slide == 6 || true) && <div className="homeproducts-info">
@@ -148,7 +148,7 @@ const HomeProducts = () => {
                 quality={100}
                 width={700}
                 height={825}
-                className="rounded-md object-cover shadow home-prod-img h-96 2xl:h-[450px]"
+                className="rounded-md object-cover shadow home-prod-img h-80 sm:h-96 2xl:h-[450px]"
                 alt="photo"
               />
               {(slide == 5 || true )&& <div className="homeproducts-info">
