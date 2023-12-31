@@ -250,6 +250,30 @@ h3 {
   -ms-user-select: none;
 }
 
+.carousel-with-custom-dots:last-child {
+  display: flex;
+  position: relative;
+}
+.custom-dot {
+  outline: none;
+}
+.custom-dot:active, 
+.custom-dot:focus, 
+.custom-dot:checked {
+  transform: scale(1.3);
+  outline: auto;
+  outline: none;
+}
+
+.dotlist::before  {
+  background-color: #fcfbfb;
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  right: 0px
+}
+
 /* sm:max-w-[1280px] xl:w-[1280px] */
 
 @layer components {
@@ -353,7 +377,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-accentDark text-sm font-bold mt-2 flex font-raleway justify-between p-2;
+    @apply text-accentDark text-sm font-bold mt-2 flex flex-col font-raleway justify-between p-2;
   }
   .introTitle {
     @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;

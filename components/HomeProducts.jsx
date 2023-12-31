@@ -2,8 +2,26 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useState } from "react";
 
 const HomeProducts = () => {
+  const [slide, setSlide] = useState(2)
+  const [prev, setPrev] = useState(3)
+  const CustomDot = ({ index, onClick, active }) => {
+    return (
+      <div className="border-1 border-aside px-1 pt-6 pb-2 bg-aside relative left-32 ">
+        <button
+          onClick={(e) => {
+            onClick();
+            e.preventDefault();
+          }}
+          className={`custom-dot border rounded-full border-accent   h-3 w-3 ${
+            active ? "bg-accent" : "bg-aside"
+          }`}
+        ></button>
+      </div>
+    );
+  };
   return (
     <section className="relative">
       <div className="pb-6 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
@@ -17,10 +35,18 @@ const HomeProducts = () => {
       <div className="">
         <Carousel
           additionalTransfrom={0}
+          afterChange={function (previousSlide, _ref) {
+            var currentSlide = _ref.currentSlide;
+            _ref.onMove;
+            setSlide(currentSlide)
+            setPrev(previousSlide)
+          }}
+          customDot={<CustomDot />}
           arrows={false}
           centerMode={false}
           className="absolute pl-2"
-          dotListClass=""
+          containerClass="carousel-with-custom-dots"
+          dotListClass="dotlist"
           draggable
           focusOnSelect={false}
           infinite
@@ -62,7 +88,7 @@ const HomeProducts = () => {
           rewindWithAnimation={false}
           rtl={false}
           shouldResetAutoplay
-          showDots={false}
+          showDots
           sliderClass=""
           slidesToSlide={1}
           swipeable
@@ -77,10 +103,10 @@ const HomeProducts = () => {
                 className="rounded-md shadow object-cover home-prod-img h-96 "
                 alt="photo"
               />
-              <div className="homeproducts-info">
+              {(slide == 2  || slide == 8) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
-              </div>
+              </div>}
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
@@ -93,10 +119,10 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              <div className="homeproducts-info">
+              {(slide == 3 || slide == 7 )&& <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
-              </div>
+              </div>}
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
@@ -109,10 +135,10 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              <div className="homeproducts-info">
+              {(slide == 4 || slide == 6) && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
-              </div>
+              </div>}
             </div>
           </div>
           <div className=" cursor-pointer mx-2">
@@ -125,10 +151,42 @@ const HomeProducts = () => {
                 className="rounded-md object-cover shadow home-prod-img h-96 "
                 alt="photo"
               />
-              <div className="homeproducts-info">
+              {slide == 5 && <div className="homeproducts-info">
                 <p>büyük tabak</p>
                 <p>500tl</p>
-              </div>
+              </div>}
+            </div>
+          </div>
+          <div className=" cursor-pointer mx-2">
+            <div className="sm:p-4 ">
+              <Image
+                src={"/plates/p1.png"}
+                quality={100}
+                width={700}
+                height={825}
+                className="rounded-md object-cover shadow home-prod-img h-96 "
+                alt="photo"
+              />
+              {(slide == 6 || slide == 0) && <div className="homeproducts-info">
+                <p>büyük tabak</p>
+                <p>500tl</p>
+              </div>}
+            </div>
+          </div>
+          <div className=" cursor-pointer mx-2">
+            <div className="sm:p-4 ">
+              <Image
+                src={"/plates/p1.png"}
+                quality={100}
+                width={700}
+                height={825}
+                className="rounded-md object-cover shadow home-prod-img h-96 "
+                alt="photo"
+              />
+              {(slide == 7 || slide == 1) && <div className="homeproducts-info">
+                <p>büyük tabak</p>
+                <p>500tl</p>
+              </div>}
             </div>
           </div>
         </Carousel>
