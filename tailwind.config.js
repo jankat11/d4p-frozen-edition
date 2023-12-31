@@ -8,9 +8,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans : ["Cormorant", "mono"],
+      sans : ["EB Garamond", "mono"],
       serif: ["Parisienne", "mono"],
-      raleway: ["Raleway", "mono"],
+      raleway: ["Inter", "mono"],
     },
     extend: {
       colors: {

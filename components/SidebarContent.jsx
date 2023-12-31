@@ -3,7 +3,7 @@ import { CiMail } from "react-icons/ci";
 
 const SidebarContent = ({handleMenuClick}) => {
   return (
-    <ul className="  text-lg menu p-2 px-4  relative mt-16 font-raleway font-medium">
+    <ul className="  text-lg menu p-2 px-4  relative mt-16 font-raleway font-semibold">
       <li onClick={handleMenuClick}>
         <a className="nav-link">Coctail Picks</a>
       </li>

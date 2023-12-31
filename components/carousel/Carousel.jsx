@@ -33,7 +33,7 @@ const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
         partialVisbile={partial}
         itemClass=""
         keyBoardControl
-        minimumTouchDrag={50}
+        minimumTouchDrag={8}
         pauseOnHover
         renderArrowsWhenDisabled={false}
         renderButtonGroupOutside={false}

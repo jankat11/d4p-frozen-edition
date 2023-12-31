@@ -38,7 +38,7 @@ const IntroductionItem = ({ introImage, title }) => {
         width={900}
         height={900}
         alt="plates"
-        className="four-images absolute md:relative object-cover object-center md:aspect-[10/9]"
+        className="four-images absolute md:relative object-cover object-center md:aspect-[10/9] home-prod-img"
       />
 
       <div className={`w-full md:hidden py-8  shark-3 bottom-0`}>

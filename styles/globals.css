@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Parisienne:wght@400&family=Cormorant:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -292,7 +294,7 @@ h3 {
     @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-accent-outline {
-    @apply rounded-sm bg-white hover:scale-105   font-semibold text-accentDark uppercase border border-accentDark px-8 py-4 duration-300 active:scale-95;
+    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primary uppercase border border-accentDark px-8 py-4 duration-150;
   }
   .button-info {
     @apply rounded-sm bg-white hover:scale-105 font-semibold text-infoDark uppercase border-2 border-infoDark px-8 py-2 duration-300 active:scale-95;
@@ -304,7 +306,7 @@ h3 {
     @apply rounded-sm bg-white hover:scale-105 font-semibold text-primaryDark uppercase border-2 border-primaryDark px-8 py-4 duration-300 active:scale-95;
   }
   .button-secondary {
-    @apply rounded-sm bg-letter hover:scale-105 text-neutral uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
+    @apply rounded-sm bg-letter tracking-wide hover:bg-letter/90 hover:border-transparent font-light text-aside font-raleway uppercase border-2 border-letter px-8 py-4 duration-150;
   }
   .button-secondary-outline {
     @apply rounded-sm bg-white hover:scale-105 text-letter uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
@@ -328,7 +330,7 @@ h3 {
     @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
-    @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal tracking-wide;
+    @apply mx-auto md:ml-0 leading-normal max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal ;
   }
   .about-gallery {
     @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-letter font-medium;
@@ -358,7 +360,7 @@ h3 {
     @apply absolute  hover:bg-transparent top-4 right-4 left-4 bottom-4 bg-transparent  z-10;
   }
   .home-images-title {
-    @apply mx-auto md:ml-0  w-fit  rounded-sm text-3xl  p-2 px-8 text-aside tracking-wider;
+    @apply mx-auto md:ml-0  w-fit  rounded-sm text-3xl  p-2 px-16 text-aside tracking-wider;
   }
   .slideController {
     @apply absolute  w-1/2 h-[80%] bottom-0;
@@ -367,7 +369,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-letter text-sm font-bold mt-2 flex flex-col sm:flex-row font-raleway justify-between p-2;
+    @apply text-letter text-sm  mt-2 flex flex-col sm:flex-row font-raleway justify-center p-2 lg:px-8;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square
@@ -379,10 +381,10 @@ h3 {
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
+    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
-    @apply absolute bottom-4 sm:bottom-12 md:top-[50%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl;
+    @apply absolute top-[43%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
   }
   .opening-logo {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
