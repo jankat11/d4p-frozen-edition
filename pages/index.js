@@ -2,7 +2,7 @@ import "animate.css";
 import Hero from "../components/home/Hero";
 import IntroductionList from "../components/home/IntroductionList";
 import Features from "@/components/Features";
-import Map from "@/components/map";
+import Map from "@/components/map/Map";
 import { useEffect, useState } from "react";
 import HomeProducts from "@/components/home/HomeProducts";
 import HomeVitra from "@/components/home/HomeVitra";
