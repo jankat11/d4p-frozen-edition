@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -287,33 +287,11 @@ h3 {
   .text-line {
     @apply w-1/5 absolute border border-accent opacity-0 ml-1;
   }
-  .button-accent {
-    @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95;
-  }
-  .button-accent-outline {
-    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primary/90 uppercase border border-accentDark px-8 py-4 duration-150;
-  }
-  .button-info {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
-  }
+
   .button-primary {
-    @apply rounded-sm bg-primary hover:scale-105 font-semibold text-neutral uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
+    @apply rounded-lg bg-primary font-raleway tracking-wide text-aside px-8 py-4 hover:bg-aside hover:text-primary duration-150;
   }
-  .button-primary-outline {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primary uppercase border-2 border-primary px-8 py-4 duration-300 active:scale-95;
-  }
-  .button-primary {
-    @apply rounded-sm bg-primary tracking-wide hover:border-transparent font-light text-aside hover:text-white font-raleway uppercase border-2 border-primary px-8 py-4 duration-150;
-  }
-  .button-primary-outline {
-    @apply rounded-sm bg-white hover:scale-105 text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
-  }
-  .button-primary {
-    @apply rounded-sm bg-primary hover:scale-105 font-semibold  text-neutral uppercase border-2 border-primary px-8 py-4 duration-300 active:scale-95;
-  }
-  .button-primary-outline {
-    @apply rounded-sm bg-white hover:scale-105  text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
-  }
+ 
   .hero-text {
     @apply relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center;
   }
