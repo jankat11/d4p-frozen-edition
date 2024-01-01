@@ -39,7 +39,7 @@ const Header = ({
                 fixed top-0
               ${scrollDown && "bg-aside border-b border-primary"}`}>
             <ul
-              className={`nav-link-container font-medium px-4  max-w-5xl xl:max-w-7xl mx-auto`}
+              className={`nav-link-container font-medium inside-container`}
             >
               <div className="lg:block hidden">
                 <D4P initialLoad={initialLoad} scrollDown={scrollDown} />

@@ -349,13 +349,16 @@ h3 {
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto text-primary sm:text-2xl lg:text-3xl xl:text-4xl text-xl tracking-wide;
+    @apply select-none sm:py-24 py-24 xl:py-28 leading-loose sm:leading-10 text-center md:text-left  text-primary sm:text-2xl lg:text-3xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
     @apply absolute top-[43%] px-8 sm:px-16 sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
   }
   .opening-logo {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
+  }
+  .inside-container {
+    @apply px-4  max-w-5xl xl:max-w-7xl mx-auto;
   }
 }
 /* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */

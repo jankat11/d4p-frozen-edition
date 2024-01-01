@@ -23,19 +23,23 @@ const Hero = () => {
           className="object-cover  object-center h-screen "
         />
       </div>
-      <div className="lg:w-fit w-full px-4 sm:px-8  absolute top-[72%] z-10 lg:left-0  flex flex-col   items-center justify-center  gap-2 ">
-        <p className="hero-text  pt-0 py-4">
-          <span className="">U</span>pcycled Products
-        </p>
-        <a className="">
-          <button className="button-primary w-full  ">
-            <div className="flex justify-center items-center gap-1">
-              <span className="font-light text-sm tracking-wider">shop now</span>{" "}
-              {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
-            </div>
-          </button>
-        </a>
-      </div>
+  
+        <div className=" absolute top-[72%] z-10 w-full ">
+          <div className="flex flex-col inside-container  items-center lg:items-start lg:justify-center  gap-2">
+            <p className="hero-text  pt-0 py-4">
+              <span className="">U</span>pcycled Products
+            </p>
+            <a className="">
+              <button className="button-primary w-full  ">
+                <div className="flex justify-center items-center gap-1">
+                  <span className="font-light text-sm tracking-wider">shop now</span>{" "}
+                  {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+
     </section>
   );
 };
