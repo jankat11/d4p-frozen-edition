@@ -384,7 +384,7 @@ h3 {
     @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
-    @apply absolute top-[43%] sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
+    @apply absolute top-[41%] px-8 sm:px-16 sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
   }
   .opening-logo {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
