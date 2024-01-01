@@ -40,7 +40,29 @@ module.exports = {
   plugins: [require('daisyui')],
 }
 
-/* 
-accent: "#C0AC8A",
-neutral: "#F3F0EA",
-accentDark: "#ad9b7c", */
+/* theme: {
+  fontFamily: {
+    sans : ["EB Garamond", "mono"],
+    serif: ["Parisienne", "mono"],
+    raleway: ["Inter", "mono"],
+  },
+  extend: {
+    colors: {
+      primary: "#977740",
+      secondary: "#91846F",
+      accent: "#C0AC8A",
+      neutral: "#F3F0EA",
+      primaryDark: "#886b3a",
+      secondaryDark: "#665c4e",
+      accentDark: "#ad9b7c",
+      navtitle: "#5b4726",   
+      infoDark: "#05875f",
+      info: "#059669",
+      aside: "#fcfbfb",
+      letter: "#736753",
+      "base-100": "#fff"
+    },
+    screens: {
+      md : "810px"
+    },
+  }, */
