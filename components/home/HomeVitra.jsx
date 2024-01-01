@@ -4,7 +4,7 @@ const HomeVitra = () => {
   return (
     <section className="lg:py-24 py-16">
       <div className="relative overflow-hidden cursor-pointer">
-        <p className="home-images-title limited-edition">limited edition</p>
+        <p className="home-images-title hero-text limited-edition">limited edition</p>
         <Image
           src={"/homepage/bsd.jpg"}
           width={2000}
