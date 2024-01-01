@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center shadow bg-aside shadow-neutral relative pb-44 md:pb-24"
+      className="flex flex-col items-center shadow bg-aside  relative pb-44 md:pb-24"
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
         <h2 className="text-primary relative top-8 md:py-10 z-1 text-4xl inline-block">
@@ -120,7 +120,7 @@ const About = () => {
             issue with our designs that we work with pleasure at every stage.
           </p>
           <div className="flex gap-6 flex-col justify-center max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
-            <button className="button-accent-outline w-full">contact us</button>
+            <button className=" w-full">contact us</button>
             <button className="button-primary w-full ">shop now!</button>
           </div>
         </div>

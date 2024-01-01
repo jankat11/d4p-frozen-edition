@@ -23,8 +23,8 @@ const Hero = () => {
           className="object-cover  object-center h-screen "
         />
       </div>
-      <div className="w-full  px-4 sm:px-8  absolute top-[72%] z-10 left-0 flex flex-col  lg:top-[60%] items-center justify-center  gap-2 ">
-        <p className="hero-text tracking-wide  border-accent pt-0 py-4">
+      <div className="lg:w-fit w-full px-4 sm:px-8  absolute top-[72%] z-10 lg:left-0  flex flex-col   items-center justify-center  gap-2 ">
+        <p className="hero-text  pt-0 py-4">
           <span className="">U</span>pcycled Products
         </p>
         <a className="">

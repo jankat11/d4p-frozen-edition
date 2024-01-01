@@ -6,12 +6,12 @@ const SectionTitle = ({ first, second, classes, third }) => {
       } ${classes}`}
     >
       <span className={`${third && "flex flex-col gap-2 sm:inline"}`}>
-        <span className={`${third && "hidden sm:inline"} text-primary/70`}>
+        <span className={`${third && "hidden sm:inline"} text-secondary/70`}>
           {first}
         </span>{" "}
         {second && (
           <span
-            className={`text-primary/70 text-2xl px-2 relative top-[1px] ${
+            className={`text-secondary/70 text-2xl px-2 relative top-[1px] ${
               third && "hidden sm:inline"
             }`}
           >
@@ -21,9 +21,9 @@ const SectionTitle = ({ first, second, classes, third }) => {
         <span className="text-primary">{second}</span>
       </span>
       {third && (
-        <span className="text-primary px-4 cursor-pointer whitespace-nowrap">
-          <div className="h-3 w-3 rounded-full inline-block bg-primary"></div>{" "}
-          <span className="px-4 relative bottom-[1px] right-[2px]">
+        <span className="text-info px-4 cursor-pointer whitespace-nowrap">
+          <div className="h-3 w-3 rounded-full inline-block bg-info "></div>{" "}
+          <span className="px-4 relative bottom-[2px] right-[2px] text-xs tracking-wider font-medium">
             {"explore"}
           </span>
         </span>

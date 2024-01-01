@@ -21,17 +21,12 @@ body {
   overflow-x: hidden;
 }
 
-.hero-text {
+/* .hero-text {
   -webkit-background-clip: text;
   background-clip: text !important;
   color: transparent;
-}
+} */
 
-
-.hero-text {
-  line-height: 1.5 !important;
-  background-image: linear-gradient(110deg, #fff, #fff, #fff) !important;
-}
 
 /* .nav-link {
   transition: all 0.2s;
@@ -214,9 +209,7 @@ h3 {
   transform: rotate(-45deg) translateY(0px) translateX(-0px);
 }
 
-.button-accent {
-  backface-visibility: hidden;
-}
+
 
 .map {
   width: 100%;
@@ -289,14 +282,14 @@ h3 {
   }
 
   .button-primary {
-    @apply rounded-lg bg-primary font-raleway tracking-wide text-aside px-8 py-4 hover:bg-aside hover:text-primary duration-150;
+    @apply rounded-lg bg-primary tracking-wide text-white px-8 py-4 hover:bg-aside hover:text-primary duration-150;
   }
  
   .hero-text {
-    @apply relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center;
+    @apply relative text-white font-light text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-wide whitespace-nowrap uppercase text-center;
   }
   .img-container {
-    @apply rounded-sm border-4 border-accent mx-auto md:mx-0 max-w-sm sm:max-w-lg sm:p-6 p-6 w-full;
+    @apply rounded-sm mx-auto md:mx-0 max-w-sm sm:max-w-lg  w-full;
   }
   .img-wrapper {
     @apply flex relative overflow-hidden rounded-sm w-full;
@@ -305,7 +298,7 @@ h3 {
     @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
-    @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal;
+    @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-normal;
   }
   .about-gallery {
     @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-primary font-medium;
@@ -335,7 +328,7 @@ h3 {
     @apply absolute  hover:bg-transparent top-4 right-4 left-4 bottom-4 bg-transparent  z-10;
   }
   .home-images-title {
-    @apply mx-auto md:ml-0  w-fit  rounded-sm text-3xl  p-2 px-16 text-aside tracking-wider;
+    @apply mx-auto md:ml-0  w-fit  cursor-pointer  rounded-sm text-3xl  p-2 px-16 text-white tracking-wider;
   }
   .slideController {
     @apply absolute  w-1/2 h-[80%] bottom-0;
@@ -344,7 +337,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-primary text-sm  mt-2 flex flex-col sm:flex-row font-raleway justify-center p-2 lg:px-8;
+    @apply text-primary text-sm  mt-2 flex flex-col sm:flex-row justify-center p-2 lg:px-8;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square;
@@ -356,7 +349,7 @@ h3 {
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-primary sm:text-2xl xl:text-4xl text-xl tracking-wide;
+    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 leading-loose sm:leading-10 text-center xl:text-left mx-auto text-primary sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
     @apply absolute top-[43%] px-8 sm:px-16 sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
@@ -365,7 +358,7 @@ h3 {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
   }
 }
-/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
+/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
 .nav-link-container {
   font-size: 1rem;
 }

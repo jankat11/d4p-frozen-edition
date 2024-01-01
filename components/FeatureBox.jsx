@@ -16,7 +16,7 @@ const FeatureBox = ({ title, content }) => {
       }`}
     >
       {iconData[title]}
-      <h3 className="text-accentDark">{title}</h3>
+      <h3 className="text-accent">{title}</h3>
       {/* <p className="md:max-w-[11rem] text-primary mx-auto">{content}</p> */}
     </article>
   );
