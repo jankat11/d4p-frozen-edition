@@ -20,7 +20,7 @@ const IntroductionList = () => {
           introImage={"/homepage/h11.png"}
         />
       </div>
-      <p className="introTitle inside-container">
+      <p className="introTitle inside-container ">
         <span className=" ">W</span>e value our planet and are dedicated to
         contributing to its well-being by upcycling waste materials and turning
         them into one of a kind gadgets, utensils and art objects.
