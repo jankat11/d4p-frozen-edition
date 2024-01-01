@@ -50,7 +50,7 @@ const HomeProducts = () => {
             return (
               <div key={i} className=" cursor-pointer mx-2">
                 <div>
-                  <div className="homeproducts-img-cover bg-neutral rounded-sm">
+                  <div className="homeproducts-img-cover bg-neutral/80 rounded-sm">
                     <Image
                       src={productItem.image}
                       quality={100}
