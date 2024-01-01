@@ -14,7 +14,7 @@ const CompareImages = () => {
       <div className="flex flex-col sm:flex-row sm:gap-4 sm:px-4  xl:justify-between ">
         <ReactCompareImage
           leftImage="homepage/comp1.png"
-          rightImage="homepage/comp22.png"
+          rightImage="homepage/comp33.png"
           sliderPositionPercentage={0.5}
         />
         {/*         <ReactCompareImage

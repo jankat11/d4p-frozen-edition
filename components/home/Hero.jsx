@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
   
         <div className=" absolute top-[72%] z-10 w-full ">
-          <div className="flex flex-col inside-container  items-center lg:items-start lg:justify-center  gap-2">
+          <div className="flex flex-col inside-container relative bottom-4 items-center lg:items-start lg:justify-center  gap-2">
             <p className="hero-text  pt-0 py-4">
               <span className="">U</span>pcycled Products
             </p>
