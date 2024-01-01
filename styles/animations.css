@@ -175,8 +175,8 @@
 
 .hamburger.animate__animated.animate__fadeInDown {
   --animate-duration: 0.3s;
+  color: #674b24
 }
-/* color: #ad7431 */
 /* color: rgb(253, 252, 252) */
 /*  color: rgb(244, 241, 236) */
 /* color: rgb(193, 173, 139) */
