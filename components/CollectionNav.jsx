@@ -2,13 +2,13 @@ import { BiDownArrow } from "react-icons/bi";
 
 const CollectionNav = ({scrollDown}) => {
   return (
-    <div className="nav-link dropdown dropdown-hover group z-50 relative ">
+    <div className="nav-link dropdown dropdown-hover group z-50 relative">
       <span
         tabIndex={0}
         role="button"
         className={`flex justify-between items-center gap-1 ${!scrollDown && "text-aside"}`}
       >
-        Collection {/* <BiDownArrow size={17} fill="#6a532d" className="p-0 m-0" /> */}
+        Collection {/* <BiDownArrow size={17} fill="#674B24" className="p-0 m-0" /> */}
       </span>
       <ul className="dropdown-content rounded-none text-lg menu p-2 shadow relative pt-8 bg-base-100 w-56 ">
         <li>
@@ -28,9 +28,9 @@ const CollectionNav = ({scrollDown}) => {
         </li>
         <div>
           <div  className="card bg-white">
-            <div className="collapse-title nav-link pt-0 flex items-center bg-white">
-              Textile{" "}
-              <BiDownArrow size={17} fill="#6a532d" className="p-0 m-0" />
+            <div className="collapse-title text-primary nav-link pt-0 flex items-center bg-white">
+              Textile
+              <BiDownArrow size={17} fill="#674B24" className="p-0 m-0" />
             </div>
             <div className="  relative bottom-4 left-4  bg-transparent">
               <li>

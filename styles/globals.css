@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,31 +21,29 @@ body {
   overflow-x: hidden;
 }
 
-.hero-text,
-.nav-link,
-.nav-link:focus,
-.nav-link:hover {
+.hero-text {
   -webkit-background-clip: text;
   background-clip: text !important;
   color: transparent;
 }
+
 
 .hero-text {
   line-height: 1.5 !important;
   background-image: linear-gradient(110deg, #fff, #fff, #fff) !important;
 }
 
-.nav-link {
+/* .nav-link {
   transition: all 0.2s;
-  background-image: linear-gradient(110deg, #5b4726, #5b4726) !important;
-}
+  background-image: linear-gradient(110deg, #674B24, #674B24) !important;
+} */
 
-.nav-link:focus > .text-line,
+/* .nav-link:focus > .text-line,
 .nav-link:hover > .text-line {
   opacity: 1;
   width: 80%;
   transition: all 0.4s;
-}
+} */
 
 .text-line {
   transition: all 0.4s;
@@ -71,7 +68,7 @@ h3 {
   @apply font-semibold uppercase my-3;
 }
 
-.nav-link:focus,
+/* .nav-link:focus,
 .nav-link:hover {
   background-image: linear-gradient(
     110deg,
@@ -81,7 +78,7 @@ h3 {
     #977740
   ) !important;
   transition: all 0.2s;
-}
+} */
 
 .colar {
   color: rgb(243, 240, 234);
@@ -276,7 +273,7 @@ h3 {
     @apply flex justify-between relative;
   } */
   .nav-bar {
-    @apply bg-navtitle/0 font-semibold mt-0 pb-0 text-lg sm:text-lg w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
+    @apply bg-primary/0 mt-0 pb-0  w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
   .nav-link-container {
     @apply transition-all duration-0 py-3 w-full flex items-center justify-center lg:justify-between;
@@ -285,7 +282,7 @@ h3 {
     @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8;
   }
   .nav-link {
-    @apply tracking-tight cursor-pointer pb-0 duration-500  relative sm:right-0 py-2;
+    @apply  cursor-pointer pb-0 duration-500 text-primary relative sm:right-0 py-2;
   }
   .text-line {
     @apply w-1/5 absolute border border-accent opacity-0 ml-1;
@@ -294,28 +291,28 @@ h3 {
     @apply rounded-sm bg-accentDark hover:scale-105  text-aside uppercase border border-accentDark px-8 py-2 duration-300 active:scale-95;
   }
   .button-accent-outline {
-    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primaryDark/90 uppercase border border-accentDark px-8 py-4 duration-150;
+    @apply rounded-sm bg-white font-raleway hover:bg-white hover:border-primary/90  tracking-wide font-light text-accentDark hover:text-primary/90 uppercase border border-accentDark px-8 py-4 duration-150;
   }
   .button-info {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-infoDark uppercase border-2 border-infoDark px-8 py-2 duration-300 active:scale-95;
+    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
   }
   .button-primary {
-    @apply rounded-sm bg-primaryDark hover:scale-105 font-semibold text-neutral uppercase border-2 border-primaryDark px-8 py-2 duration-300 active:scale-95;
+    @apply rounded-sm bg-primary hover:scale-105 font-semibold text-neutral uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
   }
   .button-primary-outline {
-    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primaryDark uppercase border-2 border-primaryDark px-8 py-4 duration-300 active:scale-95;
+    @apply rounded-sm bg-white hover:scale-105 font-semibold text-primary uppercase border-2 border-primary px-8 py-4 duration-300 active:scale-95;
   }
-  .button-secondary {
-    @apply rounded-sm bg-letter tracking-wide hover:border-transparent font-light text-aside hover:text-white font-raleway uppercase border-2 border-letter px-8 py-4 duration-150;
+  .button-primary {
+    @apply rounded-sm bg-primary tracking-wide hover:border-transparent font-light text-aside hover:text-white font-raleway uppercase border-2 border-primary px-8 py-4 duration-150;
   }
-  .button-secondary-outline {
-    @apply rounded-sm bg-white hover:scale-105 text-letter uppercase border-2 border-letter px-8 py-2 duration-300 active:scale-95;
+  .button-primary-outline {
+    @apply rounded-sm bg-white hover:scale-105 text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
   }
-  .button-letter {
-    @apply rounded-sm bg-navtitle hover:scale-105 font-semibold  text-neutral uppercase border-2 border-navtitle px-8 py-4 duration-300 active:scale-95;
+  .button-primary {
+    @apply rounded-sm bg-primary hover:scale-105 font-semibold  text-neutral uppercase border-2 border-primary px-8 py-4 duration-300 active:scale-95;
   }
-  .button-letter-outline {
-    @apply rounded-sm bg-white hover:scale-105  text-navtitle uppercase border-2 border-navtitle px-8 py-2 duration-300 active:scale-95;
+  .button-primary-outline {
+    @apply rounded-sm bg-white hover:scale-105  text-primary uppercase border-2 border-primary px-8 py-2 duration-300 active:scale-95;
   }
   .hero-text {
     @apply relative text-2xl select-none sm:text-3xl md:text-4xl  mt-0  py-6 tracking-tight whitespace-nowrap uppercase text-center;
@@ -330,10 +327,10 @@ h3 {
     @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
-    @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal ;
+    @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-raleway font-normal;
   }
   .about-gallery {
-    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-letter font-medium;
+    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-primary font-medium;
   }
   .home-images {
     @apply object-cover object-center aspect-[3/2]  sm:aspect-square sm:rounded-sm;
@@ -369,19 +366,19 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-letter text-sm  mt-2 flex flex-col sm:flex-row font-raleway justify-center p-2 lg:px-8;
+    @apply text-primary text-sm  mt-2 flex flex-col sm:flex-row font-raleway justify-center p-2 lg:px-8;
   }
   .homeproducts-img {
-    @apply rounded-md home-prod-img object-cover object-center aspect-square
+    @apply rounded-md home-prod-img object-cover object-center aspect-square;
   }
-  .homeproducts-img-cover{
+  .homeproducts-img-cover {
     @apply overflow-hidden;
   }
-/*   .homeproducts-img-cover{
+  /*   .homeproducts-img-cover{
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-letter sm:text-2xl xl:text-4xl text-xl tracking-wide;
+    @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-24 xl:py-28 font-raleway leading-loose sm:leading-10 text-center xl:text-left mx-auto text-primary sm:text-2xl xl:text-4xl text-xl tracking-wide;
   }
   .limited-edition {
     @apply absolute top-[43%] px-8 sm:px-16 sm:left-4 xl:left-16 2xl:left-36 md:text-5xl xl:text-6xl text-2xl;
@@ -390,7 +387,7 @@ h3 {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center bg-aside;
   }
 }
-/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-letter  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
+/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 font-raleway leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
 .nav-link-container {
   font-size: 1rem;
 }

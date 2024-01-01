@@ -102,12 +102,14 @@ const About = () => {
               asdasfdadf rwgt rew gety hety he{" "}
             </span>
             The number 4 in our logo represents the four principles we adopt:
-            <br /><br />
+            <br />
+            <br />
             <span>• Upcycling </span> <br /> <br />
             <span>• Respect for nature</span> <br /> <br />
             <span>• Sustainability</span> <br /> <br />
             <span className="relative">
-              • Collaboration with Local <span className="relative md:left-[17px]">Craftsmen</span>
+              • Collaboration with Local{" "}
+              <span className="relative md:left-[17px]">Craftsmen</span>
             </span>
           </p>
         </span>
@@ -119,7 +121,7 @@ const About = () => {
           </p>
           <div className="flex gap-6 flex-col justify-center max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
             <button className="button-accent-outline w-full">contact us</button>
-            <button className="button-secondary w-full ">shop now!</button>
+            <button className="button-primary w-full ">shop now!</button>
           </div>
         </div>
       </div>

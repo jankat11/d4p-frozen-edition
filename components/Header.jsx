@@ -34,18 +34,18 @@ const Header = ({
 
   return (
       <section ref={headerRef} className="">
-        <nav className={`nav-bar absolut ${isHomePage && "h-24"} `}>
+        <nav className={`nav-bar absolut ${isHomePage && "h-24"}`}>
           <ul
-            className={`nav-link-container layout-align  lg:px-6 xl:px-12 2xl:px-24 font-bold border-b border-aside
+            className={`nav-link-container font-medium font-raleway layout-align uppercase lg:px-6 xl:px-12 2xl:px-24 border-b border-aside
               fixed top-0
             
-            ${scrollDown && "bg-aside border-b border-primaryDark"}
+            ${scrollDown && "bg-aside border-b border-primary"}
             `}
           >
             <div className="lg:block hidden">
               <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
             </div>
-            <div className={` nav-items text-xl  ${initialLoad && fadeIn}`}>
+            <div className={` nav-items text-xs  ${initialLoad && fadeIn}`}>
               <div className="sm:flex sm:flex-row sm:space-x-10 sm:justify-start">
                 <CollectionNav scrollDown={scrollDown} />
                 <ContactNav scrollDown={scrollDown} />
@@ -65,23 +65,23 @@ const Header = ({
                 </Link>
               </div>
             </div>
-            <div className="lg:flex hidden items-center gap-1">
+            <div className="lg:flex text-xs hidden items-center gap-1">
               <span
-                className={`text-xl opacity-0 cursor-default ${
+                className={` opacity-0 cursor-default ${
                   !scrollDown && "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
-                className={`text-xl opacity-0 cursor-default ${
+                className={` opacity-0 cursor-default ${
                   !scrollDown && "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
-                className={`text-xl opacity-0 cursor-default ${
+                className={` opacity-0 cursor-default ${
                   !scrollDown && "text-aside"
                 }`}
               >
@@ -89,7 +89,7 @@ const Header = ({
               </span>
 
               <Link href="/" className={`nav-link  whitespace-nowrap `}>
-                <span className={`text-xl ${!scrollDown && "text-aside"}`}>
+                <span className={` ${!scrollDown && "text-aside"}`}>
                   Cart
                 </span>
               </Link>
@@ -97,7 +97,7 @@ const Header = ({
                 noText={true}
                 scrollDown={scrollDown}
                 size={18}
-                fill={scrollDown || isMenuOpen ? "#5b4726" : "#fff"}
+                fill={scrollDown || isMenuOpen ? "#674B24" : "#fff"}
               />
             </div>
             <div
@@ -121,13 +121,13 @@ const Header = ({
               }`}
             >
               {/*  <Link href={"/our-story"}>
-                <PiInfo size={25} fill="#6a532d"/>
+                <PiInfo size={25} fill="#674B24"/>
               </Link> */}
               <CartLogo
                 noText={true}
                 classes="relative bottom-[3px]"
                 size={25}
-                fill={scrollDown || isMenuOpen ? "#5b4726" : "#fff"}
+                fill={scrollDown || isMenuOpen ? "#674B24" : "#fff"}
                 isMenuOpen={isMenuOpen}
                 scrollDown={scrollDown}
               />

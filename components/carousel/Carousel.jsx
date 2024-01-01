@@ -9,8 +9,8 @@ const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
             onClick();
             e.preventDefault();
           }}
-          className={`custom-dot border rounded-full border-letter   h-[10px] w-[10px] ${
-            active ? "bg-letter" : "bg-aside"
+          className={`custom-dot border rounded-full border-primary   h-[10px] w-[10px] ${
+            active ? "bg-primary" : "bg-aside"
           }`}
         ></button>
       </div>

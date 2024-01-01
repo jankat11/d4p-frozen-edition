@@ -14,18 +14,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#977740",
-        secondary: "#91846F",
+        primary: "#674B24",
+
+        
+        secondary: "#24672A",
         accent: "#C0AC8A",
         neutral: "#F3F0EA",
-        primaryDark: "#886b3a",
-        secondaryDark: "#665c4e",
+
         accentDark: "#ad9b7c",
-        navtitle: "#5b4726",   
-        infoDark: "#05875f",
-        info: "#059669",
+    
+     
         aside: "#fcfbfb",
-        letter: "#736753",
+     
         "base-100": "#fff"
       },
       screens: {
