@@ -84,6 +84,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                   >
                     Collections
                   </span>
+                  <div className="text-line"></div>
                 </Link>
                 <Link
                   href=""
@@ -99,6 +100,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                   >
                     Contact
                   </span>
+                  <div className="text-line"></div>
                 </Link>
                 <Link
                   href="/our-story"
@@ -114,7 +116,9 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                   >
                     Our Story
                   </span>
-                  {/* <div className="text-line"></div> */}
+                 
+                    <div className="text-line"></div>
+                  
                 </Link>
                 <Link
                   href="/"
@@ -130,6 +134,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                   >
                     New Arrivals
                   </span>
+                  <div className="text-line"></div>
                 </Link>
               </div>
             </div>
