@@ -19,14 +19,14 @@ const Header = ({
   const handleClick = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false)
 
- /*  useEffect(() => {
+  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflowY = "hidden";
     } else {
       document.body.style.overflowY = "auto";
     }
   }, [isMenuOpen]);
- */
+
   /*   useEffect(() => {
     console.log(scrollDown);
   }, [scrollDown]); */
