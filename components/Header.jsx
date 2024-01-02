@@ -8,16 +8,29 @@ import ContactNav from "./ContactNav";
 import Link from "next/link";
 import Sidebar from "./sidebar/Sidebar";
 
-const Header = ({
-  scrollDown,
-  initialLoad,
-  fadeIn,
-  isHomePage,
-}) => {
+const categories = [
+  "Coctail Picks",
+  "Plates & Bowls",
+  "Trays",
+  "Drawer Knob",
+  "Charcuterie Platter",
+  "Pillowcase",
+  "Backgammon",
+];
+
+const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
   const headerRef = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [isOnNavbar, setIsOnNavbar] = useState(false);
+
   const handleClick = () => setIsMenuOpen((prev) => !prev);
-  const closeMenu = () => setIsMenuOpen(false)
+  const closeMenu = () => setIsMenuOpen(false);
+
+  const handleMouseEnter = () => setDropdownVisible(true);
+  const handleMouseLeave = () => setDropdownVisible(false);
+  const handleOnNav = () => setIsOnNavbar(true);
+  const handleLeftNav = () => setIsOnNavbar(false);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -27,37 +40,73 @@ const Header = ({
     }
   }, [isMenuOpen]);
 
-  /*   useEffect(() => {
-    console.log(scrollDown);
-  }, [scrollDown]); */
-  /* lg:px-6 xl:px-12 2xl:px-24 */
   return (
     <section ref={headerRef} className="">
-      <nav className={`nav-bar absolut ${isHomePage && "h-24"}`}>
+      <nav className={`nav-bar ${isHomePage && "h-24"}`}>
         <div
           className={`w-full border-b border-aside
                 fixed top-0
-              ${scrollDown && "bg-aside border-b border-primary"}`}
+              ${
+                (scrollDown || isDropdownVisible || isOnNavbar) && "bg-aside border-b border-primary"
+              }`}
         >
           <ul className={`nav-link-container font-medium inside-container`}>
             <div className="lg:block hidden">
-              <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
+              <D4P
+                initialLoad={initialLoad}
+                scrollDown={scrollDown}
+                isOnNavbar={isOnNavbar}
+                isDropdownVisible={isDropdownVisible}
+              />
             </div>
-            <div className={` nav-items text-xs  ${initialLoad && fadeIn}`}>
-              <div className="sm:flex sm:flex-row sm:space-x-10 sm:justify-start">
+            <div
+              onMouseEnter={handleOnNav}
+              onMouseLeave={handleLeftNav}
+              className={` nav-items text-xs h-full ${initialLoad && fadeIn}`}
+            >
+              <div className="sm:flex sm:flex-row sm:space-x-10  sm:justify-start">
                 {/* <CollectionNav scrollDown={scrollDown} />
                   <ContactNav scrollDown={scrollDown} /> */}
                 <Link
-                  href="/our-story"
-                  className={`nav-link  whitespace-nowrap `}
+                  href=""
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className={`nav-link flex items-center whitespace-nowrap `}
                 >
-                  <span className={`${!scrollDown && "text-aside"}`}>
+                  <span
+                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                  >
+                    Collections
+                  </span>
+                </Link>
+                <Link
+                  href=""
+                  className={`nav-link flex items-center whitespace-nowrap `}
+                >
+                  <span
+                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                  >
+                    Contact
+                  </span>
+                </Link>
+                <Link
+                  href="/our-story"
+                  className={`nav-link flex items-center whitespace-nowrap `}
+                >
+                  <span
+                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                  >
                     Our Story
                   </span>
                   {/* <div className="text-line"></div> */}
                 </Link>
-                <Link href="/" className={`nav-link  whitespace-nowrap `}>
-                  <span className={`${!scrollDown && "text-aside"}`}>
+                <Link
+                  href="/"
+                  className={`nav-link flex items-center whitespace-nowrap `}
+                >
+                  <span
+                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                  >
                     New Arrivals
                   </span>
                 </Link>
@@ -66,33 +115,37 @@ const Header = ({
             <div className="lg:flex text-xs hidden items-center gap-1">
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && "text-aside"
+                  !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && "text-aside"
+                  !scrollDown && !isOnNavbar && !isDropdownVisible &&  "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && "text-aside"
+                  !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
                 }`}
               >
                 Cart
               </span>
               <Link href="/" className={`nav-link  whitespace-nowrap `}>
-                <span className={` ${!scrollDown && "text-aside"}`}>Cart</span>
+                <span
+                  className={` ${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                >
+                  Cart
+                </span>
               </Link>
               <CartLogo
                 noText={true}
                 scrollDown={scrollDown}
                 size={18}
-                fill={scrollDown ? "#674B24" : "#fff"}
+                fill={scrollDown || isOnNavbar || isDropdownVisible ? "#674B24" : "#fff"}
               />
             </div>
             <div
@@ -104,11 +157,16 @@ const Header = ({
                 scrollDown={scrollDown}
                 handleClick={handleClick}
                 isMenuOpen={isMenuOpen}
+                isOnNavbar={isOnNavbar}
                 closeMenu={closeMenu}
               />
             </div>
             <div className="lg:hidden">
-              <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
+              <D4P
+                initialLoad={initialLoad}
+                scrollDown={scrollDown}
+                isOnNavbar={isOnNavbar}
+              />
             </div>
             <div
               className={`absolute right-6 sm:right-8 translate-y-[2px] flex items-center gap-4 lg:hidden ${
@@ -119,12 +177,27 @@ const Header = ({
                 noText={true}
                 classes="relative bottom-[3px]"
                 size={25}
-                fill={scrollDown ? "#674B24" : "#fff"}
+                fill={scrollDown || isOnNavbar ? "#674B24" : "#fff"}
                 isMenuOpen={isMenuOpen}
                 scrollDown={scrollDown}
               />
             </div>
           </ul>
+          {isDropdownVisible && (
+            <div
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="border-t h-16 border-primary bg-aside"
+            >
+              <div className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium text-primary">
+                {categories.map((category, i) => (
+                  <div className="nav-link" key={i}>
+                    {category}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </nav>
     </section>

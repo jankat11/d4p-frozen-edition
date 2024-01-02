@@ -2,7 +2,7 @@ import SidebarContent from "./SidebarContent";
 import { useRef, useEffect, useState } from "react";
 import Hamburger from "./Hamburger";
 
-const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu }) => {
+const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar }) => {
   const menuIconRef = useRef(null);
 
   const handleMenuClick = () => {
@@ -27,7 +27,7 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu }) => {
             }`}
           >
             <Hamburger
-              classes={!scrollDown && !isMenuOpen ? "bg-aside" : "bg-primary"}
+              classes={!scrollDown && !isMenuOpen && !isOnNavbar ? "bg-aside" : "bg-primary"}
             />
           </div>
         </label>

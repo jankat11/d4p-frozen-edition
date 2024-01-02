@@ -269,10 +269,10 @@ h3 {
     @apply bg-primary/0 mt-0 pb-0  w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
   }
   .nav-link-container {
-    @apply transition-all duration-0 py-3 w-full uppercase flex items-center justify-center lg:justify-between;
+    @apply transition-all duration-0 w-full uppercase flex h-16 items-center justify-center lg:justify-between;
   }
   .nav-items {
-    @apply h-full hidden lg:flex relative bottom-[2px] lg:flex-row lg:space-x-10 lg:justify-between  items-center ps-8;
+    @apply h-full hidden lg:flex relative  lg:flex-row lg:space-x-10 lg:justify-between  ;
   }
   .nav-link {
     @apply  cursor-pointer pb-0 duration-500 text-primary relative sm:right-0 py-2;
