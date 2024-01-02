@@ -6,12 +6,12 @@ const SectionTitle = ({ first, second, classes, third }) => {
       } ${classes}`}
     >
       <span className={`${third && "flex flex-col gap-2 sm:inline"}`}>
-        <span className={`${third && "hidden sm:inline"} text-primary/70`}>
+        <span className={`${third && "hidden sm:inline"} text-napa`}>
           {first}
         </span>{" "}
         {second && (
           <span
-            className={`text-primary/70 text-2xl px-2 relative top-[1px] ${
+            className={`text-napa text-2xl px-2 relative top-[1px] ${
               third && "hidden sm:inline"
             }`}
           >

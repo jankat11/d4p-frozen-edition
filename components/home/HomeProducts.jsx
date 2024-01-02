@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 
 const data = [
   { product: "büyük tabak", price: "1600", image: "/plates/p3.png" },
-  { product: "büyük tabak", price: "700", image: "/plates/p2.png" },
-  { product: "büyük tabak", price: "850", image: "/plates/p4.png" },
-  { product: "büyük tabak", price: "1400", image: "/plates/p1.png" },
-  { product: "büyük tabak", price: "990", image: "/plates/p5.png" },
   { product: "büyük tabak", price: "2700", image: "/plates/p6.png" },
   { product: "büyük tabak", price: "1350", image: "/plates/p7.png" },
+  { product: "büyük tabak", price: "850", image: "/plates/p4.png" },
+  { product: "büyük tabak", price: "1400", image: "/plates/p1.png" },
+  { product: "büyük tabak", price: "700", image: "/plates/p2.png" },
+  { product: "büyük tabak", price: "990", image: "/plates/p5.png" },
 ];
 
 const HomeProducts = () => {
@@ -50,7 +50,7 @@ const HomeProducts = () => {
             return (
               <div key={i} className=" cursor-pointer mx-2">
                 <div>
-                  <div className="homeproducts-img-cover bg-neutral/80 rounded-sm">
+                  <div className="homeproducts-img-cover bg-westar rounded-sm">
                     <Image
                       src={productItem.image}
                       quality={100}
