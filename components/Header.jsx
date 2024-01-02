@@ -1,10 +1,7 @@
 import PropTypes from "prop-types";
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 import D4P from "./D4P";
 import CartLogo from "./CartLogo";
-import CollectionNav from "./CollectionNav";
-import ContactNav from "./ContactNav";
 import Link from "next/link";
 import Sidebar from "./sidebar/Sidebar";
 
@@ -26,7 +23,6 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
 
   const handleClick = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false);
-
   const handleMouseEnter = () => setDropdownVisible(true);
   const handleMouseLeave = () => setDropdownVisible(false);
   const handleOnNav = () => setIsOnNavbar(true);
@@ -66,8 +62,6 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
               className={` nav-items text-xs h-full ${initialLoad && fadeIn}`}
             >
               <div className="sm:flex sm:flex-row sm:justify-start">
-                {/* <CollectionNav scrollDown={scrollDown} />
-                  <ContactNav scrollDown={scrollDown} /> */}
                 <Link
                   href=""
                   onMouseEnter={handleMouseEnter}
