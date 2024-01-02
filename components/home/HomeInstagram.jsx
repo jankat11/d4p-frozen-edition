@@ -13,7 +13,7 @@ const HomeInstagram = () => {
           classes={"xl:ps-8"}
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 p-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 pt-4 gap-1">
         <div className="relative group">
           <div className="absolute top-[50%] transition-all duration-300 right-[50%] cursor-pointer group-hover:opacity-100 z-20 opacity-0 translate-x-[50%] translate-y-[-50%]">
             <FaInstagram fill="white" size={24} />

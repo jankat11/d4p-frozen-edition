@@ -13,7 +13,7 @@ const About = () => {
       className="flex flex-col items-center shadow bg-aside  relative pb-44 md:pb-24"
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
-        <h2 className="text-primary relative top-8 md:py-10 z-1 text-4xl inline-block">
+        <h2 className="text-napa relative top-8 md:py-10 z-1 text-4xl inline-block">
           <span className="">O</span>ur Story
         </h2>
       </div>
@@ -25,7 +25,7 @@ const About = () => {
             have developed themselves in different disciplines and are united in
             the same worldview.
           </p>
-          <div className="img-container md:aspect-square md:max-w-xs md:p-4 group">
+          <div className="img-container md:aspect-square md:max-w-xs pr-4 md:mt-8 group">
             <div className="img-wrapper">
               <Image
                 src="/about-3.png"
@@ -43,10 +43,10 @@ const About = () => {
             <Image
               src="/about-1.png"
               alt="image could not loaded"
-              className="about-images md:aspect-auto md:max-h-[494px]"
+              className="about-images md:aspect-auto md:max-h-[570px]"
               priority
               width={500}
-              height={850}
+              height={1000}
             />
             <div className="skeleton w-full md:h-[494px] md:w-[1000px] rounded-sm aspect-video md:aspect-auto"></div>
           </div>
@@ -63,7 +63,7 @@ const About = () => {
             15%-20% of it is recycled. As design4theplanet, we care about nature
             and make it our mission to do our part to improve it.
           </p>
-          <div className="img-container md:max-w-sm md:p-4 md:ml-10 my-10 group float-right">
+          <div className="img-container md:max-w-sm  md:ml-10 my-10 group float-right">
             <div className="img-wrapper">
               <Image
                 src="/about-4.png"
@@ -85,7 +85,7 @@ const About = () => {
           </p>
         </span>
         <span className="relative md:bottom-10">
-          <div className="img-container md:max-w-sm md:p-4 md:ml-10 my-10 group float-right">
+          <div className="img-container md:max-w-sm  md:ml-10 my-10 group float-right">
             <div className="img-wrapper">
               <Image
                 src="/about-2.png"
@@ -120,8 +120,8 @@ const About = () => {
             issue with our designs that we work with pleasure at every stage.
           </p>
           <div className="flex gap-6 flex-col justify-center max-w-sm sm:max-w-lg md:max-w-sm mx-auto w-full mt-8 md:mt-0 md:mx-0">
-            <button className=" w-full">contact us</button>
-            <button className="button-primary w-full ">shop now!</button>
+            <button className="button-hillary font-light text-sm tracking-wider border border-hillary w-full">contact us</button>
+            <button className="button-primary font-light text-sm tracking-wider border border-primary w-full ">shop now!</button>
           </div>
         </div>
       </div>
