@@ -1,96 +1,53 @@
 import SidebarContent from "./SidebarContent";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import Hamburger from "./Hamburger";
 
-const Sidebar = ({ handleClick, isMenuOpen, scrollDown }) => {
+const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu }) => {
   const menuIconRef = useRef(null);
 
   const handleMenuClick = () => {
     menuIconRef.current.click();
   };
 
+  const handleOverlay = () => {
+    closeMenu()
+  }
+
+
   return (
-    <section className="drawer">
+    <div className="drawer ">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div
-        ref={menuIconRef}
-        onClick={handleClick}
-        className={` drawer-content  ${isMenuOpen && "open"}`}
-      >
+      <div className="drawer-content">
         <label htmlFor="my-drawer" className="">
-
-          <Hamburger
-            classes={!scrollDown && !isMenuOpen ? "bg-aside" : "bg-primary"}
-          />
-
+          <div
+            ref={menuIconRef}
+            onClick={handleClick}
+            className={`absolute hamburger cursor-pointer -top-[6px] block z-50 ${
+              isMenuOpen && "open"
+            }`}
+          >
+            <Hamburger
+              classes={!scrollDown && !isMenuOpen ? "bg-aside" : "bg-primary"}
+            />
+          </div>
         </label>
-        
       </div>
-      <div className={`drawer-side  ${""} `}>
+      <div className="drawer-side ">
         <label
           htmlFor="my-drawer"
+          onClick={handleOverlay}
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
+
         <div className="  bg-aside  h-screen w-72">
-          <div className="mt-12">
+          <div className="mt-16 px-4">
             <SidebarContent handleMenuClick={handleMenuClick} />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 export default Sidebar;
 
-
-
-
-/* 
-import SidebarContent from "./SidebarContent";
-import { useRef } from "react";
-import Hamburger from "./Hamburger";
-
-const Sidebar = ({ handleClick, isMenuOpen, scrollDown }) => {
-  const menuIconRef = useRef(null);
-
-  const handleMenuClick = () => {
-    menuIconRef.current.click();
-  };
-
-  return (
-    <section className="drawer">
-      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div
-        ref={menuIconRef}
-        onClick={handleClick}
-        className={` drawer-content  ${isMenuOpen && "open"}`}
-      >
-        <label htmlFor="my-drawer" className="">
-
-          <Hamburger
-            classes={!scrollDown && !isMenuOpen ? "bg-aside" : "bg-primary"}
-          />
-
-        </label>
-        
-      </div>
-      <div className={`drawer-side  ${""} `}>
-        <label
-          htmlFor="my-drawer"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
-        <div className="  bg-aside  h-screen w-72">
-          <div className="mt-12">
-            <SidebarContent handleMenuClick={handleMenuClick} />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-export default Sidebar;
-
-
-*/

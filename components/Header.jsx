@@ -13,21 +13,20 @@ const Header = ({
   initialLoad,
   fadeIn,
   isHomePage,
-  fixedValue,
 }) => {
   const headerRef = useRef(null);
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleClick = () => setIsMenuOpen((prev) => !prev);
+  const closeMenu = () => setIsMenuOpen(false)
 
-  useEffect(() => {
+ /*  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflowY = "hidden";
     } else {
       document.body.style.overflowY = "auto";
     }
   }, [isMenuOpen]);
-
+ */
   /*   useEffect(() => {
     console.log(scrollDown);
   }, [scrollDown]); */
@@ -93,7 +92,7 @@ const Header = ({
                 noText={true}
                 scrollDown={scrollDown}
                 size={18}
-                fill={scrollDown || isMenuOpen ? "#674B24" : "#fff"}
+                fill={scrollDown ? "#674B24" : "#fff"}
               />
             </div>
             <div
@@ -105,24 +104,22 @@ const Header = ({
                 scrollDown={scrollDown}
                 handleClick={handleClick}
                 isMenuOpen={isMenuOpen}
+                closeMenu={closeMenu}
               />
             </div>
             <div className="lg:hidden">
               <D4P initialLoad={initialLoad} scrollDown={scrollDown} />
             </div>
             <div
-              className={`absolute z-50 right-6 sm:right-8 translate-y-[2px] flex items-center gap-4 lg:hidden ${
+              className={`absolute right-6 sm:right-8 translate-y-[2px] flex items-center gap-4 lg:hidden ${
                 initialLoad && fadeIn
               }`}
             >
-              {/*  <Link href={"/our-story"}>
-                  <PiInfo size={25} fill="#674B24"/>
-                </Link> */}
               <CartLogo
                 noText={true}
                 classes="relative bottom-[3px]"
                 size={25}
-                fill={scrollDown || isMenuOpen ? "#674B24" : "#fff"}
+                fill={scrollDown ? "#674B24" : "#fff"}
                 isMenuOpen={isMenuOpen}
                 scrollDown={scrollDown}
               />
