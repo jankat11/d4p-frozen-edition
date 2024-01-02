@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="h-screen md:h-auto bg-aside m-0 p-0  relative ">
       <div className="lg:w-full relative z-10 h-screen ">
         <Image
-          src={"/hero.png"}
+          src={"/hero.jpg"}
           width={2500}
           height={2500}
           alt="hero"
