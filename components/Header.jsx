@@ -42,12 +42,13 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
 
   return (
     <section ref={headerRef} className="">
-      <nav className={`nav-bar ${isHomePage && "h-24"}`}>
-        <div
+   
+        <nav
           className={`w-full border-b border-aside
                 fixed top-0
               ${
-                (scrollDown || isDropdownVisible || isOnNavbar) && "bg-aside border-b border-primary"
+                (scrollDown || isDropdownVisible || isOnNavbar) &&
+                "bg-aside border-b border-primary"
               }`}
         >
           <ul className={`nav-link-container font-medium inside-container`}>
@@ -64,37 +65,52 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
               onMouseLeave={handleLeftNav}
               className={` nav-items text-xs h-full ${initialLoad && fadeIn}`}
             >
-              <div className="sm:flex sm:flex-row sm:space-x-10  sm:justify-start">
+              <div className="sm:flex sm:flex-row sm:justify-start">
                 {/* <CollectionNav scrollDown={scrollDown} />
                   <ContactNav scrollDown={scrollDown} /> */}
                 <Link
                   href=""
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
-                  className={`nav-link flex items-center whitespace-nowrap `}
+                  className={`nav-link px-5 flex items-center whitespace-nowrap `}
                 >
                   <span
-                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                    className={`${
+                      !scrollDown &&
+                      !isOnNavbar &&
+                      !isDropdownVisible &&
+                      "text-aside"
+                    }`}
                   >
                     Collections
                   </span>
                 </Link>
                 <Link
                   href=""
-                  className={`nav-link flex items-center whitespace-nowrap `}
+                  className={`nav-link px-5 flex items-center whitespace-nowrap `}
                 >
                   <span
-                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                    className={`${
+                      !scrollDown &&
+                      !isOnNavbar &&
+                      !isDropdownVisible &&
+                      "text-aside"
+                    }`}
                   >
                     Contact
                   </span>
                 </Link>
                 <Link
                   href="/our-story"
-                  className={`nav-link flex items-center whitespace-nowrap `}
+                  className={`nav-link flex px-5 items-center whitespace-nowrap `}
                 >
                   <span
-                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                    className={`${
+                      !scrollDown &&
+                      !isOnNavbar &&
+                      !isDropdownVisible &&
+                      "text-aside"
+                    }`}
                   >
                     Our Story
                   </span>
@@ -102,10 +118,15 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 </Link>
                 <Link
                   href="/"
-                  className={`nav-link flex items-center whitespace-nowrap `}
+                  className={`nav-link px-5 flex items-center whitespace-nowrap `}
                 >
                   <span
-                    className={`${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                    className={`${
+                      !scrollDown &&
+                      !isOnNavbar &&
+                      !isDropdownVisible &&
+                      "text-aside"
+                    }`}
                   >
                     New Arrivals
                   </span>
@@ -115,28 +136,42 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
             <div className="lg:flex text-xs hidden items-center gap-1">
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
+                  !scrollDown &&
+                  !isOnNavbar &&
+                  !isDropdownVisible &&
+                  "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && !isOnNavbar && !isDropdownVisible &&  "text-aside"
+                  !scrollDown &&
+                  !isOnNavbar &&
+                  !isDropdownVisible &&
+                  "text-aside"
                 }`}
               >
                 Cart
               </span>
               <span
                 className={` opacity-0 cursor-default ${
-                  !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
+                  !scrollDown &&
+                  !isOnNavbar &&
+                  !isDropdownVisible &&
+                  "text-aside"
                 }`}
               >
                 Cart
               </span>
               <Link href="/" className={`nav-link  whitespace-nowrap `}>
                 <span
-                  className={` ${!scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"}`}
+                  className={` ${
+                    !scrollDown &&
+                    !isOnNavbar &&
+                    !isDropdownVisible &&
+                    "text-aside"
+                  }`}
                 >
                   Cart
                 </span>
@@ -145,7 +180,11 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 noText={true}
                 scrollDown={scrollDown}
                 size={18}
-                fill={scrollDown || isOnNavbar || isDropdownVisible ? "#674B24" : "#fff"}
+                fill={
+                  scrollDown || isOnNavbar || isDropdownVisible
+                    ? "#674B24"
+                    : "#fff"
+                }
               />
             </div>
             <div
@@ -183,23 +222,26 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
               />
             </div>
           </ul>
-          {isDropdownVisible && (
-            <div
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              className="border-t h-16 border-primary bg-aside"
-            >
-              <div className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium text-primary">
-                {categories.map((category, i) => (
-                  <div className="nav-link" key={i}>
-                    {category}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
+        </nav>
+
+        <nav
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className={`${
+            isDropdownVisible
+              ? "subnav border-t border-b h-32 opacity-1"
+              : "h-0 opacity-0"
+          }  border-primary/30  overflow-hidden transition-all duration-200 fixed top-16 bg-aside w-full`}
+        >
+          <ul className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium text-primary">
+            {categories.map((category, i) => (
+              <li className="nav-link" key={i}>
+                {category}
+              </li>
+            ))}
+          </ul>
+        </nav>
+   
     </section>
   );
 };

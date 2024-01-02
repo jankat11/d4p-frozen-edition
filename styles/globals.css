@@ -180,6 +180,26 @@ h3 {
   }
 }
 
+.appp {
+  animation: appp 1.3s ease-in-out;
+}
+
+@keyframes appp {
+  0% {
+    opacity: 0;
+    fill: #fcfbfb;
+    scale: 10;
+  }
+  2% {
+    opacity: 1;
+    fill: #ad7431;
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    fill: #ad7431;
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -256,6 +276,10 @@ h3 {
   right: 0px;
 }
 
+.subnav.animate__animated.animate__fadeIn {
+  --animate-duration: 2.8s;
+}
+
 /* sm:max-w-[1280px] xl:w-[1280px] */
 
 @layer components {
@@ -265,9 +289,7 @@ h3 {
   /*   .header {
     @apply flex justify-between relative;
   } */
-  .nav-bar {
-    @apply bg-primary/0 mt-0 pb-0  w-full flex sm:flex-col justify-center sm:items-start transition-opacity h-auto;
-  }
+  
   .nav-link-container {
     @apply transition-all duration-0 w-full uppercase flex h-16 items-center justify-center lg:justify-between;
   }
