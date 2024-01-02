@@ -40,7 +40,7 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu }) => {
           className="drawer-overlay"
         ></label>
 
-        <div className="  bg-aside  h-full w-80">
+        <div className="  bg-aside  h-screen w-80">
           <div className="mt-16 px-4">
             <SidebarContent handleMenuClick={handleMenuClick} />
           </div>
