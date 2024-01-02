@@ -14,7 +14,7 @@ const categories = [
 
 const SidebarContent = ({ handleMenuClick }) => {
   return (
-    <section className="  text-lg uppercase relative font-raleway font-semibold">
+    <section className="  text-lg uppercase font-raleway font-semibold">
       <li className="py-2 flex items-baseline" onClick={handleMenuClick}>
         <a className="nav-link">Collections</a>
         <BiDownArrow size={17} fill="#674B24" className="p-0 m-2" />
