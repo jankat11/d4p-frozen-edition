@@ -20,7 +20,7 @@ module.exports = {
         accent: "#DBBF97",
         greenish: "#626724",
         green: "#24674B",
-        info: "#059669",
+        info: "#04946C",
         red: "#672a24",
         violet: "#4B2467",
         purple: "#843FB5",
