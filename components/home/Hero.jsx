@@ -30,7 +30,7 @@ const Hero = () => {
               <span className="">U</span>pcycled Products
             </p>
             <a className="">
-              <button className="button-primary w-full  ">
+              <button className="button-primary w-full ">
                 <div className="flex justify-center items-center gap-1">
                   <span className="font-light text-sm tracking-wider">shop now</span>{" "}
                   {/* <SlArrowDown size={17} className="p-0 m-0" /> */}
