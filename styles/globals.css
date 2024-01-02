@@ -307,7 +307,7 @@ h3 {
     @apply object-cover object-center aspect-[3/2]  sm:aspect-square sm:rounded-sm;
   }
   .home-images-container {
-    @apply bg-base-200 border-8 rounded-sm lg:p-6 sm:p-4 hover:sm:-translate-y-4 hover:sm:translate-x-4 hover:cursor-pointer border-accent my-6 p-6 overflow-hidden relative hover:z-50 hover:sm:scale-110 transition-transform duration-200;
+    @apply border-8 rounded-sm lg:p-6 sm:p-4 hover:sm:-translate-y-4 hover:sm:translate-x-4 hover:cursor-pointer border-accent my-6 p-6 overflow-hidden relative hover:z-50 hover:sm:scale-110 transition-transform duration-200;
   }
   .feature-box {
     @apply rounded-sm py-8  px-4 text-center text-base max-w-sm md:max-w-[14rem];
