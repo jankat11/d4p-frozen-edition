@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const D4P = ({ scrollDown, isOnNavbar, isDropdownVisible }) => {
   return (
-    <Link href={"/"} className="relative  shrink-0">
+    <Link href={"/"} className="relative h-full flex items-center shrink-0">
       <Image
         width={1560}
         height={50}
