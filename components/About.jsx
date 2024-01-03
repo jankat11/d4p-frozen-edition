@@ -13,7 +13,7 @@ const About = () => {
       className="flex flex-col items-center shadow bg-aside  relative pb-44 md:pb-24"
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
-        <h2 className="text-napa relative top-8 md:py-10 z-1 text-4xl inline-block">
+        <h2 className="text-napaDark relative top-8 md:py-10 z-1 text-4xl inline-block">
           <span className="">O</span>ur Story
         </h2>
       </div>

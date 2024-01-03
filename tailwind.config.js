@@ -32,7 +32,8 @@ module.exports = {
         asideLight: "#FDFCFA",
         westar: "#E0DBD3",
         hillary: "#ACA48C",
-        napa: "#AC9C8C"
+        napa: "#AC9C8C",
+        napaDark: "#9b8c7e"
       },
       screens: {
         md : "810px"
