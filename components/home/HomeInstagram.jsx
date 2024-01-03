@@ -1,6 +1,5 @@
-import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
+import InstagramModal from "../InstagramModal";
 
 const data = [
   "/homepage/h1.webp",
@@ -11,7 +10,7 @@ const data = [
 
 const HomeInstagram = () => {
   return (
-    <section className="pb-8">
+    <section className="pb-12">
       <div className="pb-2 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"INSTAGRAM"}
@@ -22,17 +21,8 @@ const HomeInstagram = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 pt-4 gap-1">
         {data.map((imageItem, i) => (
-          <div key={i} className="relative group">
-            <div className="home-instagram-logo">
-              <FaInstagram fill="white" size={24} />
-            </div>
-            <Image
-              src={imageItem}
-              width={500}
-              height={500}
-              className="home-instagram-img"
-              alt="instagram"
-            />
+          <div key={i}>
+            <InstagramModal imageItem={imageItem} />
           </div>
         ))}
       </div>

@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en" class="scroll-smooth">
       <Head />
       <body class="h-screen ">
+        <div id='modal'></div>
         <Main />
         <NextScript />
       </body >
