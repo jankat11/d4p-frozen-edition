@@ -38,7 +38,7 @@ const InstagramModal = ({ imageItem }) => {
           <FaInstagram fill="white" size={24} />
         </div>
         <Image
-          src={imageItem}
+          src={imageItem.image}
           width={500}
           height={500}
           className="home-instagram-img"
@@ -58,7 +58,7 @@ const InstagramModal = ({ imageItem }) => {
             <figure>
               <Image
                 className=""
-                src={imageItem}
+                src={imageItem.image}
                 alt="Album"
                 height={800}
                 width={800}
@@ -69,17 +69,11 @@ const InstagramModal = ({ imageItem }) => {
                 handleClose={handleClose}
                 classes={"hidden lg:block"}
               />
-
               <div className="p-6">
                 <div className="text-sm pb-6 text-gray-500">
-                  Hayat dönüştürünce güzel! İleri dönüştürülmüş kağıt hamurundan
-                  tepsi. Toksik olmayan doğa dostu boya ve cila kullanılarak
-                  elde üretilmiştir. Recycling is out, upcycling is in… Upcycled
-                  and hand-made papier-maché tray. Coloured and varnished with
-                  non-toxic materials.
+                  {imageItem.description}
                   <div className="mt-4">
-                    #upcycle #papiermache #papiermaché #homedecor #gift
-                    #ecofriendly
+                  {imageItem.hash}
                   </div>
                 </div>
               </div>
