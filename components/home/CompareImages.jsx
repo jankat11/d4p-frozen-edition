@@ -9,6 +9,7 @@ const CompareImages = () => {
           first={"THE HEALING POVER OF ART"}
           second={"OUR STORY"}
           third={true}
+          link={"/our-story"}
         />
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-4 sm:px-4  xl:justify-between ">

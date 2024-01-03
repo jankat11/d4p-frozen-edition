@@ -1,4 +1,6 @@
-const SectionTitle = ({ first, second, classes, third }) => {
+import Link from "next/link";
+
+const SectionTitle = ({ first, second, classes, third, link }) => {
   return (
     <div
       className={`ps-4 font-raleway  w-full whitespace-nowrap ${
@@ -21,12 +23,12 @@ const SectionTitle = ({ first, second, classes, third }) => {
         <span className="text-primary">{second}</span>
       </span>
       {third && (
-        <span className="text-info px-4 cursor-pointer whitespace-nowrap">
+        <Link href={link ? link : ""} className="text-info px-4 cursor-pointer whitespace-nowrap">
           <div className="h-3 w-3 rounded-full inline-block bg-info "></div>{" "}
           <span className="px-4 relative bottom-[2px] right-[2px] text-xs tracking-widest font-medium">
             {"explore"}
           </span>
-        </span>
+        </Link>
       )}
     </div>
   );

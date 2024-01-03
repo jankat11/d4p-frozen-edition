@@ -6,9 +6,9 @@ import { useState, useEffect } from "react";
 const data = [
   { product: "büyük tabak", price: "1600", image: "/plates/p3.png" },
   { product: "büyük tabak", price: "2700", image: "/plates/p6.png" },
-  { product: "büyük tabak", price: "850", image: "/plates/p4.png" },
-  { product: "büyük tabak", price: "1350", image: "/plates/p7.png" },
   { product: "büyük tabak", price: "1400", image: "/plates/p1.png" },
+  { product: "büyük tabak", price: "1350", image: "/plates/p7.png" },
+  { product: "büyük tabak", price: "850", image: "/plates/p4.png" },
   { product: "büyük tabak", price: "700", image: "/plates/p8.png" },
   { product: "büyük tabak", price: "990", image: "/plates/p5.png" },
 ];
