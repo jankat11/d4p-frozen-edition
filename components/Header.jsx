@@ -199,7 +199,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 closeMenu={closeMenu}
               />
             </div>
-            <div className="lg:hidden">
+            <div className="lg:hidden h-full flex items-center">
               <D4P
                 initialLoad={initialLoad}
                 scrollDown={scrollDown}
