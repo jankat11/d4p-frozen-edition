@@ -57,7 +57,7 @@ const InstagramModal = ({ imageItem }) => {
             <InstagramTitle handleClose={handleClose} classes={"lg:hidden"} />
             <figure>
               <Image
-                className="image-full"
+                className=""
                 src={imageItem}
                 alt="Album"
                 height={800}
