@@ -9,9 +9,11 @@ const InstagramTitle = ({classes, handleClose}) => {
           <div className="border p-2 rounded-full">
             <FaInstagram fill="black" size={30} />
           </div>
-          <p className="text-black tracking-wider font-medium cursor-pointer">
-            design4theplanet
-          </p>
+          <a href="https://www.instagram.com/design4theplanet" target="_blank">
+            <p className="text-black tracking-wider font-medium cursor-pointer">
+              design4theplanet
+            </p>
+          </a>
         </div>
         <div className="card-actions justify-end">
           <button onClick={handleClose} className="mr-2">
