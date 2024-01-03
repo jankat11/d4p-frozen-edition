@@ -33,10 +33,13 @@ module.exports = {
         westar: "#E0DBD3",
         hillary: "#ACA48C",
         napa: "#AC9C8C",
-        napaDark: "#9b8c7e"
+        napaDarker: "#9b8c7e",
+        napaDark: "#786d62",
+        napaDarkest: "#675e54"
       },
       screens: {
-        md : "810px"
+        md : "810px",
+        lg : "1025px"
       },
     },
   },

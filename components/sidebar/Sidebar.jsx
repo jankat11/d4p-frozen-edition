@@ -41,7 +41,7 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
         ></label>
 
         <div className="  bg-aside  h-screen w-80">
-          <div className="mt-16 px-4">
+          <div className="mt-16 px-6">
             <SidebarContent handleMenuClick={handleMenuClick} />
           </div>
         </div>

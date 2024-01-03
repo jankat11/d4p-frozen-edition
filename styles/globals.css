@@ -329,7 +329,7 @@ h3 {
     @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-normal;
   }
   .about-gallery {
-    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-primary font-medium;
+    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-napaDarkest font-medium;
   }
   .home-images {
     @apply object-cover object-center aspect-[3/2]  sm:aspect-square sm:rounded-sm;
