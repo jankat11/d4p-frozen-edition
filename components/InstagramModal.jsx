@@ -53,7 +53,7 @@ const InstagramModal = ({ imageItem }) => {
         }`}
       >
         <div ref={cardRef} onClick={handleCardClick} className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container relative z-10">
-          <div className=" card lg:card-side bg-base-100 shadow-xl overflow-hidden">
+          <div className=" card lg:card-side bg-white shadow-xl overflow-hidden">
             <InstagramTitle handleClose={handleClose} classes={"lg:hidden"} />
             <figure>
               <Image
