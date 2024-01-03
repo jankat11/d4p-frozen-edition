@@ -34,7 +34,7 @@ const SidebarContent = ({ handleMenuClick }) => {
         </li>
         <li className="py-6" onClick={handleMenuClick}>
           <a className="nav-link">
-            <span className=" flex justify-start items-center gap-1">
+            <span >
               Contact
             </span>
           </a>

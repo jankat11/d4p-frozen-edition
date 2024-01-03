@@ -22,7 +22,7 @@ const HomeInstagram = () => {
             src="/homepage/h1.webp"
             width={500}
             height={500}
-            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300"
+            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300 home-prod-img"
             alt="instagram"
           />
         </div>
@@ -34,7 +34,7 @@ const HomeInstagram = () => {
             src="/homepage/h2.webp"
             width={500}
             height={500}
-            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300"
+            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300 home-prod-img"
             alt="instagram"
           />
         </div>
@@ -46,7 +46,7 @@ const HomeInstagram = () => {
             src="/homepage/h3.webp"
             width={500}
             height={500}
-            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300"
+            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300 home-prod-img"
             alt="instagram"
           />
         </div>
@@ -58,7 +58,7 @@ const HomeInstagram = () => {
             src="/homepage/h4.webp"
             width={500}
             height={500}
-            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300"
+            className="group-hover:brightness-50 group-hover:cursor-pointer relative z-10 transition-all duration-300 home-prod-img"
             alt="instagram"
           />
         </div>
