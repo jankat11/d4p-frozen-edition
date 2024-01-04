@@ -108,8 +108,8 @@ const About = () => {
             <span>• Respect for nature</span> <br /> <br />
             <span>• Sustainability</span> <br /> <br />
             <span className="relative">
-              • Collaboration with Local{" "}
-              <span className="relative xs:left-[17px] sm:left-0">Craftsmen</span>
+              • Collaboration with Local{" "} <br></br>
+              <span className="relative left-[17px]">Craftsmen</span>
             </span>
           </p>
         </span>
