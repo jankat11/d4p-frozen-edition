@@ -61,9 +61,9 @@ const InstagramModal = ({ imageItem }) => {
           <div
             ref={cardRef}
             onClick={handleCardClick}
-            className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container "
+            className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:block h-[calc(100%-100px)] lg:h-auto flex items-center "
           >
-            <div className=" card max-h-[650px] lg:card-side bg-white shadow-xl overflow-y-auto ">
+            <div className=" card h-full lg:h-auto  lg:card-side bg-white shadow-xl overflow-y-auto ">
               <InstagramTitle handleClose={handleClose} classes={"lg:hidden"} />
               <figure>
                 <Image
