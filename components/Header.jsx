@@ -180,7 +180,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
             />
           </div>
           <div
-            className={`absolute z-50 left-4 block  lg:hidden ${
+            className={`absolute z-30 left-4 block  lg:hidden ${
               initialLoad && fadeIn
             }`}
           >
