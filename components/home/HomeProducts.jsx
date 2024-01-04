@@ -50,7 +50,7 @@ const HomeProducts = () => {
             return (
               <div key={i} className=" cursor-pointer ">
                 <div>
-                  <div className="homeproducts-img-cover rounded-md ">
+                  <div className="homeproducts-img-cover">
                     <Image
                       src={productItem.image}
                       quality={100}
@@ -63,8 +63,8 @@ const HomeProducts = () => {
 
                   <div className="homeproducts-info">
                     <p className="whitespace-nowrap">{productItem.product}</p>
-                    <p className="hidden sm:inline px-4">|</p>
-                    <p className="text-base font-semibold sm:text-sm mt-2 sm:mt-0">
+                    <p className="inline px-4">|</p>
+                    <p className="font-semibold text-sm mt-0">
                       {productItem.price}₺
                     </p>
                   </div>

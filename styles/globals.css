@@ -373,7 +373,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-primary text-sm  mt-2 flex flex-col sm:flex-row justify-center p-2 lg:px-8;
+    @apply text-primary text-sm  mt-2 flex  sm:justify-center p-2 lg:px-8;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square;
