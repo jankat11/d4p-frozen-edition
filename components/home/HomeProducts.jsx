@@ -4,10 +4,10 @@ import ReactCarousel from "../carousel/Carousel";
 import { useState, useEffect } from "react";
 
 const data = [
-  { product: "amorf tabak", price: "1600", image: "/plates/p3.png" },
-  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak küçük boy", price: "1400", image: "/plates/p1.png" },
   { product: "tabak orta boy", price: "1350", image: "/plates/p7.png" },
+  { product: "amorf tabak", price: "1600", image: "/plates/p3.png" },
+  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak küçük boy", price: "850", image: "/plates/p4.png" },
   { product: "tepsi orta boy", price: "700", image: "/plates/p8.png" },
   { product: "tabak büyük", price: "990", image: "/plates/p5.png" },
@@ -50,7 +50,7 @@ const HomeProducts = () => {
             return (
               <div key={i} className=" cursor-pointer mx-2">
                 <div>
-                  <div className="homeproducts-img-cover bg-westar rounded-sm">
+                  <div className="homeproducts-img-cover rounded-md ">
                     <Image
                       src={productItem.image}
                       quality={100}

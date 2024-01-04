@@ -61,7 +61,7 @@ const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
               min: 0,
             },
             items: 1,
-            partialVisibilityGutter: 70,
+            partialVisibilityGutter: 110,
           },
         }}
         rewind={false}
