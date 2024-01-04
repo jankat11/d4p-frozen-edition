@@ -63,7 +63,7 @@ const HomeProducts = () => {
 
                   <div className="homeproducts-info">
                     <p className="whitespace-nowrap">{productItem.product}</p>
-                    <p className="inline px-2 sm:px-4">|</p>
+                    <p className="inline px-4">|</p>
                     <p className="font-semibold text-sm mt-0">
                       {productItem.price}₺
                     </p>
