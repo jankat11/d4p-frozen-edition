@@ -20,7 +20,7 @@ const Hero = () => {
           alt="hero"
           priority
           quality={100}
-          className="object-cover  object-center h-screen home-prod-img"
+          className="object-cover object-center h-screen home-prod-img"
         />
       </div>
   
