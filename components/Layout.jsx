@@ -58,21 +58,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
-{
-  /*  <div
-               className={`bg-aside screen-cover ${fadeIn}`}
-             ></div> */
-}
-{
-  /*  <div className="w-fit absolute z-50 top-[35%]">
-               <Image 
-               src={"/brand.png"}
-               height={400}
-               width={400}
-               alt="brand"
-               className="w-36 invert brightness-0"
-               />
-     
-             </div> */
-}
