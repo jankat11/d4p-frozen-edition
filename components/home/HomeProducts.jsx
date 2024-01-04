@@ -4,10 +4,10 @@ import ReactCarousel from "../carousel/Carousel";
 import { useState, useEffect } from "react";
 
 const data = [
-  { product: "amorf tabak", price: "1600", image: "/plates/p3.png" },
   { product: "tabak küçük boy", price: "1400", image: "/plates/p1.png" },
-  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak orta boy", price: "1350", image: "/plates/p7.png" },
+  { product: "amorf tabak", price: "1600", image: "/plates/p3.png" },
+  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak küçük boy", price: "850", image: "/plates/p4.png" },
   { product: "tepsi orta boy", price: "700", image: "/plates/p8.png" },
  
@@ -62,9 +62,9 @@ const HomeProducts = () => {
                   </div>
 
                   <div className="homeproducts-info">
-                    <p className="whitespace-nowrap">{productItem.product}</p>
-                    <p className="inline px-3">|</p>
-                    <p className="font-semibold text-sm mt-0">
+                    <p className="whitespace-nowrap text-xs sm:text-sm">{productItem.product}</p>
+                    <p className="hidden sm:inline px-2">|</p>
+                    <p className="font-semibold text-sm mt-1 sm:mt-0">
                       {productItem.price}₺
                     </p>
                   </div>
