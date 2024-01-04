@@ -20,7 +20,7 @@ const ProductList = () => {
       <section className="py-10 bg-aside">
         <div className="mx-auto grid max-w-6xl  grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {data.map((product, i) => (
-            <article key={i} className="rounded-xl  shadow border border-primary/20 p-3  hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+            <article key={i} className="rounded-xl  shadow border border-napa/20 p-3  hover:shadow-xl hover:transform  hover:scale-105 duration-300 ">
               <a href="#">
                 <div className="relative flex items-end overflow-hidden rounded-xl">
                   <img

@@ -48,7 +48,7 @@ const HomeProducts = () => {
         >
           {data.map((productItem, i) => {
             return (
-              <div key={i} className=" cursor-pointer mx-2">
+              <div key={i} className=" cursor-pointer ">
                 <div>
                   <div className="homeproducts-img-cover rounded-md ">
                     <Image

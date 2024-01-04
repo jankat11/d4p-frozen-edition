@@ -23,12 +23,15 @@ const SectionTitle = ({ first, second, classes, third, link }) => {
         <span className="text-primary">{second}</span>
       </span>
       {third && (
-        <Link href={link ? link : ""} className="text-info px-4 cursor-pointer whitespace-nowrap">
+        <div
+          href={link ? link : ""}
+          className="text-info px-4 inline-block cursor-pointer whitespace-nowrap"
+        >
           <div className="h-3 w-3 rounded-full inline-block bg-info "></div>{" "}
           <span className="px-4 relative bottom-[2px] right-[2px] text-xs tracking-widest font-medium">
             {"explore"}
           </span>
-        </Link>
+        </div>
       )}
     </div>
   );
