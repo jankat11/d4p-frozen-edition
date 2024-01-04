@@ -22,7 +22,7 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
           <div
             ref={menuIconRef}
             onClick={handleClick}
-            className={`absolute hamburger cursor-pointer -top-[6px] block z-50 ${
+            className={`absolute hamburger cursor-pointer -top-[6px] block z-40 ${
               isMenuOpen && "open"
             }`}
           >

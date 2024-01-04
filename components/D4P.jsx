@@ -9,7 +9,7 @@ const D4P = ({ scrollDown, isOnNavbar, isDropdownVisible }) => {
         height={50}
         src="/brandMobile.png"
         quality={100}
-        className={`w-[156px] pt-2  lg:pe-2 z-40 ${
+        className={`w-[156px] pt-2  lg:pe-2 z-30 ${
           !scrollDown && !isOnNavbar && !isDropdownVisible
             ? "invert brightness-0"
             : ""
