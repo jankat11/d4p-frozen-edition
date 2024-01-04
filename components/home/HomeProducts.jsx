@@ -57,6 +57,7 @@ const HomeProducts = () => {
                       width={700}
                       height={825}
                       className="homeproducts-img"
+                      loading="eager"
                       alt="photo"
                     />
                   </div>
