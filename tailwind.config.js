@@ -40,6 +40,7 @@ module.exports = {
         napaDarkest: "#675e54"
       },
       screens: {
+        xs : "464px",
         md : "810px",
         lg : "1025px"
       },
