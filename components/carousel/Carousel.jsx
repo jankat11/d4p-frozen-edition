@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
   const CustomDot = ({ index, onClick, active }) => {
     return (
-      <div className="border-1 sm:hidden px-1 pt-6 pb-2 relative left-24 ">
+      <div className="border-1 sm:hidden px-1 pt-6 pb-2 relative left-[104px] ">
         <button
           onClick={(e) => {
             onClick();
