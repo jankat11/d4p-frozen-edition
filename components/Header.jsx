@@ -43,7 +43,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
                 fixed top-0
               ${
                 (scrollDown || isDropdownVisible || isOnNavbar) &&
-                "bg-aside border-b border-primary"
+                "bg-aside border-b border-primary/30"
               }`}
       >
         <ul className={`nav-link-container font-medium inside-container`}>

@@ -1,5 +1,6 @@
 import SectionTitle from "../SectionTitle";
 import InstagramModal from "../InstagramModal";
+import { FaInstagram } from "react-icons/fa";
 
 const data = [
   {image: "/homepage/h1.webp", description : "Hayat dönüştürünce güzel! İleri dönüştürülmüş kağıt hamurundan tepsi. Toksik olmayan doğa dostu boya ve cila kullanılarak elde üretilmiştir. Recycling is out, upcycling is in… Upcycled and hand-made papier-maché tray. Coloured and varnished with non-toxic materials.", hash: "#upcycle #papiermache #papiermaché #homedecor #gift #ecofriendly"},
@@ -14,7 +15,7 @@ const HomeInstagram = () => {
     <section className="pb-12">
       <div className="pb-2 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
-          first={"INSTAGRAM"}
+          first={<FaInstagram fill="#674B24" size={24} />}
           second={"FOLLOW US"}
           third={false}
           classes={"xl:ps-8"}

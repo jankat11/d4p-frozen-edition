@@ -14,13 +14,13 @@ const About = () => {
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
         <h2 className="text-primaryLight relative top-8 md:py-10 z-1 text-4xl inline-block">
-          <span className="">O</span>ur Story
+          <span className="font-serif text-6xl">O</span>ur story
         </h2>
       </div>
       <section className="about-gallery">
         <div className="md:w-fit w-full px-0 py-10 md:p-0  md:h-[550px] order-1 flex flex-col gap-10 md:gap-4 justify-between items-center md:items-start">
           <p className="about-text">
-            <span className="font-serif text-3xl ">D</span>esign4theplanet is a
+            <span className=" ">d</span>esign4theplanet is a
             nature-sensitive upcycling workshop founded by two close friends who
             have developed themselves in different disciplines and are united in
             the same worldview.
@@ -34,7 +34,7 @@ const About = () => {
                 width={500}
                 height={500}
               />
-              <div className="skeleton w-full sm:w-[1000px] rounded-sm md:aspect-square aspect-video"></div>
+              
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const About = () => {
               width={500}
               height={1000}
             />
-            <div className="skeleton w-full md:h-[494px] md:w-[1000px] rounded-sm aspect-video md:aspect-auto"></div>
+           
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@ const About = () => {
                 width={500}
                 height={500}
               />
-              <div className="skeleton w-full md:w-[1000px] rounded-sm aspect-video md:aspect-square"></div>
+          
             </div>
           </div>
           <p className="about-text md:ml-auto mt-8 md:max-w-[748px] md:pt-4 md:hyphens-auto">
@@ -94,7 +94,7 @@ const About = () => {
                 height={500}
                 alt="about"
               ></Image>
-              <div className="skeleton w-full md:w-[1000px] rounded-sm aspect-video md:aspect-square"></div>
+              {/* <div className="skeleton w-full md:w-[1000px] rounded-sm aspect-video md:aspect-square"></div> */}
             </div>
           </div>
           <p className="about-text md:ml-auto mt-8 md:max-w-[748px] relative md:bottom-4 md:hyphens-auto">
@@ -109,7 +109,7 @@ const About = () => {
             <span>• Sustainability</span> <br /> <br />
             <span className="relative">
               • Collaboration with Local{" "}
-              <span className="relative md:left-[17px]">Craftsmen</span>
+              <span className="relative xs:left-[17px] sm:left-0">Craftsmen</span>
             </span>
           </p>
         </span>

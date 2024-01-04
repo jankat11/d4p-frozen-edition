@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Lato&family=Parisienne&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Parisienne&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -331,7 +331,7 @@ h3 {
     @apply flex relative overflow-hidden rounded-sm w-full;
   }
   .about-images {
-    @apply group-hover:scale-105 shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
+    @apply  shrink-0 transition-all duration-300 aspect-video object-cover md:mr-8 mr-0;
   }
   .about-text {
     @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-normal;

@@ -3,17 +3,17 @@ import Link from "next/link";
 const SectionTitle = ({ first, second, classes, third, link }) => {
   return (
     <div
-      className={`ps-4 font-raleway  w-full whitespace-nowrap ${
+      className={`ps-4 font-raleway w-full sm:w-fit whitespace-nowrap ${
         third && "flex sm:block items-end justify-between"
       } ${classes}`}
     >
-      <span className={`${third && "flex flex-col gap-2 sm:inline"}`}>
-        <span className={`${third && "hidden sm:inline"} text-napa`}>
+      <span className={`${third ? "flex flex-col gap-2 sm:inline" : "flex items-center"}`}>
+        <span className={`${third && "hidden sm:inline"} text-primary`}>
           {first}
         </span>{" "}
         {second && (
           <span
-            className={`text-napa text-2xl px-2 relative top-[1px] ${
+            className={`text-primary/60 text-2xl px-2 relative top-[1px] ${
               third && "hidden sm:inline"
             }`}
           >
