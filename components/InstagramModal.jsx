@@ -61,7 +61,7 @@ const InstagramModal = ({ imageItem }) => {
           <div
             ref={cardRef}
             onClick={handleCardClick}
-            className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:block h-[calc(100%-100px)] lg:h-auto flex items-center "
+            className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:block h-[calc(100%-0px)] lg:h-auto flex items-center "
           >
             <div className=" card h-full lg:h-auto  lg:card-side bg-white shadow-xl overflow-y-auto ">
               <InstagramTitle handleClose={handleClose} classes={"lg:hidden"} />
@@ -82,10 +82,6 @@ const InstagramModal = ({ imageItem }) => {
                 <div className="p-6 ">
                   <div className="text-sm pb-6   text-gray-500">
                     {imageItem.description}
-                    {imageItem.description}
-                    {imageItem.description}
-                    {imageItem.description}
-
                     <div className="mt-4">{imageItem.hash}</div>
                   </div>
                 </div>
