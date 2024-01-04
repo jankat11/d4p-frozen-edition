@@ -402,6 +402,12 @@ h3 {
   .inside-container {
     @apply px-4 md:max-w-4xl lg:max-w-5xl max-w-5xl xl:max-w-7xl mx-auto;
   }
+  .modal-overlay {
+    @apply bg-black/80 fixed top-0 right-0 z-50 left-0 bottom-0 h-full w-full justify-center items-center;
+  }
+  .modal-card {
+    @apply md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:block h-[calc(100%-0px)] lg:h-auto flex items-center;
+  }
 }
 /* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
 .nav-link-container {

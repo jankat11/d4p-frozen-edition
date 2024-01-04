@@ -54,16 +54,16 @@ const InstagramModal = ({ imageItem }) => {
         <div
           ref={overlayRef}
           onClick={handleOverlayClick}
-          className={`bg-black/80 fixed top-0 right-0 z-50 left-0 bottom-0 h-full w-full justify-center items-center ${
+          className={`modal-overlay ${
             isModalOpen ? "flex" : "hidden"
           }`}
         >
           <div
             ref={cardRef}
             onClick={handleCardClick}
-            className="md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:block h-[calc(100%-0px)] lg:h-auto flex items-center "
+            className="modal-card"
           >
-            <div className=" card h-full lg:h-auto  lg:card-side bg-white shadow-xl overflow-y-auto ">
+            <div className="card h-full lg:h-auto lg:card-side bg-white shadow-xl overflow-y-auto">
               <InstagramTitle handleClose={handleClose} classes={"lg:hidden"} />
               <figure>
                 <Image
