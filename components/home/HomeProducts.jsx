@@ -10,7 +10,7 @@ const data = [
   { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak küçük boy", price: "850", image: "/plates/p4.png" },
   { product: "tepsi orta boy", price: "700", image: "/plates/p8.png" },
-  { product: "tabak büyük", price: "990", image: "/plates/p5.png" },
+ 
 ];
 
 const HomeProducts = () => {
@@ -63,7 +63,7 @@ const HomeProducts = () => {
 
                   <div className="homeproducts-info">
                     <p className="whitespace-nowrap">{productItem.product}</p>
-                    <p className="inline px-4">|</p>
+                    <p className="inline px-3">|</p>
                     <p className="font-semibold text-sm mt-0">
                       {productItem.price}₺
                     </p>
