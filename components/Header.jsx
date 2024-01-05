@@ -1,7 +1,7 @@
 "use client";
 import PropTypes from "prop-types";
-import { useState, useEffect, useRef } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import D4P from "./D4P";
 import CartLogo from "./CartLogo";
 import Link from "next/link";
@@ -21,14 +21,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isOnNavbar, setIsOnNavbar] = useState(false);
-
   const [scrollHeight, setScrollHeight] = useState(0);
   const [initialLoad, setInitialLoad] = useState(true);
-  const fixedValue = scrollHeight >= 21;
-  const { pathname } = usePathname();
 
+  const pathname  = usePathname();
   const fadeIn = "animate__animated animate__fadeIn";
-  const isHomePage = true;
+  const isHomePage = pathname === "/";
   const scrollDown = scrollHeight >= 70 || !isHomePage;
 
   

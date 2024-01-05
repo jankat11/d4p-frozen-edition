@@ -1,15 +1,12 @@
-"use client"
-import { useState, useRef } from "react";
 import Image from "next/image";
-import { SlArrowDown } from "react-icons/sl";
+
 
 const Hero = () => {
-  const [height, setHeight] = useState(0);
-  const storeRef = useRef();
+/*   const storeRef = useRef(); */
 
-  const handleClick = () => {
+/*   const handleClick = () => {
     storeRef.current.scrollIntoView({ behavior: "smooth" });
-  };
+  }; */
 
   return (
     <section className="h-screen md:h-auto bg-aside m-0 p-0  relative ">

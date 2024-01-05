@@ -1,11 +1,10 @@
-"use client"
-import { useState, useEffect } from "react";
+
 /* import { shopifyFetch, storefront } from "@/utils"; */
-import axios from "axios";
+/* import axios from "axios"; */
 import IntroductionItem from "../IntroductionItem";
 
 const IntroductionList = () => {
-  const [isMounted, setIsMounted] = useState({});
+
 
   return (
     <section id="home-store" className="relative">
