@@ -4,8 +4,8 @@ import ReactCarousel from "../carousel/Carousel";
 import { useState, useEffect } from "react";
 
 const data = [
-  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak küçük boy", price: "1400", image: "/plates/p1.png" },
+  { product: "tabak orta boy", price: "2700", image: "/plates/p6.png" },
   { product: "tabak orta boy", price: "1350", image: "/plates/p7.png" },
   { product: "tepsi orta boy", price: "700", image: "/plates/p8.png" },
   { product: "tabak küçük boy", price: "850", image: "/plates/p4.png" },
