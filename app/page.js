@@ -10,31 +10,14 @@ import HomeInstagram from "@/components/home/HomeInstagram";
 import CompareImages from "@/components/home/CompareImages";
 
 export default function Home() {
-
-
   return (
     <>
-
-     
-   
-          <Hero />
-          <IntroductionList />
-          <HomeProducts />
-          <HomeVitra />
-          <CompareImages />
-          <HomeInstagram />
-   
-     
+      <Hero />
+      <IntroductionList />
+      <HomeProducts />
+      <HomeVitra />
+      <CompareImages />
+      <HomeInstagram />
     </>
   );
-}
-
- /*  <Map /> */
-{
-  /* <CompareImages /> */
-}
-{
-  /* <Features /> */
-}
-{
 }
