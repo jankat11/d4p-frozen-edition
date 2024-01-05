@@ -8,6 +8,10 @@
   @apply rounded-none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .inline-block {
   display: inline-block;
 }

@@ -24,6 +24,7 @@ const Header = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [initialLoad, setInitialLoad] = useState(true);
 
+
   const pathname  = usePathname();
   const fadeIn = "animate__animated animate__fadeIn";
   const isHomePage = pathname === "/";

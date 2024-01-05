@@ -22,7 +22,9 @@ const HomeProducts = () => {
     setWidth(window.innerWidth);
   };
 
+  
   useEffect(() => {
+    window.scrollBy(0, 1);
     updateWindowDimensions();
     setIsOnClient(true);
     window.addEventListener("resize", updateWindowDimensions);
