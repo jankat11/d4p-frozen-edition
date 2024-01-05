@@ -1,5 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import { iconData } from "../data";
+/* import { iconData } from "../data"; */
 import PropTypes from "prop-types";
 
 const FeatureBox = ({ title, content }) => {
@@ -15,16 +15,16 @@ const FeatureBox = ({ title, content }) => {
         inView && "opacity-100"
       }`}
     >
-      {iconData[title]}
-      <h3 className="text-accent">{title}</h3>
+{/*       {iconData[title]}
+      <h3 className="text-accent">{title}</h3> */}
       {/* <p className="md:max-w-[11rem] text-primary mx-auto">{content}</p> */}
     </article>
   );
 };
 
-FeatureBox.propTypes = {
+/* FeatureBox.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-};
+}; */
 
 export default FeatureBox;
