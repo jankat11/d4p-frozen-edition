@@ -1,5 +1,7 @@
 /* import { useInView } from "react-intersection-observer"; */
 import Image from "next/image";
+import { Inter, Parisienne } from "next/font/google";
+const paris = Parisienne({weight: "400", subsets: ["latin"] });
 
 const About = () => {
   /* const [ref, inView] = useInView({
@@ -14,7 +16,7 @@ const About = () => {
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
         <h2 className="text-primaryLight relative top-8 md:py-10 z-1 text-4xl inline-block">
-          <span className="font-serif text-6xl">O</span>ur story
+          <span className={`text-6xl ${paris.className}`}>O</span>ur story
         </h2>
       </div>
       <section className="about-gallery">
