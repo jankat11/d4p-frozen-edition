@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import PropTypes from "prop-types";
 import { useState, useEffect, useRef } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import D4P from "./D4P";
 import CartLogo from "./CartLogo";
 import Link from "next/link";
@@ -16,18 +17,40 @@ const categories = [
   "Backgammon",
 ];
 
-const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
-  const headerRef = useRef(null);
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isOnNavbar, setIsOnNavbar] = useState(false);
 
+  const [scrollHeight, setScrollHeight] = useState(0);
+  const [initialLoad, setInitialLoad] = useState(true);
+  const fixedValue = scrollHeight >= 21;
+  const { pathname } = usePathname();
+
+  const fadeIn = "animate__animated animate__fadeIn";
+  const isHomePage = true;
+  const scrollDown = scrollHeight >= 70 || !isHomePage;
+
+  
   const handleClick = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false);
   const handleMouseEnter = () => setDropdownVisible(true);
   const handleMouseLeave = () => setDropdownVisible(false);
   const handleOnNav = () => setIsOnNavbar(true);
   const handleLeftNav = () => setIsOnNavbar(false);
+
+  useEffect(() => {
+    document.body.style.overflowX = "hidden";
+    const removeInitialAnimation = setTimeout(() => {
+      setInitialLoad(false);
+    }, 2000);
+    const addScroll = () => setScrollHeight(window.scrollY);
+    window.addEventListener("scroll", addScroll);
+    return () => {
+      window.removeEventListener("scroll", addScroll);
+      clearTimeout(removeInitialAnimation);
+    };
+  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -38,7 +61,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
   }, [isMenuOpen]);
 
   return (
-    <section ref={headerRef} className="">
+    <>
       <nav
         className={`w-full border-b border-aside
                 fixed top-0
@@ -234,7 +257,7 @@ const Header = ({ scrollDown, initialLoad, fadeIn, isHomePage }) => {
           ))}
         </ul>
       </nav>
-    </section>
+    </>
   );
 };
 
