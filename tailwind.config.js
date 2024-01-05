@@ -7,11 +7,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      /* sans : ["Inter", "mono"], */
+/*     fontFamily: {
+      sans : ["Inter", "mono"],
       serif: ["Parisienne", "mono"],
       garamond: ["EB Garamond", "mono"],
-    },
+    }, */
   
     extend: {
       colors: {
