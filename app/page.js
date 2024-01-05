@@ -1,7 +1,6 @@
 import "animate.css";
 import Hero from "../components/home/Hero";
 import IntroductionList from "../components/home/IntroductionList";
-import Features from "@/components/Features";
 /* import Map from "@/components/map/Map"; */
 
 import HomeProducts from "@/components/home/HomeProducts";
