@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans : ["Inter", "mono"],
+      /* sans : ["Inter", "mono"], */
       serif: ["Parisienne", "mono"],
       garamond: ["EB Garamond", "mono"],
     },
