@@ -1,18 +1,50 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans : ["Inter", "mono"],
+      serif: ["Parisienne", "mono"],
+      garamond: ["EB Garamond", "mono"],
+    },
+  
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: "#674B24",
+        primaryLight: "#765d3a",
+        secondary: "#8D6731",
+        accent: "#DBBF97",
+        greenish: "#626724",
+        green: "#24674B",
+        lightgreen: "#50856f",
+        info: "#04946C",
+        red: "#672a24",
+        violet: "#4B2467",
+        purple: "#843FB5",
+        lightpurple: "#bd94da",
+        blue: "#7CA0D1",
+        neutral: "#f8f3ec",
+        neutralDark: "#EDE6DB",
+        aside: "#FDFCFA",
+        asideDark: "#FDFBF8",
+        westar: "#E0DBD3",
+        hillary: "#ACA48C",
+        napa: "#AC9C8C",
+        napaDarker: "#9b8c7e",
+        napaDark: "#786d62",
+        napaDarkest: "#675e54"
+      },
+      screens: {
+        xs : "464px",
+        md : "810px",
+        lg : "1025px"
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }
