@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import React, { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+
 
 const IntroductionItem = ({ introImage, title }) => {
   const [windowWidth, setWindowWidth] = useState(0);

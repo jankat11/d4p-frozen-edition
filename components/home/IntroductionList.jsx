@@ -1,5 +1,6 @@
+"use client"
 import { useState, useEffect } from "react";
-import { shopifyFetch, storefront } from "@/utils";
+/* import { shopifyFetch, storefront } from "@/utils"; */
 import axios from "axios";
 import IntroductionItem from "../IntroductionItem";
 

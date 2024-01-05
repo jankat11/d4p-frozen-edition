@@ -1,6 +1,6 @@
 /* import { Inter } from 'next/font/google' */
 import './globals.css'
-
+import Layout from "@/components/Layout";
 /* const inter = Inter({ subsets: ['latin'] }) */
 
 export const metadata = {
@@ -11,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body >
+        <div id='modal'></div>
+        <Layout>
+        {children}
+
+        </Layout>
+        </body>
     </html>
   )
 }

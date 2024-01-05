@@ -1,3 +1,4 @@
+"use client";
 import Carousel from "react-multi-carousel";
 
 const ReactCarousel = ({ centerMode, partial, showDots, children }) => {

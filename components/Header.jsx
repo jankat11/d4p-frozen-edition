@@ -1,3 +1,4 @@
+"use client"
 import PropTypes from "prop-types";
 import { useState, useEffect, useRef } from "react";
 import D4P from "./D4P";

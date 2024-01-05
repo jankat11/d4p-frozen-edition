@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";

@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import SectionTitle from "../SectionTitle";
 import ReactCarousel from "../carousel/Carousel";
@@ -15,20 +16,8 @@ const data = [
 
 const HomeProducts = () => {
   const [width, setWidth] = useState(null);
-  const [isOnClient, setIsOnClient] = useState(false);
+  const [isOnClient, setIsOnClient] = useState(true);
 
-  const updateWindowDimensions = () => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    updateWindowDimensions();
-    setIsOnClient(true);
-    window.addEventListener("resize", updateWindowDimensions);
-    return () => {
-      window.removeEventListener("resize", updateWindowDimensions);
-    };
-  }, []);
 
   return (
     <section className="relative">

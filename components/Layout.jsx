@@ -1,21 +1,22 @@
 import PropTypes from "prop-types";
 import Header from "./Header";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+/* import { useState, useEffect } from "react"; */
+import { useRouter, usePathname } from 'next/navigation'
 import Footer from "./Footer";
 
+
 const Layout = ({ children }) => {
-  const [scrollHeight, setScrollHeight] = useState(0);
-  const [initialLoad, setInitialLoad] = useState(true);
-  const fixedValue = scrollHeight >= 21;
-  const { pathname } = useRouter();
+/*   const [scrollHeight, setScrollHeight] = useState(0);
+  const [initialLoad, setInitialLoad] = useState(true); */
+/*   const fixedValue = scrollHeight >= 21; */
+/*   const { pathname } = usePathname(); */
 
   /*  const fadeIn = "animate__animated animate__fadeIn animate__delay-1s"; */
   const fadeIn = "animate__animated animate__fadeIn";
-  const isHomePage = pathname == "/";
-  const scrollDown = scrollHeight >= 70 || !isHomePage;
+  const isHomePage = true;
+ /*  const scrollDown = scrollHeight >= 70 || !isHomePage; */
 
-  useEffect(() => {
+/*   useEffect(() => {
     document.body.style.overflowX = "hidden";
     const removeInitialAnimation = setTimeout(() => {
       setInitialLoad(false);
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
       window.removeEventListener("scroll", addScroll);
       clearTimeout(removeInitialAnimation);
     };
-  }, []);
+  }, []); */
   /* (initialLoad && isHomePage) && "opacity-0" */
   return (
     <>
@@ -37,10 +38,10 @@ const Layout = ({ children }) => {
           }`}
         >
           <Header
-            initialLoad={initialLoad}
-            isHomePage={isHomePage}
-            scrollDown={scrollDown}
-            fixedValue={fixedValue}
+            initialLoad={false}
+            isHomePage={true}
+            scrollDown={true}
+           
             fadeIn={fadeIn}
           />
         </div>
