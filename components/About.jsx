@@ -15,7 +15,7 @@ const About = () => {
       className="flex flex-col items-center shadow relative pb-44 md:pb-24"
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
-        <h2 className="text-primaryLight relative top-8 md:py-10 z-1 text-4xl inline-block">
+        <h2 className=" relative top-8 md:py-10 z-1 text-4xl inline-block">
           <span className={`text-6xl ${paris.className}`}>O</span>ur story
         </h2>
       </div>

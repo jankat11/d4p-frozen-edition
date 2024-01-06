@@ -246,7 +246,7 @@ const Header = () => {
             : "h-0 opacity-0"
         }  border-primary/30 bg-white overflow-hidden transition-all duration-200 fixed top-16  w-full`}
       >
-        <ul className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium text-primary">
+        <ul className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium ">
           {categories.map((category, i) => (
             <li className="nav-link" key={i}>
               {category}

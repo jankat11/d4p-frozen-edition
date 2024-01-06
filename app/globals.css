@@ -301,7 +301,7 @@ h3 {
     @apply h-full hidden lg:flex relative  lg:flex-row lg:space-x-10 lg:justify-between;
   }
   .nav-link {
-    @apply cursor-pointer pb-0 duration-500 text-primary relative sm:right-0 py-2;
+    @apply cursor-pointer pb-0 duration-500  relative sm:right-0 py-2;
   }
   .text-line {
     @apply w-1/5 absolute border bottom-0 border-primary opacity-0;
@@ -333,7 +333,7 @@ h3 {
     @apply mx-auto md:ml-0 leading-9 max-w-sm sm:max-w-lg md:max-w-xs font-normal;
   }
   .about-gallery {
-    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl text-primaryLight font-medium;
+    @apply w-full flex flex-col md:flex-row items-start justify-center px-6 text-xl  font-medium;
   }
   .home-images {
     @apply object-cover object-center aspect-[3/2]  sm:aspect-square sm:rounded-sm;
@@ -369,7 +369,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-primary text-sm mt-2 flex flex-col sm:flex-row sm:justify-center p-2 ;
+    @apply text-sm mt-2 flex flex-col sm:flex-row sm:justify-center p-2;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square;
@@ -387,7 +387,7 @@ h3 {
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none sm:py-24 py-24 xl:py-28 leading-loose sm:leading-10 text-center md:text-left  text-napa sm:text-xl lg:text-3xl xl:text-4xl  tracking-wide;
+    @apply select-none sm:py-24 py-24 xl:py-28 leading-loose sm:leading-10 text-center md:text-left  text-primary/50 sm:text-xl lg:text-3xl xl:text-4xl  tracking-wide;
   }
   .limited-edition {
     @apply absolute top-[50%] -translate-y-[50%] md:text-5xl xl:text-6xl text-2xl;
@@ -398,6 +398,9 @@ h3 {
   .inside-container {
     @apply px-4 md:max-w-4xl lg:max-w-5xl max-w-5xl xl:max-w-7xl mx-auto;
   }
+  .breadcrumbs-container {
+    @apply px-4 lg:max-w-5xl max-w-5xl xl:max-w-7xl mx-auto;
+  }
   .modal-overlay {
     @apply bg-black/80 fixed top-0 right-0 z-50 left-0 bottom-0 h-full w-full justify-center items-center;
   }
@@ -405,7 +408,7 @@ h3 {
     @apply md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl container lg:p-0 lg:block h-[calc(100%-24px)] lg:h-auto flex items-center;
   }
 }
-/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto md:text-primary text-primary  sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
+/* @apply select-none max-w-5xl xl:max-w-7xl p-4 sm:py-24 py-16 xl:py-28 leading-loose sm:leading-10 text-center md:text-left mx-auto md:   sm:text-2xl text-xl xl:text-4xl  tracking-wide; */
 .nav-link-container {
   font-size: 1rem;
 }

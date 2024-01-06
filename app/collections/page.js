@@ -1,18 +1,10 @@
+import BreadCrumbs from "@/components/BreadCrumbs";
 const Collections = () => {
   return (
-    <section className="relative mt-16 flex justify-center w-full">
-      <div className="text-sm breadcrumbs inside-container w-full">
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Documents</a>
-          </li>
-          <li>Add Document</li>
-        </ul>
-      </div>
-    </section>
+    <div>
+      <BreadCrumbs />
+      <h1>ALL COLLECTIONS</h1>
+    </div>
   );
 };
 export default Collections;

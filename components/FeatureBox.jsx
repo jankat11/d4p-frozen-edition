@@ -15,9 +15,9 @@ const FeatureBox = ({ title, content }) => {
         inView && "opacity-100"
       }`}
     >
-{/*       {iconData[title]}
+      {/*       {iconData[title]}
       <h3 className="text-accent">{title}</h3> */}
-      {/* <p className="md:max-w-[11rem] text-primary mx-auto">{content}</p> */}
+      {/* <p className="md:max-w-[11rem]  mx-auto">{content}</p> */}
     </article>
   );
 };

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PiShoppingCartSimple } from "react-icons/pi";
+import BreadCrumbs from "@/components/BreadCrumbs";
 
 const data = [
   { product: "amorf tabak", price: "1600", image: "/plates/p3.png" },
@@ -11,17 +12,13 @@ const data = [
   { product: "tabak büyük", price: "990", image: "/plates/p5.png" },
 ];
 
-const ProductList = ({params}) => {
+const ProductList = ({ params }) => {
   return (
     <>
-      <div className="py-24 pb-8">
-        <h1 className="text-center text-2xl tracking-wider text-primary">
-          {params.productList}
-        </h1>
-      </div>
+      <BreadCrumbs page={params.productList}/>
 
-      <section className="py-10 pt-0  ">
-        <div className="mx-auto grid gap-10 max-w-7xl grid-cols-1 p-4 pt-0 sm:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4">
+      <section className="pb-10">
+        <div className="mx-auto grid gap-10 breadcrumbs-container grid-cols-1 p-4 pt-0 sm:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4">
           {data.map((product, i) => (
             <article
               key={i}
@@ -33,11 +30,11 @@ const ProductList = ({params}) => {
                   alt="product"
                   width={500}
                   height={600}
-                  style={{width: "500px", height:"auto"}}
+                  style={{ width: "500px", height: "auto" }}
                 />
               </div>
 
-              <div className=" flex justify-between items-baseline p-2 px-4 bg-westar/40 mt-2  text-primary">
+              <div className=" flex justify-between items-baseline p-2 px-4 bg-westar/40 mt-2  ">
                 <p className="whitespace-nowrap sm:text-sm ">
                   {product.product}
                 </p>
