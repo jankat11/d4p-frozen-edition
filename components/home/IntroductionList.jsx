@@ -27,12 +27,7 @@ const IntroductionList = () => {
 };
 export default IntroductionList;
 
-{
-  /* <p className="text-center text-primary text-xl sm:text-2xl lg:text-3xl font-raleway mb-4">THE HEALING POVER OF ART</p> */
-}
-{
-  /* <h2 className="text-primary/80 text-4xl text-center py-16">Products</h2> */
-}
+
 
 {
   /*           <div className="overflow-hidden sm:rounded-sm">
