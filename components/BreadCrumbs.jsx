@@ -3,7 +3,7 @@ import Link from "next/link";
 const BreadCrumbs = ({ page }) => {
   return (
     <header className="breadcrumbs-container px-2 font-medium  uppercase">
-      <div className="navbar lg:py-10 sm:py-6 mt-16">
+      <div className="navbar lg:py-10 py-6 mt-16">
         <div className="flex-1">
           <div className=" breadcrumbs text-xs w-full px-0">
             <ul>
@@ -26,7 +26,7 @@ const BreadCrumbs = ({ page }) => {
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered w-24 md:w-auto"
+              className="input input-bordered border-primary/50 placeholder:text-westar focus:outline-none w-24 md:w-auto"
             />
           </div>
         </div>
