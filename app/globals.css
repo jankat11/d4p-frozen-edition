@@ -12,10 +12,10 @@
   display: inline-block;
 }
 
-.screen-cover {
-  /* background-color: #7a78751f; */
-  /* background-image: url("/gplay.png"); */
-}
+/* .screen-cover {
+  background-color: #7a78751f;
+  background-image: url("/gplay.png");
+} */
 
 body {
   overflow-x: hidden;
