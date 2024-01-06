@@ -11,7 +11,7 @@ const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
             e.preventDefault();
           }}
           className={`custom-dot border rounded-full border-primary   h-[10px] w-[10px] ${
-            active ? "bg-primary" : "bg-aside"
+            active ? "bg-primary" : ""
           }`}
         ></button>
       </div>

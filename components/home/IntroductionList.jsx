@@ -1,11 +1,8 @@
-
 /* import { shopifyFetch, storefront } from "@/utils"; */
 /* import axios from "axios"; */
 import IntroductionItem from "../IntroductionItem";
 
 const IntroductionList = () => {
-
-
   return (
     <section id="home-store" className="relative">
       <div className="grid relative md:grid-cols-2 ">
@@ -110,7 +107,7 @@ export default IntroductionList;
 }
 
 {
-  /* <div className="carousel carousel-center bg-aside p-4 py-0 space-x-4 sm:space-x-0 border-none">
+  /* <div className="carousel carousel-center  p-4 py-0 space-x-4 sm:space-x-0 border-none">
                     <div className="carousel-item w-2/5 md:w-[28%] border-none">
                       <div className="sm:p-4 ">
                       <Image

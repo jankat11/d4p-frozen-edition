@@ -8,7 +8,7 @@ const CustomDots = () => {
             e.preventDefault();
           }}
           className={`custom-dot border rounded-full border-primary   h-3 w-3 ${
-            active ? "bg-primary" : "bg-aside"
+            active ? "bg-primary" : ""
           }`}
         ></button>
       </div>

@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
       <header className={` w-full z-30 absolute`}>
         <Header />
       </header>
-      <main className={`bg-aside h-full w-full`}>{children}</main>
-      <footer>
+      <main className={`bg-white h-full w-full`}>{children}</main>
+      <footer className="bg-white">
         <Footer />
       </footer>
     </>

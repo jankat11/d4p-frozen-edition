@@ -2,7 +2,13 @@ import SidebarContent from "./SidebarContent";
 import { useRef, useEffect, useState } from "react";
 import Hamburger from "./Hamburger";
 
-const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar }) => {
+const Sidebar = ({
+  handleClick,
+  isMenuOpen,
+  scrollDown,
+  closeMenu,
+  isOnNavbar,
+}) => {
   const menuIconRef = useRef(null);
 
   const handleMenuClick = () => {
@@ -10,9 +16,8 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
   };
 
   const handleOverlay = () => {
-    closeMenu()
-  }
-
+    closeMenu();
+  };
 
   return (
     <div className="drawer ">
@@ -27,7 +32,11 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
             }`}
           >
             <Hamburger
-              classes={!scrollDown && !isMenuOpen && !isOnNavbar ? "bg-aside" : "bg-primary"}
+              classes={
+                !scrollDown && !isMenuOpen && !isOnNavbar
+                  ? "bg-white"
+                  : "bg-primary"
+              }
             />
           </div>
         </label>
@@ -40,7 +49,7 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
           className="drawer-overlay"
         ></label>
 
-        <div className="  bg-aside  h-screen w-80">
+        <div className="bg-white h-screen w-80">
           <div className="mt-16 px-6">
             <SidebarContent handleMenuClick={handleMenuClick} />
           </div>
@@ -50,4 +59,3 @@ const Sidebar = ({ handleClick, isMenuOpen, scrollDown, closeMenu, isOnNavbar })
   );
 };
 export default Sidebar;
-

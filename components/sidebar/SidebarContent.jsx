@@ -42,7 +42,6 @@ const SidebarContent = ({ handleMenuClick }) => {
        {/*  <li className="" onClick={handleMenuClick}>
           <a className="nav-link lowercase">info@design4theplanet.com</a>
         </li> */}
-        <li className="cursor-default relative mt-4 w-full bg-white"></li>
       </ul>
     </section>
   );

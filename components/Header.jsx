@@ -24,13 +24,11 @@ const Header = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
   const [initialLoad, setInitialLoad] = useState(true);
 
-
-  const pathname  = usePathname();
+  const pathname = usePathname();
   const fadeIn = "animate__animated animate__fadeIn";
   const isHomePage = pathname === "/";
   const scrollDown = scrollHeight >= 70 || !isHomePage;
 
-  
   const handleClick = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false);
   const handleMouseEnter = () => setDropdownVisible(true);
@@ -66,7 +64,7 @@ const Header = () => {
                 fixed top-0
               ${
                 (scrollDown || isDropdownVisible || isOnNavbar) &&
-                "bg-aside border-b border-primary/30"
+                " border-b bg-white border-primary/30"
               }`}
       >
         <ul className={`nav-link-container font-medium inside-container`}>
@@ -246,7 +244,7 @@ const Header = () => {
           isDropdownVisible
             ? "subnav border-t border-b h-32 opacity-1"
             : "h-0 opacity-0"
-        }  border-primary/30  overflow-hidden transition-all duration-200 fixed top-16 bg-aside w-full`}
+        }  border-primary/30 bg-white overflow-hidden transition-all duration-200 fixed top-16  w-full`}
       >
         <ul className=" inside-container flex items-center h-full gap-8 text-xs uppercase font-medium text-primary">
           {categories.map((category, i) => (
