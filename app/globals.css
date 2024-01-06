@@ -262,11 +262,11 @@ h3 {
   background: linear-gradient(
     to right,
     #fcfbfb00,
-    #fcfbfb,
-    #fcfbfb,
-    #fcfbfb,
-    #fcfbfb,
-    #fcfbfb
+    #fff,
+    #fff,
+    #fff,
+    #fff,
+    #fff
   );
   content: "";
   position: absolute;
