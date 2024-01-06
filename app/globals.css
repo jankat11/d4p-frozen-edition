@@ -311,7 +311,7 @@ h3 {
     @apply rounded-lg bg-primary tracking-wide text-white px-8 py-4 hover:bg-white hover:text-primary  duration-150;
   }
   .button-napa {
-    @apply rounded-lg bg-napa tracking-wide text-white px-8 py-4 hover: hover:text-napa duration-150;
+    @apply rounded-lg bg-napa tracking-wide text-white px-8 py-4 hover:bg-white hover:text-napa duration-150;
   }
   .button-hillary {
     @apply rounded-lg bg-hillary tracking-wide text-white px-8 py-4 hover:bg-white hover:text-hillary duration-150;
@@ -369,7 +369,7 @@ h3 {
     @apply relative w-full object-cover transition-all duration-500 md:group-hover:scale-105;
   }
   .homeproducts-info {
-    @apply text-primary text-sm mt-2 flex flex-col sm:flex-row sm:justify-center p-2 lg:px-8;
+    @apply text-primary text-sm mt-2 flex flex-col sm:flex-row sm:justify-center p-2 ;
   }
   .homeproducts-img {
     @apply rounded-md home-prod-img object-cover object-center aspect-square;

@@ -93,7 +93,7 @@ const Header = () => {
                     !scrollDown &&
                     !isOnNavbar &&
                     !isDropdownVisible &&
-                    "text-aside"
+                    "text-white"
                   }`}
                 >
                   Collections
@@ -113,7 +113,7 @@ const Header = () => {
                     !scrollDown &&
                     !isOnNavbar &&
                     !isDropdownVisible &&
-                    "text-aside"
+                    "text-white"
                   }`}
                 >
                   Contact
@@ -129,7 +129,7 @@ const Header = () => {
                     !scrollDown &&
                     !isOnNavbar &&
                     !isDropdownVisible &&
-                    "text-aside"
+                    "text-white"
                   }`}
                 >
                   Our Story
@@ -146,7 +146,7 @@ const Header = () => {
                     !scrollDown &&
                     !isOnNavbar &&
                     !isDropdownVisible &&
-                    "text-aside"
+                    "text-white"
                   }`}
                 >
                   New Arrivals
@@ -158,21 +158,21 @@ const Header = () => {
           <div className="lg:flex text-xs hidden items-center gap-1">
             <span
               className={` opacity-0 cursor-default ${
-                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
+                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-white"
               }`}
             >
               Cart
             </span>
             <span
               className={` opacity-0 cursor-default ${
-                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
+                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-white"
               }`}
             >
               Cart
             </span>
             <span
               className={` opacity-0 cursor-default ${
-                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-aside"
+                !scrollDown && !isOnNavbar && !isDropdownVisible && "text-white"
               }`}
             >
               Cart
@@ -183,7 +183,7 @@ const Header = () => {
                   !scrollDown &&
                   !isOnNavbar &&
                   !isDropdownVisible &&
-                  "text-aside"
+                  "text-white"
                 }`}
               >
                 Cart
