@@ -26,7 +26,7 @@ const BreadCrumbs = ({ page }) => {
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered border-dallas-600 placeholder:font-light placeholder:text-sm placeholder:text-dallas-600 focus:outline-none focus:border-dallas-700 focus:shadow-md w-24 md:w-auto"
+              className="input input-bordered  text-dallas border-dallas placeholder:font-light placeholder:text-sm placeholder:text-dallas-600 focus:outline-none focus:border-dallas-700 focus:shadow-md w-24 md:w-auto"
             />
           </div>
         </div>
