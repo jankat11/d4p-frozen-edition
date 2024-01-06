@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   /* (initialLoad && isHomePage) && "opacity-0" */
   return (
     <>
-      <header className={` w-full z-30 absolute`}>
+      <header className={`text-primary w-full z-30 absolute`}>
         <Header />
       </header>
       <main className={`bg-white text-dallas h-full w-full`}>{children}</main>

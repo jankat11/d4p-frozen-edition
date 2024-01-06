@@ -21,16 +21,16 @@ body {
   overflow-x: hidden;
 }
 
-.nav-link {
+/* .nav-link {
   -webkit-background-clip: text;
   background-clip: text !important;
   color: transparent;
-}
+} */
 
-.nav-link {
+/* .nav-link {
   transition: all 0.2s;
   background-image: linear-gradient(110deg, #674b24, #674b24) !important;
-}
+} */
 
 /* .nav-link:focus > .text-line, */
 .nav-link:hover > .text-line {
@@ -62,7 +62,7 @@ h3 {
   @apply font-semibold uppercase my-3;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   background-image: linear-gradient(
     110deg,
     #ad9b7c,
@@ -72,10 +72,10 @@ h3 {
   ) !important;
   transition: all 0.2s;
 }
-
-.top-nav:hover {
+ */
+/* .top-nav:hover {
   background-image: linear-gradient(110deg, #674b24, #674b24) !important;
-}
+} */
 
 .colar {
   color: rgb(243, 240, 234);

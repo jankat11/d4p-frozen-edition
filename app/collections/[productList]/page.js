@@ -17,7 +17,7 @@ const ProductList = ({ params }) => {
     <>
       <BreadCrumbs page={params.productList}/>
 
-      <section className="pb-10">
+      <section className="pb-10 ">
         <div className="mx-auto grid gap-10 breadcrumbs-container grid-cols-1 p-4 pt-0 sm:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4">
           {data.map((product, i) => (
             <article
@@ -51,3 +51,5 @@ const ProductList = ({ params }) => {
   );
 };
 export default ProductList;
+
+/* border rounded-md  border-westar/70 */

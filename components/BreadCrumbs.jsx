@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const BreadCrumbs = ({ page }) => {
   return (
-    <header className="breadcrumbs-container px-2">
-      <div className="navbar mt-16">
+    <header className="breadcrumbs-container px-2 font-medium  uppercase">
+      <div className="navbar lg:py-10 sm:py-6 mt-16">
         <div className="flex-1">
-          <div className="text-sm breadcrumbs w-full px-0">
+          <div className=" breadcrumbs text-xs w-full px-0">
             <ul>
               <li>
                 <Link href="/">Home</Link>
