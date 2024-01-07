@@ -10,13 +10,11 @@ const Hero = () => {
   return (
     <section className="h-screen md:h-auto  m-0 p-0  relative ">
       <div className="lg:w-full relative z-10 h-screen ">
-        <Image
-          src={"/hero.jpg"}
+        <img
+          src={"https://cdn.shopify.com/s/files/1/0631/9049/9493/files/herolg.jpg?v=1704666485"}
           width={2500}
           height={2500}
-          alt="hero"
-          priority
-          quality={100}
+ 
           className="object-cover object-center h-screen home-prod-img"
         />
       </div>
