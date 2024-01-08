@@ -28,6 +28,7 @@ const Header = () => {
   const fadeIn = "animate__animated animate__fadeIn";
   const isHomePage = pathname === "/";
   const scrollDown = scrollHeight >= 70 || !isHomePage;
+  const scrollTop = scrollHeight === 0;
 
   const handleClick = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false);
@@ -242,7 +243,11 @@ const Header = () => {
         onMouseLeave={handleMouseLeave}
         className={`${
           isDropdownVisible
-            ? "subnav border-t border-b h-32 opacity-1"
+            ? `subnav border-t ${
+                pathname.split("/")[1] === "collections" &&
+                scrollTop &&
+                "border-b-transparent"
+              } border-b h-32 opacity-1`
             : "h-0 opacity-0"
         }  border-primary/30 bg-white overflow-hidden transition-all duration-200 fixed top-16  w-full`}
       >
