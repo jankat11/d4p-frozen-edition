@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="h-screen md:h-auto  m-0 p-0  relative ">
-      <div className="lg:w-full relative z-10 h-screen ">
+      <div className="lg:w-full relative z-10 h-screen bg-[#A9A193]">
         <Image
           src={"https://cdn.shopify.com/s/files/1/0631/9049/9493/files/herolg.jpg?v=1704666485"}
           width={2500}

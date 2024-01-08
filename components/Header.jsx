@@ -80,7 +80,7 @@ const Header = () => {
           <div
             onMouseEnter={handleOnNav}
             onMouseLeave={handleLeftNav}
-            className={` nav-items text-xs h-full ${initialLoad && fadeIn}`}
+            className={` nav-items text-xs h-full `}
           >
             <div className="sm:flex sm:flex-row sm:justify-start">
               <Link
