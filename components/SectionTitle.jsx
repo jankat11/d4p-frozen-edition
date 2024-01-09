@@ -30,7 +30,7 @@ const SectionTitle = ({ first, second, classes, third, link }) => {
           className="text-info px-4 inline-block cursor-pointer whitespace-nowrap"
         >
           <div className="h-3 w-3 rounded-full inline-block bg-info "></div>{" "}
-          <span className="px-4 relative bottom-[2px] right-[2px] text-xs tracking-widest font-medium">
+          <span className="px-2 relative bottom-[2px] right-[2px] text-xs tracking-widest font-medium">
             {"explore"}
           </span>
         </div>

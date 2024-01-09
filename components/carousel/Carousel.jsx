@@ -4,14 +4,14 @@ import Carousel from "react-multi-carousel";
 const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
   const CustomDot = ({ index, onClick, active }) => {
     return (
-      <div className="sm:hidden px-1 pt-8 pb-2 relative left-[104px]  bottom-[13px]">
+      <div className="sm:hidden px-1 pt-8 pb-2 relative left-[calc(50%)] -translate-x-[calc(100%+3rem)] bottom-[13px]">
         <button
           onClick={(e) => {
             onClick();
             e.preventDefault();
           }}
-          className={`custom-dot border rounded-full border-letter h-[10px] w-[10px] ${
-            active ? "bg-letter" : ""
+          className={`custom-dot border rounded-full border-info h-[10px] w-[10px] ${
+            active ? "bg-info" : ""
           }`}
         ></button>
       </div>

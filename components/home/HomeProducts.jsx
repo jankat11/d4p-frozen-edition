@@ -88,8 +88,8 @@ const HomeProducts = ({products, title}) => {
                         alt="photo"
                       />
                     </div>
-                    <div className="homeproducts-info pt-8">
-                      <p className="whitespace-nowrap text-xs sm:text-sm ">{productItem.product}</p>
+                    <div className="homeproducts-info pt-4 md:pt-8">
+                      <p className="whitespace-nowrap  sm:text-sm ">{productItem.product}</p>
                       <p className="hidden sm:inline px-2">|</p>
                       <p className="font-semibold text-sm mt-1 sm:mt-0">
                         {productItem.price}₺
