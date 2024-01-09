@@ -26,7 +26,7 @@ const bags = [
 
 const newArrivals = [
   { product: "kol çantası", price: "3500", image: "/new/n1.webp" },
-  { product: "kol çantası", price: "3500", image: "/new/n2.webp" },
+  { product: "kol çantası", price: "3500", image: "/new/n2.jpg" },
   { product: "kol çantası", price: "6700", image: "/new/n3.jpg" },
 ]
 
