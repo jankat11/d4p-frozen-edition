@@ -372,7 +372,7 @@ h3 {
     @apply text-sm mt-2 flex flex-col sm:flex-row sm:justify-center p-2;
   }
   .homeproducts-img {
-    @apply rounded-md home-prod-img object-cover object-center aspect-[4/5];
+    @apply rounded-sm home-prod-img object-cover object-center aspect-[4/5];
   }
   .homeproducts-img-cover {
     @apply overflow-hidden;

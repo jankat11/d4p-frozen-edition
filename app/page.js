@@ -21,7 +21,7 @@ export default function Home() {
       <HomeVitra />
       <HomeProducts products={"plates"}  title={"PLATES"} />
       <CompareImages />
-      <HomeProducts products={"bags"} title={"BAGS"} />
+   {/*    <HomeProducts products={"bags"} title={"BAGS"} /> */}
       <HomeInstagram />
     </>
   );

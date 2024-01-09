@@ -75,9 +75,9 @@ const HomeProducts = ({products, title}) => {
           >
             {data.map((productItem, i) => {
               return (
-                <div key={i} className=" cursor-pointer p-4 relative left-12 sm:left-0">
+                <div key={i} className=" cursor-pointer p-2 relative left-12 sm:left-0">
                   <div>
-                    <div className={`homeproducts-img-cover rounded-md  bg-gray-100 ${products === "plates" && "p-8"}`}>
+                    <div className={`homeproducts-img-cover rounded-sm  bg-gray-100 ${products === "plates" && "p-8"}`}>
                       <Image
                         src={productItem.image}
                         quality={100}
