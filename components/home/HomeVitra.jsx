@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeVitra = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className="lg:py-14 py-12">
       <div className="relative overflow-hidden cursor-pointer">
         <div className="w-full limited-edition">
           <p className=" hero-text inside-container relative  sm:left-16 xl:left-0 text-left text-xl sm:text-2xl md:text-4xl xl:text-5xl">limited edition</p>

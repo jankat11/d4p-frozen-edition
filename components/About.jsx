@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center shadow relative pb-44 md:pb-24"
+      className="flex flex-col items-center shadow relative pb-44 md:pb-24 text-primary"
     >
       <div className="py-8  my-16 flex justify-center items-center gap-4">
         <h2 className=" relative top-8 md:py-10 z-1 text-4xl inline-block">

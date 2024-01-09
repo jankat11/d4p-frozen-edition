@@ -15,7 +15,7 @@ const SectionTitle = ({ first, second, classes, third, link }) => {
         <span className={`${third && "hidden sm:inline"} `}>{first}</span>{" "}
         {second && (
           <span
-            className={`text-primary/60 text-2xl px-2 relative top-[1px] ${
+            className={`text-letter/60 text-2xl px-2 relative top-[1px] ${
               third && "hidden sm:inline"
             }`}
           >

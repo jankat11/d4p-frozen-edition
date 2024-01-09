@@ -4,7 +4,7 @@ import { ReactCompareSlider } from "react-compare-slider";
 
 const CompareImages = () => {
   return (
-    <div className="pb-16 pt-8 sm:hidden overflow-x-hidden">
+    <div className="lg:py-14 py-12 sm:hidden overflow-x-hidden">
       <div className="pb-6 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"THE HEALING POVER OF ART"}
@@ -27,7 +27,7 @@ const CompareImages = () => {
             <Image
               width={650}
               height={400}
-              src="/homepage/comp33.webp"
+              src="/homepage/comp.png"
               alt="Image two"
             />
           }

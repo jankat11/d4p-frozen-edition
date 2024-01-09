@@ -12,7 +12,7 @@ const data = [
 
 const HomeInstagram = () => {
   return (
-    <section className="pb-12">
+    <section className="py-12">
       <div className="pb-2 sm:pb-2 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={<FaInstagram fill="#674B24" size={24} />}
