@@ -57,7 +57,7 @@ const HomeProducts = ({products, title}) => {
   }, []);
 
   return (
-    <section className="relative py-14 xl:py-14">
+    <section className="relative lg:py-14 py-10 pb-6">
       <div className="pb-6 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"DIRECT AVAILABLE"}

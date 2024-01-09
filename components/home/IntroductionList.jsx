@@ -4,7 +4,7 @@ import IntroductionItem from "../IntroductionItem";
 
 const IntroductionList = () => {
   return (
-    <section id="home-store" className="relative">
+    <section id="home-store" className="relative pb-10">
       <div className="grid relative md:grid-cols-2 ">
         <IntroductionItem
           title={"our collection"}
