@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
   const CustomDot = ({ index, onClick, active }) => {
     return (
-      <div className="sm:hidden px-1 pt-8 pb-2 relative left-[calc(50%)] -translate-x-[calc(100%+3rem)] bottom-[13px]">
+      <div className="sm:hidden px-1 pt-8 pb-2 relative left-[calc(50%)] -translate-x-[calc(100%+50px)] bottom-[13px]">
         <button
           onClick={(e) => {
             onClick();
@@ -51,14 +51,14 @@ const ReactCarousel = ({ centerMode, partial, showDots, children }) => {
           tablet: {
             breakpoint: {
               max: 1024,
-              min: 530,
+              min: 630,
             },
             items: 2,
             partialVisibilityGutter: 40,
           },
           mobile: {
             breakpoint: {
-              max: 530,
+              max: 630,
               min: 0,
             },
             items: 1,

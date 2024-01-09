@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Hero />
       <IntroductionList />
-      <HomeProducts products={"newArrivals"} title={"NEW ARRIVAL"} />
+      <HomeProducts products={"newArrivals"} title={"NEW ARRIVALS"} />
       <HomeVitra />
       <HomeProducts products={"plates"}  title={"PLATES"} />
       <CompareImages />

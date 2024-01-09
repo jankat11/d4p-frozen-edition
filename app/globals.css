@@ -387,7 +387,7 @@ h3 {
     @apply rounded-md shadow w-full h-80 sm:h-96 2xl:h-[450px] overflow-hidden;
   } */
   .introTitle {
-    @apply select-none sm:pt-24 pb-12 sm:pb-14 pt-24 xl:pt-28 leading-loose sm:leading-10 text-left sm:text-xl lg:text-3xl xl:text-4xl  tracking-wide;
+    @apply select-none  pb-12 sm:pb-14 pt-32 leading-loose sm:leading-10 text-left sm:text-xl lg:text-3xl xl:text-4xl  tracking-wide;
   }
   .limited-edition {
     @apply absolute top-[50%] -translate-y-[50%] md:text-5xl xl:text-6xl text-2xl;

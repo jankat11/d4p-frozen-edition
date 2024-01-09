@@ -57,7 +57,7 @@ const HomeProducts = ({products, title}) => {
   }, []);
 
   return (
-    <section className="relative py-12 xl:py-14">
+    <section className="relative py-14 xl:py-14">
       <div className="pb-6 max-w-5xl xl:max-w-7xl mx-auto">
         <SectionTitle
           first={"DIRECT AVAILABLE"}
@@ -69,9 +69,9 @@ const HomeProducts = ({products, title}) => {
 
         {isOnClient && (
           <ReactCarousel
-            centerMode={width >= 530}
-            partial={width < 530}
-            showDots={width < 530}
+            centerMode={width >= 630}
+            partial={width < 630}
+            showDots={width < 630}
           >
             {data.map((productItem, i) => {
               return (
