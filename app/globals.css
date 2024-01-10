@@ -390,7 +390,7 @@ h3 {
     @apply select-none hidden lg:block pt-20 pb-4 sm:pb-8 sm:pt-32 leading-loose sm:leading-10 text-left sm:text-xl lg:text-3xl xl:text-4xl  tracking-wide;
   }
   .limited-edition {
-    @apply absolute top-[50%] -translate-y-[50%] md:text-5xl xl:text-6xl text-2xl;
+    @apply absolute sm:top-[50%] top-[85%] -translate-y-[50%] md:text-5xl xl:text-6xl text-2xl;
   }
   .opening-logo {
     @apply w-screen h-screen overflow-y-hidden flex relative justify-center items-center;
