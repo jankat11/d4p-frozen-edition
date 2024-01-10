@@ -21,7 +21,7 @@ const HomeInstagram = () => {
           classes={"xl:ps-8"}
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 pt-4 gap-1">
+      <div className="grid grid-cols-2 md:grid-cols-4 pt-4 gap-[2px]">
         {data.map((imageItem, i) => (
           <div key={i}>
             <InstagramModal imageItem={imageItem} />
