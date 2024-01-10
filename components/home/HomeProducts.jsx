@@ -25,9 +25,9 @@ const bags = [
 
 
 const newArrivals = [
-  { product: "kol çantası", price: "3500", image: "/new/n1.webp" },
-  { product: "kol çantası", price: "3500", image: "/new/n2.jpg" },
-  { product: "kol çantası", price: "6700", image: "/new/n3.jpg" },
+  { product: "zincir askılı kol çantası", price: "3500", image: "/new/n1.webp" },
+  { product: "zincir askılı kol çantası", price: "3500", image: "/new/n2.jpg" },
+  { product: "zincir askılı kol çantası", price: "6700", image: "/new/n3.jpg" },
 ]
 
 const allProducts = {
@@ -75,7 +75,7 @@ const HomeProducts = ({products, title}) => {
           >
             {data.map((productItem, i) => {
               return (
-                <div key={i} className=" cursor-pointer p-2 relative left-12 sm:left-0">
+                <div key={i} className=" cursor-pointer p-2 relative  sm:left-0">
                   <div>
                     <div className={`homeproducts-img-cover rounded-sm  bg-napa/10 ${products === "plates" && "p-8"}`}>
                       <Image
