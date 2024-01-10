@@ -12,7 +12,7 @@ const HomeVitra = () => {
           width={2000}
           height={2000}
           alt="vitra"
-          className="object-cover sm:object-bottom sm:aspect-video aspect-[4/3] object-right home-prod-img"
+          className="object-cover sm:object-bottom sm:aspect-video aspect-[4/2] object-right home-prod-img"
         />
       </div>
     </section>
